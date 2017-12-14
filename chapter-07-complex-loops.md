@@ -181,7 +181,7 @@
 
 **Псевдо-код** за алгоритъма на Евклид:
 
-```csharp
+```javascript
 while b ≠ 0
   var oldB = b;
   b = a % b;
@@ -451,7 +451,7 @@ print а;
 
 **Формулата** за образуване на редицата е:
 
-```csharp
+```javascript
 F0 = 1
 F1 = 1
 Fn = Fn-1 + Fn-2
@@ -559,7 +559,7 @@ Fn = Fn-1 + Fn-2
 
 Можем да използваме **`for`** цикли със **стъпка**:
 
-```csharp
+```javascript
 for (var i = 1; i <= n; i+=3)
 {
    Console.WriteLine(i);
@@ -568,7 +568,7 @@ for (var i = 1; i <= n; i+=3)
 
 Циклите **`while`** / **`do-while`** се повтарят докато е в сила дадено **условие**:
 
-```csharp
+```javascript
 int num = 1;
 while (num <= n)
 {
@@ -578,7 +578,7 @@ while (num <= n)
 
 Ако се наложи да **прекъснем** изпълнението на цикъл, го правим с оператора **`break`**:
 
-```csharp
+```javascript
 var n = 0;
 while (true)
 {
@@ -594,7 +594,7 @@ Console.WriteLine("Even number entered: {0}", n);
 
 Вече знаем как да прихващаме **грешки** по време на изпълнението на програмата ни:
 
-```csharp
+```javascript
 try
 {
    Console.Write("Enter even number: ");
@@ -634,6 +634,8 @@ catch
 ![](assets/chapter-7-images/15.Fruits-02.png)
 
 Следват стъпките за имплементация на уеб приложението “Обстреляй плодовете!”.
+
+[TODO: да се редактира и адаптира за JS]
 
 Във Visual Studio създаваме ново **ASP.NET MVC уеб приложение** с език C#. Добавяме нов проект от [**Solution Explorer**] &rarr; [**Add**] &rarr; [**New Project…**]. Задаваме смислено име, например “**Fruits-Web-Game**”:
 
