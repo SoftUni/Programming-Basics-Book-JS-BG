@@ -20,7 +20,7 @@
 
 В повечето случаи системната конзола представлява текстов терминал, т.е. приема и визуализира само **текст**, без графични елементи като например бутони, менюта и т.н. Обикновено изглежда като прозорец с черен цвят като този:
 
-![](/assets/chapter-2-images/00.Console-example.png)
+![](/assets/old-images/chapter-2-images/00.Console-example.png)
 
 В повечето операционни системи **конзолата** е достъпна като самостоятелно приложение на което пишем конзолни команди. В Windows се нарича **Command Prompt**, а в Linux и Mac се нарича **Terminal**. В конзолата се изпълняват конзолни приложения. Те четат текстов вход от командния ред и печатат изхода си като текстов изход на конзолата. В настоящата книга ще се учим на програмиране като създаваме предимно **конзолни приложения**.
 
@@ -28,7 +28,7 @@
 
 За да прочетем **цяло** (не дробно) **число** от конзолата е необходимо да **декларираме променлива**, да посочим **типа на числото**, както и да използваме стандартната команда за четене на информация от системната конзола:
 
-```csharp
+```javascript
 var num = int.Parse(Console.ReadLine());
 ```
 
@@ -36,7 +36,7 @@ var num = int.Parse(Console.ReadLine());
 
 За пример да вземем следната програма, която прочита цяло число от конзолата, умножава го по него самото (вдига го на квадрат) и отпечатва резултата от умножението. Така можем да пресметнем лицето на квадрат по дадена дължина на страната:
 
-```csharp
+```javascript
 Console.Write("a = ");              
 var a = int.Parse(Console.ReadLine());
 var area = a * a;
@@ -46,7 +46,7 @@ Console.WriteLine(area);
 
 Ето как би работила програмата при квадрат с размер на страната 3:
 
-![](/assets/chapter-2-images/00.Square-area-01.jpg)
+![](/assets/old-images/chapter-2-images/00.Square-area-01.jpg)
 
 Опитайте да въведете грешно число, например "**hello**". Ще получите съобщение за грешка по време на изпълнение (exception). Това е нормално. По-късно ще разберем как можем да прихващаме такива грешки и да караме потребителят да въвежда число наново.
 
@@ -69,9 +69,9 @@ Console.WriteLine(area);
 
 ## Пресмятания в програмирането
 
-За компютрите знаем, че са машини, които обработват данни. Всички **данни** се записват в компютърната памет (RAM памет) в **променливи**. Променливите са именувани области от паметта, които пазят данни от определен тип, например число или текст. Всяка една **променлива** в C# има **име**, **тип** и **стойност**. Ето как бихме дефинирали една променлива, като едновременно с декларацията ѝ, ѝ присвояваме и стойност:
+За компютрите знаем, че са машини, които обработват данни. Всички **данни** се записват в компютърната памет (RAM памет) в **променливи**. Променливите са именувани области от паметта, които пазят данни от определен тип, например число или текст. Всяка една **променлива** в JavaScript има **име** и **стойност**. Ето как бихме дефинирали една променлива, като едновременно с декларацията ѝ, ѝ присвояваме и стойност:
 
-![](/assets/chapter-2-images/00.Declaring-variables-01.png)
+![](/assets/old-images/chapter-2-images/00.Declaring-variables-01.png)
 
 След тяхната обработка, данните се записват отново в променливи (т.е. някъде в паметта, заделена от нашата програма).
 
@@ -89,7 +89,7 @@ Console.WriteLine(area);
 
 За да прочетем **дробно число** от конзолата е необходимо отново да **декларираме променлива**, да посочим **типа на числото**, както и да използваме стандартната команда за четене на информация от системната конзола:
 
-```csharp
+```javascript
 var num = double.Parse(Console.ReadLine());
 ```
 
@@ -97,7 +97,7 @@ var num = double.Parse(Console.ReadLine());
 
 Да напишем програма, която чете дробно число в инчове и го обръща в сантиметри:
 
-```csharp
+```javascript
 Console.Write("Inches = ");              
 var inches = double.Parse(Console.ReadLine());
 var centimeters = inches * 2.54;
@@ -107,7 +107,7 @@ Console.WriteLine(centimeters);
 
 Да стартираме програмата и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
 
-![](assets/chapter-2-images/00.Inches-to-centimeters-01.jpg)
+![](assets/old-images/chapter-2-images/00.Inches-to-centimeters-01.jpg)
 
 #### Тестване в Judge системата
 
@@ -118,7 +118,7 @@ Console.WriteLine(centimeters);
 
 За да прочетем текст (стринг) от конзолата, отново **декларираме нова променлива** и използваме стандартната **команда за четене на информация от системната конзола**:
 
-```csharp
+```javascript
 var str = Console.ReadLine();
 ```
 Нека обърнем внимание на факта, че при **четене на текст не се декларира** по никакъв начин тип "**`string`**" (текст). Това е така, защото по подразбиране методът **`Console.ReadLine(…)`** връща като **резултат текст**. Допълнително, вие можете да зададете текста да бъде прехвърлен в цяло число чрез **`int.Parse(…)`** или дробно число чрез **`double.Parse(…)`**. Ако това не се направи, за програмата **всяко едно число** ще бъде просто **текст**, с който **не бихме могли да извършваме** аритметични операции.
@@ -127,14 +127,14 @@ var str = Console.ReadLine();
 
 Да напишем програма, която въвежда името на потребителя и го поздравява с текста "**Hello, *име***".
 
-```csharp           
+```javascript           
 var name = Console.ReadLine();
 Console.WriteLine("Hello, {0}!", name);
 ```
 
 В този случай, изразът **`{0}`** e заместен от **първия** подаден аргумент, който в примера е променливата **`name`**:
 
-![](/assets/chapter-2-images/00.Greeting-by-name-01.jpg)
+![](/assets/old-images/chapter-2-images/00.Greeting-by-name-01.jpg)
 
 #### Тестване в Judge системата
 
@@ -145,7 +145,7 @@ Console.WriteLine("Hello, {0}!", name);
 
 При печат в конзолата на текст, числа и други данни, **можем да ги съединим**, като използваме шаблони **`{0}`**, **`{1}`**, **`{2}`** и т.н. В програмирането тези шаблони се наричат **placeholders**.
 
-```csharp
+```javascript
 var firstName = Console.ReadLine();
 var lastName = Console.ReadLine();
 var age = int.Parse(Console.ReadLine());
@@ -156,13 +156,13 @@ Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}.",
 
 Ето резултатът, който ще получим, след изпълнение на този пример:
 
-![](assets/chapter-2-images/00.Placeholders-01.jpg)
+![](assets/old-images/chapter-2-images/00.Placeholders-01.jpg)
 
 Обърнете внимание как всяка една променлива трябва да бъде подадена в **реда, в който искаме да се печата**. По същество, шаблонът (**placeholder**) **приема променливи от всякакъв вид**.
 
 Възможно е един и същ номер на шаблон да се използва по няколко пъти и не е задължително шаблоните да са номерирани поредно. Ето пример:
 
-```csharp
+```javascript
 Console.WriteLine("{1} + {1} = {0}", 1+1, 1);
 ```
 Резултатът е:
@@ -183,7 +183,7 @@ Console.WriteLine("{1} + {1} = {0}", 1+1, 1);
 
 Можем да събираме числа с оператора **`+`**:
 
-```csharp
+```javascript
 var a = 5;
 var b = 7;
 var sum = a + b; // резултатът е 12
@@ -193,7 +193,7 @@ var sum = a + b; // резултатът е 12
 
 Изваждането на числа се извършва с оператора **`-`**:
 
-```csharp
+```javascript
 var a = int.Parse(Console.ReadLine());
 var b = int.Parse(Console.ReadLine());
 var result = a - b;
@@ -202,13 +202,13 @@ Console.WriteLine(result);
 
 Ето резултатът от изпълнението на програмата (при числа 10 и 3):
 
-![](assets/chapter-2-images/00.Subtracting-01.jpg)
+![](assets/old-images/chapter-2-images/00.Subtracting-01.jpg)
 
 ### Умножение на числа (оператор **`*`**)
 
 За умножение на числа използваме оператора **`*`**:
 
-```csharp
+```javascript
 var a = 5;
 var b = 7;
 var product = a * b; // 35
@@ -224,7 +224,7 @@ var product = a * b; // 35
 
 Ето няколко примера за използване на оператора за делене:
 
-```csharp
+```javascript
 var a = 25;
 var i = a / 4;      // извършваме т.нар. целочислено деление:
                     // резултатът от тази операция ще бъде 6 – дробната част се отрязва, 
@@ -234,16 +234,16 @@ var f = a / 4.0;    // 6.25 – дробно деление. Изрично см
 var error = a / 0;  // Грешка: целочислено деление на 0
 ```
 
-Да разгледаме и няколко примера за **целочислено деление** (запомнете, че при **деление на цели числа** в езика C# резултатът е **цяло число**):
+Да разгледаме и няколко примера за **целочислено деление** (запомнете, че при **деление на цели числа** в езика JavaScript резултатът е **цяло число**):
 
-```csharp
+```javascript
 var a = 25;
 Console.WriteLine(a / 4);  // Целочислен резултат: 6
 Console.WriteLine(a / 0);  // Грешка: деление на 0
 ```
 Да разгледаме няколко примера за **деление на дробни числа**. При дробно делене резултатът винаги е **дробно число** и деленето никога не дава грешка и работи коректно със специалните стойности **+&#8734;** и **-&#8734;**:
 
-```csharp
+```javascript
 var a = 15;
 Console.WriteLine(a / 2.0);   // Дробен резултат: 7.5
 Console.WriteLine(a / 0.0);   // Резултат: Infinity
@@ -264,7 +264,7 @@ NaN
 
 Операторът **`+`** освен за събиране на числа служи и за съединяване на текст (долепяне на два символни низа един след друг). В програмирането съединяване на текст с текст или с число наричаме "**конкатенация**". Ето как можем да съединяваме текст и число с оператора **`+`**:
 
-```csharp
+```javascript
 var firstName = "Maria";
 var lastName = "Ivanova";
 var age = 19;
@@ -274,7 +274,7 @@ Console.WriteLine(str);  // Maria Ivanova @ 19
 
 Ето още един пример:
 
-```csharp
+```javascript
 var a = 1.5;
 var b = 2.5;
 var sum = "The sum is: " + a + b;
@@ -283,7 +283,7 @@ Console.WriteLine(sum);  // The sum is: 1.52.5
 
 Забелязвате ли нещо странно? Може би очаквахте числата **`a`** и **`b`** да се сумират? Всъщност конкатенацията работи отляво надясно и горният резултат е абсолютно коректен. Ако искаме да сумираме числата, ще трябва да ползваме **скоби**, за да променим реда на изпълнение на операциите:
 
-```csharp
+```javascript
 var a = 1.5;
 var b = 2.5;
 var sum = "The sum is: " + (a + b);
@@ -295,7 +295,7 @@ Console.WriteLine(sum);  // The sum is: 4
 
 В програмирането можем да пресмятаме и **числови изрази**, например:
 
-```csharp
+```javascript
 var expr = (3 + 5) * (4 – 2);
 ```
 В сила е стандартното правило за приоритетите на аритметичните операции: **умножение и деление се извършват винаги преди събиране и изваждане**. При наличие на **израз в скоби, той се изчислява пръв**, но ние знаем всичко това от училищната математика.
@@ -304,7 +304,7 @@ var expr = (3 + 5) * (4 – 2);
 
 Да напишем програма, която въвежда дължините на двете основи на трапец и неговата височина (по едно дробно число на ред) и пресмята **лицето на трапеца** по стандартната математическа формула:
 
-```csharp
+```javascript
 var b1 = double.Parse(Console.ReadLine());
 var b2 = double.Parse(Console.ReadLine());
 var h = double.Parse(Console.ReadLine());
@@ -334,16 +334,16 @@ Trapezoid area = 17.5
 - Периметър = 2 \* π \* r
 - π ≈ 3.14159265358979323846…
 
-```csharp
+```javascript
 Console.Write("Enter circle radius. r = ");
 var r = double.Parse(Console.ReadLine());
 Console.WriteLine("Area = " + Math.PI * r * r); 
-  // Math.PI - вградена в C# константа за π
+  // Math.PI - вградена в JavaScript константа за π
 Console.WriteLine("Perimeter = " + 2 * Math.PI * r);
 ```
 Нека изпробваме програмата с **радиус `r = 10`**:
 
-![](/assets/chapter-2-images/00.Circle-area-01.jpg)
+![](/assets/old-images/chapter-2-images/00.Circle-area-01.jpg)
 
 #### Тестване в Judge системата
 
@@ -354,11 +354,11 @@ Console.WriteLine("Perimeter = " + 2 * Math.PI * r);
 
 Правоъгълник е зададен с **координатите на два от своите два срещуположни ъгъла**. Да се пресметнат **площта и периметъра** му:
 
-<img alt="rectangleArea" src="/assets/chapter-2-images/00.Rectangle-area-01.png" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/old-images/chapter-2-images/00.Rectangle-area-01.png" width="250" height="200" />
 
 В тази задача трябва да съобразим, че ако от по-големия `x` извадим по-малкия `x`, ще получим дължината на правоъгълника. Аналогично, ако от по-големия `y` извадим по-малкия `y`, ще получим височината на правоъгълника. Остава да умножим двете страни. Ето примерна имплементация на описаната логика:
 
-```csharp
+```javascript
 var x1 = double.Parse(Console.ReadLine());
 var y1 = double.Parse(Console.ReadLine());
 var x2 = double.Parse(Console.ReadLine());
@@ -376,7 +376,7 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 При стартиране на програмата със стойностите от координатната система в условието, получаваме следния резултат:
 
-![](/assets/chapter-2-images/00.Rectangle-area-02.jpg)
+![](/assets/old-images/chapter-2-images/00.Rectangle-area-02.jpg)
 
 #### Тестване в Judge системата
 
@@ -404,15 +404,15 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 *	Стартираме Visual Studio.
 * Създаваме нов **Blank Solution:** [**File**] -> [**New**] -> [**Project**].
 
-![](assets/chapter-2-images/00.Blank-solution-01.png)
+![](assets/old-images/chapter-2-images/00.Blank-solution-01.png)
 
 Избираме от диалоговия прозорец [**Templates**] -> [**Other Project Types**] -> [**Visual Studio Solutions**] -> [**Blank Solution**] и даваме подходящо име на проекта, например “Simple-Calculations”:
 
-![](assets/chapter-2-images/00.Blank-solution-02.png)
+![](assets/old-images/chapter-2-images/00.Blank-solution-02.png)
 
 Сега имаме създаден **празен Visual Studio Solution** (с 0 проекта в него):
 
-![](assets/chapter-2-images/00.Blank-solution-03.png)
+![](assets/old-images/chapter-2-images/00.Blank-solution-03.png)
 
 Целта на този blank solution e да добавяме в него **по един проект за всяка задача** от упражненията.
 
@@ -424,27 +424,29 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 Създаваме **нов проект** в съществуващото Visual Studio решение. В **Solution Explorer** кликнете с десен бутон на мишката върху **Solution 'Simple-Calculations'**. Изберете [**Add**] -> [**New Project…**]:
 
-![](assets/chapter-2-images/01.Square-area-01.png)
+![](assets/old-images/chapter-2-images/01.Square-area-01.png)
 
-Ще се отвори **диалогов прозорец** за избор на **тип проект** за създаване. Избираме **C# конзолно приложение** с име “Square-Area”:
+[TODO: да се редактира и адаптира за JS]
 
-![](assets/chapter-2-images/01.Square-area-02.png)
+Ще се отвори **диалогов прозорец** за избор на **тип проект** за създаване. Избираме **JavaScript конзолно приложение** с име “Square-Area”:
+
+![](assets/old-images/chapter-2-images/01.Square-area-02.png)
 
 Вече имаме solution с едно конзолно приложение в него. Остава да напишем **кода за решаване на задачата**. За целта отиваме в тялото на метода **`Main(string[] args)`** и пишем следния код:
 
-![](assets/chapter-2-images/01.Square-area-03.png)
+![](assets/old-images/chapter-2-images/01.Square-area-03.png)
 
 Кодът въвежда цяло число чрез **`a = int.Parse(Console.ReadLine())`**, след това изчислява **`area = a * a`** и накрая печата стойността на променливата **`area`**. **Стартираме** програмата с [**Ctrl+F5**] и я **тестваме** с различни входни стойности:
 
-![](assets/chapter-2-images/01.Square-area-04.png)
+![](assets/old-images/chapter-2-images/01.Square-area-04.png)
 
 #### Тестване в Judge системата
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#0](https://judge.softuni.bg/Contests/Practice/Index/504#0). Трябва да получите 100 точки (напълно коректно решение):
 
-![](assets/chapter-2-images/01.Square-area-05.png)
+![](assets/old-images/chapter-2-images/01.Square-area-05.png)
 
-![](assets/chapter-2-images/01.Square-area-06.png)
+![](assets/old-images/chapter-2-images/01.Square-area-06.png)
 
 
 ### Задача:	от инчове към сантиметри
@@ -453,56 +455,58 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 #### Насоки и подсказки
 
-Първо създаваме **нов C# конзолен проект** в решението “Simple-Calculations”. Кликаме с мишката върху решението в **Solution Explorer** и избираме [**Add**] -> [**New Project…**]:
+[TODO: да се редактира и адаптира за JS]
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-01.png)
+Първо създаваме **нов JavaScript конзолен проект** в решението “Simple-Calculations”. Кликаме с мишката върху решението в **Solution Explorer** и избираме [**Add**] -> [**New Project…**]:
+
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-01.png)
 
 Избираме [**Visual C#**] -> [**Windows**] -> [**Console Application**] и задайте име “Inches-to-Centimeters”:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-02.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-02.png)
 
 Следва да напишем **кода на програмата**:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-03.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-03.png)
 
 **Стартираме програмата** с [**Ctrl+F5**]:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-04.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-04.png)
 
 Изненада! Какво става? Програмата не работи правилно… Всъщност това не е ли предходната програма?
 Във Visual Studio **текущият активен проект** в един solution е маркиран в получерно и може да се сменя:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-05.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-05.png)
 
 За да включим режим на **автоматично преминаване към текущия проект**, кликаме върху главния solution с десния бутон на мишката и избираме [**Set StartUp Projects…**]:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-06.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-06.png)
 
 Ще се появи диалогов прозорец, от който трябва да се избере [**Startup Project**] -> [**Current Selection**]:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-07.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-07.png)
 
 Сега отново **стартираме програмата**, както обикновено с [**Ctrl+F5**]. Този път ще се стартира **текущата отворена програма**, която преобразува инчове в сантиметри. Изглежда работи коректно:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-08.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-08.png)
 
 Сега **да превключим към преходната програма** (лице на квадрат). Това става с двоен клик на мишката върху файла **``Program.cs``** от предходния проект **“Square-Area”** в панела [**Solution Explorer**] на Visual Studio:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-12.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-12.png)
 
 Натискаме пак [**Ctrl+F5**]. Този път трябва да се стартира другият проект:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-11.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-11.png)
 
 Превключваме обратно към проекта **“Inches-to-Centimeters”** и го стартираме с [**Ctrl+F5**]:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-09.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-09.png)
 
 **Превключването между проектите** е много лесно, нали? Просто избираме файла със сорс кода на програмата, кликваме го два пъти с мишката и при стартиране тръгва програмата от този файл.
 
 Да тестваме с дробни числа, например с **2.5**:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-10.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-10.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>В зависимост от регионалните настройки на операционната система, е възможно вместо <b>десетична точка</b> (US настройки) да се използва <b>десетична запетая</b> (BG настройки).</td>
@@ -510,13 +514,13 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 Ако програмата очаква десетична точка и бъде въведено число с десетична запетая или обратното (бъде въведена десетична точка, когато се очаква десетична запетая), ще се получи следната грешка:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-13.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-13.png)
 
 Препоръчително е **да променим настройките на компютъра си**, така че да се използва **десетична точка**:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-14.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-14.png)
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-15.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-15.png)
 
 #### Тестване в Judge системата
 
@@ -524,7 +528,7 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 Решението би трябвало да бъде прието като напълно коректно:
 
-![](assets/chapter-2-images/02.Inches-to-centimeters-16.png)
+![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-16.png)
 
 
 ### Задача: поздрав по име
@@ -533,17 +537,19 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 #### Насоки и подсказки
 
-Първо създаваме **нов C# конзолен проект** с име “Greeting” в решението “Simple-Calculations”:
+[TODO: да се редактира и адаптира за JS]
 
-![](assets/chapter-2-images/03.Greeting-by-name-01.png)
+Първо създаваме **нов JavaScript конзолен проект** с име “Greeting” в решението “Simple-Calculations”:
+
+![](assets/old-images/chapter-2-images/03.Greeting-by-name-01.png)
 
 **Следва да напишем кода** на програмата. Ако се затруднявате, може да ползвате примерния код по-долу:
 
-![](assets/chapter-2-images/03.Greeting-by-name-02.png)
+![](assets/old-images/chapter-2-images/03.Greeting-by-name-02.png)
 
 **Стартираме** програмата с [**Ctrl+F5**] и я тестваме дали работи:
 
-![](assets/chapter-2-images/03.Greeting-by-name-03.png)
+![](assets/old-images/chapter-2-images/03.Greeting-by-name-03.png)
 
 #### Тестване в Judge системата
 
@@ -552,17 +558,17 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 ### Задача:	съединяване на текст и числа
 
-Напишете C# програма, която прочита от конзолата име, фамилия, възраст и град и печата съобщение от следния вид: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
+Напишете JavaScript програма, която прочита от конзолата име, фамилия, възраст и град и печата съобщение от следния вид: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
 
 #### Насоки и подсказки
 
-Добавяме към текущото Visual Studio решение още един конзолен C# проект с име “Concatenate-Data”.	**Пишем кода**, който чете входните данни от конзолата:
+Добавяме към текущото Visual Studio решение още един конзолен Ja проект с име “Concatenate-Data”. **Пишем кода**, който чете входните данни от конзолата:
 
-![](assets/chapter-2-images/04.Concatenate-data-01.png)
+![](assets/old-images/chapter-2-images/04.Concatenate-data-01.png)
 
 **Кодът**, който отпечатва описаното в условието на задачата съобщение, трябва да се допише.
 
-![](assets/chapter-2-images/04.Concatenate-data-02.png)
+![](assets/old-images/chapter-2-images/04.Concatenate-data-02.png)
 
 На горната картинка кодът е нарочно даден замъглен, за да помислите как да си го напишете сами.
 
@@ -579,13 +585,13 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
 
-![](assets/chapter-2-images/05.Trapezoid-area-01.png)
+![](assets/old-images/chapter-2-images/05.Trapezoid-area-01.png)
 
 #### Насоки и подсказки
 
-Отново трябва да добавим към текущото Visual Studio решение още един **конзолен C# проект** с име ""Trapezoid-Area" и да напишем **кода, който чете входните данни от конзолата, пресмята лицето на трапеца и го отпечатва**:
+Отново трябва да добавим към текущото Visual Studio решение още един **конзолен JavaScript проект** с име "Trapezoid-Area" и да напишем **кода, който чете входните данни от конзолата, пресмята лицето на трапеца и го отпечатва**:
 
-![](assets/chapter-2-images/05.Trapezoid-area-02.png)
+![](assets/old-images/chapter-2-images/05.Trapezoid-area-02.png)
 
 Кодът на картинката е нарочно размазан, за да помислите върху него и да го допишете сами.
 
@@ -622,7 +628,7 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 **Правоъгълник** е зададен с **координатите** на два от своите срещуположни ъгъла (x1, y1) – (x2, y2). Да се пресметнат **площта и периметъра** му. **Входът** се чете от конзолата. Числата **x1, y1, x2 и y2** са дадени по едно на ред. **Изходът** се извежда на конзолата и трябва да съдържа два реда с по една число на всеки от тях – лицето и периметъра.
 
-![](/assets/chapter-2-images/07.Rectangle-area-01.png)
+![](/assets/old-images/chapter-2-images/07.Rectangle-area-01.png)
 
 #### Примерен вход и изход
 
@@ -675,7 +681,7 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 ### Задача:	конзолен конвертор - от радиани в градуси
 
-Напишете програма, която чете **ъгъл в [радиани](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) и го преобразува в **[градуси](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Потърсете в Интернет подходяща формула. Числото **π** в C# програмите е достъпно чрез **``Math.PI``**. Закръглете резултата до най-близкото цяло число използвайки метода **``Math.Round(…)``**.
+Напишете програма, която чете **ъгъл в [радиани](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) и го преобразува в **[градуси](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (`deg`). Потърсете в Интернет подходяща формула. Числото **π** в JavaScript програмите е достъпно чрез **``Math.PI``**. Закръглете резултата до най-близкото цяло число използвайки метода **``Math.Round(…)``**.
 
 #### Примерен вход и изход
 
@@ -747,7 +753,7 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 |14-06-1980|10-03-1983|
 
 #### Насоки и подсказки 
-* Потърсете информация за типа **``DateTime``** в C# и по-конкретно разгледайте методите **``ParseExact(str, format)``**, **``AddDays(count)``** и **``ToString(format)``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
+* Потърсете информация за типа **``DateTime``** в JavaScript и по-конкретно разгледайте методите **``ParseExact(str, format)``**, **``AddDays(count)``** и **``ToString(format)``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
 * **Не печатайте** нищо допълнително на конзолата освен изискваната дата!
 
 #### Тестване в Judge системата
@@ -761,15 +767,17 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 ### Графично приложение: конвертор от BGN към EUR
 
+[TODO: да се адаптира за JS]
+
 От нас се изисква да създадем **графично приложение** (GUI application), което пресмята стойността в **евро** (EUR) на парична сума, зададена в **лева** (BGN). При промяна на стойността в лева, равностойността в евро трябва да се преизчислява автоматично (използваме курс лева / евро: **1.95583**).
 
-![](assets/chapter-2-images/13.Currency-converter-01.png)
+![](assets/old-images/chapter-2-images/13.Currency-converter-01.png)
 
 Тази задача излиза извън изучавания в книгата материал и има за цел не да ви научи как да програмирате GUI приложения, а да ви запали интереса към разработката на софтуер. Да се залавяме за работа.
 
 Добавяме към текущото Visual Studio решение (solution) още един проект. Този път създаваме **Windows Forms** приложение със C# с име "BGN-to-EUR-Converter":
 
-![](assets/chapter-2-images/13.Currency-converter-02.png)
+![](assets/old-images/chapter-2-images/13.Currency-converter-02.png)
 
 Подреждаме следните UI контроли във формата:
 * **`NumericUpDown`** с име **`numericUpDownAmount`** – ще въвежда сумата за конвертиране
@@ -777,19 +785,19 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 *	Още два **`Label`** компонента, служещи единствено за статично изобразяване на текст
 Графичният редактор за потребителски интерфейс може да изглежда по подобен начин:
 
-![](assets/chapter-2-images/13.Currency-converter-03.png)
+![](assets/old-images/chapter-2-images/13.Currency-converter-03.png)
 
 Задаваме следните настройки на формата и на отделните контроли:
 
 |                                             Настройка                                                 | Снимка|
 |:-----------------------------------------------------------------------------------------------------:|:-----:|
-|**``FormConverter``**:<br>Text = "BGN to EUR",<br>Font.Size = 12,<br>MaximizeBox = False,<br>MinimizeBox = False,<br>FormBorderStyle = FixedSingle | <img alt="formConverter" src ="/assets/chapter-2-images/13.Currency-converter-04.png" /> |
-|**``numericUpDownAmount``**:<br>Value = 1,<br>Minimum = 0,<br>Maximum = 10000000,<br>TextAlign = Right,<br>DecimalPlaces = 2 | <img alt="numUpDown" src ="/assets/chapter-2-images/13.Currency-converter-05.png" /> |
-|**``labelResult``**:<br>AutoSize = False,<br>BackColor = PaleGreen,<br>TextAlign = MiddleCenter,<br>Font.Size = 14,<br>Font.Bold = True| <img alt="labelResult" src ="/assets/chapter-2-images/13.Currency-converter-06.png" /> |
+|**``FormConverter``**:<br>Text = "BGN to EUR",<br>Font.Size = 12,<br>MaximizeBox = False,<br>MinimizeBox = False,<br>FormBorderStyle = FixedSingle | <img alt="formConverter" src ="/assets/old-images/chapter-2-images/13.Currency-converter-04.png" /> |
+|**``numericUpDownAmount``**:<br>Value = 1,<br>Minimum = 0,<br>Maximum = 10000000,<br>TextAlign = Right,<br>DecimalPlaces = 2 | <img alt="numUpDown" src ="/assets/old-images/chapter-2-images/13.Currency-converter-05.png" /> |
+|**``labelResult``**:<br>AutoSize = False,<br>BackColor = PaleGreen,<br>TextAlign = MiddleCenter,<br>Font.Size = 14,<br>Font.Bold = True| <img alt="labelResult" src ="/assets/old-images/chapter-2-images/13.Currency-converter-06.png" /> |
 
 Дефинираме следните **обработчици на събития** по контролите:
 
-![](assets/chapter-2-images/13.Currency-converter-07.png)
+![](assets/old-images/chapter-2-images/13.Currency-converter-07.png)
 
 След това хващаме следните събития:
 - **``FormConverter.Load``** (като кликнем върху формата 2 пъти с мишката)
@@ -800,11 +808,11 @@ Console.WriteLine("Perimeter = " + 2 * (width + height));
 
 За **хващане на събитие** ползваме иконката със събитията (Events) в **Properties**  прозореца във Visual Studio:
 
-![](assets/chapter-2-images/13.Currency-converter-01.png)
+![](assets/old-images/chapter-2-images/13.Currency-converter-01.png)
 
-Ще използваме следния **C# код** за обработка на събитията:
+Ще използваме следния **JavaScript код** за обработка на събитията:
 
-```csharp
+```javascript
 private void FormConverter_Load(object sender, EventArgs e)
 {
   ConvertCurrency();
@@ -825,7 +833,7 @@ private void numericUpDownAmount_KeyUp(object sender, KeyEventArgs e)
 
 Трябва да напишем **кода** (програмната логика) за конвертиране от лева към евро: 
 
-```csharp
+```javascript
 private void ConvertCurrency()
 {
   var amountBGN = this.numericUpDownAmount.Value;
@@ -844,12 +852,12 @@ private void ConvertCurrency()
 
 Създайте забавно графично приложение **„хвани бутона“**: една форма съдържа един бутон. При преместване на курсора на мишката върху бутона той се премества на случайна позиция. Така се създава усещане, че **„бутонът бяга от мишката и е трудно да се хване“**. При „хващане“ на бутона се извежда съобщение-поздрав.
 
-![](assets/chapter-2-images/14.Catch-the-button-01.png)
+![](assets/old-images/chapter-2-images/14.Catch-the-button-01.png)
 
 
 **Подсказка**: напишете обработчик за събитието **``Button.MouseEnter``** и премествайте бутона на случайна позиция. Използвайте генератор за случайни числа **``Random``**. Позицията на бутона се задава от свойството **``Location``**. За да бъде новата позиция на бутона в рамките на формата, можете да направите изчисления спрямо размера на формата, който е достъпен от свойството **``ClientSize``**. Можете да ползвате следния примерен код:
 
-```csharp
+```javascript
 private void buttonCatchMe_MouseEnter(object sender, EventArgs e)
 {
     Random rand = new Random();
