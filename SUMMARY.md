@@ -17,6 +17,6 @@
 * [8.2. Подготовка за практически изпит – част II](chapter-08-exam-preparation-part-2.md)
 * [9.1. Задачи за шампиони – част I](chapter-09-problems-for-champions.md)
 * [9.2. Задачи за шампиони – част II](chapter-09-problems-for-champions-part-2.md)
-* [10. Методи](chapter-10-methods.md)
+* [10. Функции](chapter-10-methods.md)
 * [11. Хитрости и хакове](chapter-11-tricks-and-hacks.md)
 * [Заключение](chapter-12-conclusion.md)
