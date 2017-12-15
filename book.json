@@ -2,7 +2,7 @@
     "plugins": ["ga", "meta"],
     "pluginsConfig": {
         "ga": {
-            "token": "UA-11309924-16"
+            "token": "UA-11309924-22"
         },
         "meta": {
             "name": "google-site-verification",
