@@ -5,7 +5,7 @@
 ## Видео
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=uwW_ueaOt7M">https://www.youtube.com/watch?v=uwW_ueaOt7M</a>.
+  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=0GTknpT5mw8">https://www.youtube.com/watch?v=0GTknpT5mw8</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
@@ -24,7 +24,9 @@
 
 ### Примери за сравнение на числа
 
-![](assets/old-images/chapter-3-images/00.Comparing-numbers-01.png)
+![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
+
+========================== HERE =========================
 
 Обърнете внимание, че при отпечатване на стойностите **`true`** и **`false`** в езика JavaScript, те се отпечатват с главна буква, съответно **`True`** и **`False`**.
 
