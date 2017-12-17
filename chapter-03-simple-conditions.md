@@ -9,7 +9,7 @@
 </div>
 <script src="/assets/js/video.js"></script>
 
-## Сравняване на числа
+## Оператори за сравнение
 
 В програмирането можем да сравняваме стойности чрез следните **оператори**:
 
@@ -17,58 +17,32 @@
 * Оператор **`>`** (по-голямо)
 * Оператор **`<=`** (по-малко или равно)
 * Оператор **`>=`** (по-голямо или равно)
-* Оператор **`==`** (равно)
-* Оператор **`!=`** (различно)
+* Оператор **`===`** (равно)
+* Оператор **`!==`** (различно)
 
 При сравнение резултатът е булева стойност – **`true`** или **`false`**, в зависимост от това дали резултатът от сравнението е истина или лъжа.
+
+Важно е да се отбележи, че в **JavaScript** се използват и още един вид оператори за **сравнение**  **`==`** и **различие** **`!=`**. Прилагането им без задълбочено разбиране води до проблеми и неочаквани резултати, затова няма да ги разглеждаме на този етап от нашата подготовка.
+
+Повече информация за разликите между двата вида оператори за сравнение и различие можете да получите от тук:  https://www.w3schools.com/js/js_comparisons.asp
 
 ### Примери за сравнение на числа
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-========================== HERE =========================
+### Примери за сравнение на променливи от тип "текст" (стринг)
 
-Обърнете внимание, че при отпечатване на стойностите **`true`** и **`false`** в езика JavaScript, те се отпечатват с главна буква, съответно **`True`** и **`False`**.
+![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-### Оператори за сравнение
+Важно е да се отбележи, че има значение дали буквите в нашият текст са **главни** или **малки**. Ако сравняваните стойности не са **напълно идентични**, резултатът, който ще получим винаги ще бъде **`false`**.
 
-В езика JavaScript можем да използваме следните оператори за сравнение на данни:
-
-<table>
-<tr>
-<th>Оператор</th> <th>Означение</th> <th>Работи за</th>
-</tr>
-<tr>
-<td>Проверка за равенство</td><td align="center"> == </td><td rowspan="2"> числа, стрингове, дати</td>
-</tr>
-<tr>
-<td>Проверка за различие</td><td align="center"> != </td>
-</tr>
-<tr>
-<td>По-голямо</td><td align="center"> > </td><td rowspan="4">числа, дати, други сравними типове</td>
-</tr>
-<tr>
-<td>По-голямо или равно</td><td align="center"> >= </td>
-</tr>
-<tr>
-<td>По-малко</td><td align="center"> &lt; </td>
-</tr>
-<tr>
-<td>По-малко или равно</td><td align="center"> &lt;= </td>
-</tr>
-</table>
-
-Ето един пример:
-
-![](assets/old-images/chapter-3-images/00.Comparing-numbers-02.png)
 
 ## Прости проверки
 
 В програмирането често **проверяваме дадени условия** и извършваме различни действия, според резултата от проверката. Това става чрез проверката **`if`**, която има следната конструкция:
 
 ```javascript
-if (булев израз)
-{
+if (булев израз) {
     // тяло на условната конструкция;  
 }
 ```
@@ -77,27 +51,29 @@ if (булев израз)
 
 Въвеждаме оценка в конзолата и проверяваме дали тя е отлична (**`≥ 5.50`**).
 
-![](assets/old-images/chapter-3-images/01.Еxcellent-result-01.png)
+![](assets/chapter-3-1-images/01.ЕxcellentResult.png)
 
-Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе “**Excellent!**”.
+Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе “**Excellent!**”. Извикваме функцията като записваме нейното име, след което попълваме примерната стойност в скобите.
+
+![](assets/chapter-3-1-images/01.ЕxcellentResult-2.png)
 
 #### Тестване в Judge системата
 
 Тествайте програмата от примера в judge системата на СофтУни:
-[https://judge.softuni.bg/Contests/Practice/Index/506#0](https://judge.softuni.bg/Contests/Practice/Index/506#0).
+[https://judge.softuni.bg/Contests/Practice/Index/152#0](https://judge.softuni.bg/Contests/Practice/Index/152#0).
 
+Не забравяйте да изберете езикът **JavaScript** от падащото меню, за да може Judge правилно да разпознае вашият код.
+![](assets/chapter-3-1-images/01.CodeSelect.png)
 
 ## Проверки с if-else конструкция
 
 Конструкцията **`if`** може да съдържа и **`else`** клауза, с която да окажем конкретно действие в случай, че булевият израз (който е зададен в началото **`if (булев израз)`**) върне отрицателен резултат (**`false`**). Така построена, **условната конструкция** наричаме **`if-else`** и поведението ѝ е следното: ако резултатът от условието е **позитивен** (**`true`**) - извършваме едни действия, a когато е **негативен** (**`false`**) - други. Форматът на конструкцията е:
 
 ```javascript
-if (булево условие)
-{
+if (булево условие) {
     // тяло на условната конструкция;
 }
-else
-{
+else {
     // тяло на else-конструкция;
 }
 
@@ -107,11 +83,11 @@ else
 
 Подобно на горния пример, въвеждаме оценка, проверяваме дали е отлична, но **изписваме резултат и в двата случая**.
 
-![](assets/old-images/chapter-3-images/02.Excellent-or-not-01.png)
+![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#1](https://judge.softuni.bg/Contests/Practice/Index/506#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#1](https://judge.softuni.bg/Contests/Practice/Index/152#1).
 
 
 ## За къдравите скоби { } след if / else
@@ -124,19 +100,19 @@ else
 
 Ето един пример, в който изпускането на къдравите скоби води до объркване:
 
-![](assets/old-images/chapter-3-images/00.Brackets-tip-01.png)
+![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
 Изпълнението на горния код ще изведе следния резултат на конзолата:
 
-![](assets/old-images/chapter-3-images/00.Brackets-tip-03.png)
+![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
 С къдрави скоби:
 
-![](assets/old-images/chapter-3-images/00.Brackets-tip-02.png)
+![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
 На конзолата ще бъде отпечатано следното:
 
-![](assets/old-images/chapter-3-images/00.Brackets-tip-04.png)
+![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 ### Пример: четно или нечетно
 
@@ -144,11 +120,11 @@ else
 
 Задачата можем да решим с помощта на една **`if-else`** конструкция и оператора **`%`**, който връща **остатък при деление** на две числа.
 
-![](assets/old-images/chapter-3-images/03.Even-or-odd-02.png)
+![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#2](https://judge.softuni.bg/Contests/Practice/Index/506#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#2](https://judge.softuni.bg/Contests/Practice/Index/152#2).
 
 
 ### Пример: по-голямото число
@@ -157,20 +133,21 @@ else
 
 Първата ни задача е да **прочетем** двете числа. След което, чрез проста **`if-else`** конструкция, в съчетание с **оператора за по-голямо** (**`>`**), да направим проверка. Част от кода е замъглена умишлено, за да изпробваме наученото до момента.
 
-![](assets/old-images/chapter-3-images/04.Greater-number-02.png)
+![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#3](https://judge.softuni.bg/Contests/Practice/Index/506#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#3](https://judge.softuni.bg/Contests/Practice/Index/152#3).
 
+========================== **HERE** =========================
 
 ## Живот на променлива
 
-Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика JavaScript областта, в която една променлива съществува, започва от реда, на който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **}** (на метода, на **`if` конструкцията** и т.н.). За това е важно да знаем, че **всяка променлива, дефинирана вътре в тялото на `if`, няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
+Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика JavaScript областта, в която една променлива съществува, започва от реда, на който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **}** (на функцията, на **`if` конструкцията** и т.н.). За това е важно да знаем, че **всяка променлива, дефинирана вътре в тялото на `if`, няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
 
 В примера по-долу, на последния ред, на който се опитваме да отпечатаме променливата **`salary`**, която е дефинирана в **`if` конструкцията**, ще получим **грешка**, защото нямаме достъп до нея.
 
-![](assets/old-images/chapter-3-images/00.Variable-scope-01.png)
+![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
 ## Серии от проверки
 
@@ -260,11 +237,11 @@ else
 
 Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-else-if-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно).
 
-![](assets/old-images/chapter-3-images/06.Bonus-score-01.png)
+![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
 Ето как би могло да изглежда решението на задачата в действие:
 
-![](assets/old-images/chapter-3-images/06.Bonus-score-02.png)
+![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
 Обърнете внимание, че за тази задача judge е настроен да игнорира всичко, което не е число, така че можем да печатаме не само числата, но и уточняващ текст.
 
@@ -294,7 +271,7 @@ else
 - Ако резултатът е между 120 и 179, отпечатваме 2 минути + изчислените секунди минус 120.
 - Ако секундите са по-малко от 10, извеждаме водеща нула преди тях.
 
-![](assets/old-images/chapter-3-images/07.Sum-seconds-01.png)
+![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
 #### Тестване в Judge системата
 
@@ -333,7 +310,7 @@ else
 
 Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`ToLower()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
 
-![](assets/old-images/chapter-3-images/08.Metric-converter-01.png)
+![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
 #### Тестване в Judge системата
 
@@ -348,13 +325,13 @@ else
 
 **Дебъгване** е процесът на „**закачане**“ към изпълнението на програмата, който ни позволява да проследим поетапно процеса на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
 
-![](assets/old-images/chapter-3-images/00.Debugging-01.png)
+![](assets/chapter-3-1-images/00.Debugging-01.png)
 
 ### Дебъгване във Visual Studio
 
 Чрез натискане на бутона [**F10**], стартираме програмата в **debug режим**. Преминаваме към **следващия ред** отново с [**F10**]. 
 
-![](assets/old-images/chapter-3-images/00.Debugging-02.png)
+![](assets/chapter-3-1-images/00.Debugging-02.png)
 
 Чрез [**F9**] създаваме стопери – така наречените **breakpoints**, до които можем да стигнем директно използвайки [**F5**] при стартирането на програмата.
 
@@ -368,15 +345,15 @@ else
 
 Стартираме Visual Studio. Създаваме нов **Blank Solution:** [**File**] -> [**New**] -> [**Project**].
 
-![](assets/old-images/chapter-3-images/00.Visual-studio-01.png)
+![](assets/chapter-3-1-images/00.Visual-studio-01.png)
 
 Избираме от диалоговия прозорец [**Templates**] -> [**Other Project Types**] -> [**Visual Studio Solutions**] -> [**Blank Solution**] и даваме подходящо име на проекта, например “Simple-Conditions”:  
 
-![](assets/old-images/chapter-3-images/00.Visual-studio-02.png)
+![](assets/chapter-3-1-images/00.Visual-studio-02.png)
 
 Сега имаме създаден празен Visual Studio Solution (без проекти в него):  
 
-![](assets/old-images/chapter-3-images/00.Visual-studio-03.png)
+![](assets/chapter-3-1-images/00.Visual-studio-03.png)
 
 ### Задача: проверка за отлична оценка
 
@@ -395,31 +372,31 @@ else
 
 Създаваме **нов проект** в съществуващото Visual Studio решение. В **Solution Explorer** кликваме с десен бутон на мишката върху **Solution 'Simple-Conditions'**. Избираме [**Add**] -> [**New Project**]:  
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-01.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
 Ще се отвори диалогов прозорец за избор на тип проект за създаване. Избираме **JavaScript конзолно приложение** и задаваме име, например “`Excellent-Result`”:
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-02.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
 Вече имаме solution с едно конзолно приложение в него. Остава да напишем кода за решаване на задачата.
 
-За целта отиваме в тялото на метода **`Main(string[] args)`** и пишем следния код:
+За целта отиваме в тялото на функцията **`Main(string[] args)`** и пишем следния код:
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-03.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
 **Стартираме** програмата с [**Ctrl+F5**], за да я **тестваме** с различни входни стойности:
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-04.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-05.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
 #### Тестване в Judge системата
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#0](https://judge.softuni.bg/Contests/Practice/Index/506#0).
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-06.png) 
+ ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
 
- ![](assets/old-images/chapter-3-images/09.Excellent-result-07.png)
+ ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
 ### Задача: отлична оценка или не
@@ -447,26 +424,26 @@ else
  
 Следва да **напишем кода** на програмата. Може да си помогнем с примерния код от картинката:  
 
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-01.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 Включваме режим на **автоматично превключване към текущия проект** като кликнем върху главния solution с десния бутон на мишката и изберем [**Set StartUp Projects…**]:  
 
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-02.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
 
  Ще се появи диалогов прозорец, от който трябва да се избере [**Startup Project**] -> [**Current selection**]:
 
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-03.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
 Сега **стартираме програмата**, както обикновено с [**Ctrl+F5**] и я тестваме дали работи коректно:
 
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-04.png)
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-05.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-05.png)
 
 #### Тестване в Judge системата
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#1](https://judge.softuni.bg/Contests/Practice/Index/506#1).
 
- ![](assets/old-images/chapter-3-images/02.Excellent-or-not-06.png)
+ ![](assets/chapter-3-1-images/02.Excellent-or-not-06.png)
 
 
 ### Задача: четно или нечетно
@@ -486,11 +463,11 @@ else
 
 [TODO: да се редактира и адаптира за JS]
 
-Отново, първо добавяме **нов JavaScript конзолен проект** в съществуващия solution. В метода **`static void Main()`** трябва да напишем, кода на програмата. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`var isEven = (num % 2 == 0)`**.
+Отново, първо добавяме **нов JavaScript конзолен проект** в съществуващия solution. В функцията **`static void Main()`** трябва да напишем, кода на програмата. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`var isEven = (num % 2 == 0)`**.
 
 Остава да **стартираме** програмата с [**Ctrl+F5**] и да я тестваме:  
 
-![](assets/old-images/chapter-3-images/03.Even-or-odd-01.png)
+![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
 #### Тестване в Judge системата
 
@@ -516,11 +493,11 @@ else
 
 Както обикновено, първо трябва да добавим **нов JavaScript конзолен проект** в съществуващия solution. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помислите как да го допишете сами:  
 
-![](assets/old-images/chapter-3-images/04.Greater-number-02.png)
+![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
 След като сме готови с имплементацията на решението, **стартираме** програмата с [**Ctrl+F5**] и я тестваме:
 
-![](assets/old-images/chapter-3-images/04.Greater-number-01.png)
+![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
 #### Тестване в Judge системата
 
@@ -726,11 +703,11 @@ else
 
 Нека разгледаме как да създадем графично (**GUI**) приложение за **конвертиране на валути**. Приложението ще изглежда приблизително като на картинката по-долу:  
 
-![](assets/old-images/chapter-3-images/14.Converter-01.png)
+![](assets/chapter-3-1-images/14.Converter-01.png)
 
 Този път създаваме нов **Windows Forms Application** с име “Currency-Converter”:
 
-![](assets/old-images/chapter-3-images/14.Converter-02.png)
+![](assets/chapter-3-1-images/14.Converter-02.png)
 
 **Нареждаме следните контроли** във формата: 
 * Една кутийка за въвеждане на число (**`NumericUpDown`**)
@@ -740,7 +717,7 @@ else
 
 Нагласяме **размерите** и свойствата им, за да изглеждат долу-горе като на картинката:
  
-![](assets/old-images/chapter-3-images/14.Converter-03.png)
+![](assets/chapter-3-1-images/14.Converter-03.png)
  
 Задаваме следните **настройки на контролите**:
 
@@ -783,7 +760,7 @@ else
 
 * Събитието **`ValueChanged`** на контролата за въвеждане на число **`numericUpDownAmount`**: 
 
-![](assets/old-images/chapter-3-images/14.Converter-04.png)
+![](assets/chapter-3-1-images/14.Converter-04.png)
 
 * Събитието **`Load`** на формата **`FormConverter`**
 * Събитието **`SelectedIndexChanged`** на падащия списък за избор на валута **`comboBoxCurrency`**
@@ -807,7 +784,7 @@ private void comboBoxCurrency_SelectedIndexChanged(object sender, EventArgs e)
 }
 ```
 
-Задачата на горния код е да избере при стартиране на програмата валута “**EUR**” и при промяна на стойностите в полето за сума или при смяна на валутата, да изчисли резултата, извиквайки **`ConvertCurrency()`** метода.
+Задачата на горния код е да избере при стартиране на програмата валута “**EUR**” и при промяна на стойностите в полето за сума или при смяна на валутата, да изчисли резултата, извиквайки **`ConvertCurrency()`** функцията.
 
 Следва да напишем действието **`ConvertCurrency()`** за конвертиране на въведената сума от лева в избраната валута:
  
