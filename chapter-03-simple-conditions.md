@@ -36,6 +36,34 @@
 
 Важно е да се отбележи, че има значение дали буквите в нашият текст са **главни** или **малки**. Ако сравняваните стойности не са **напълно идентични**, резултатът, който ще получим винаги ще бъде **`false`**.
 
+### Оператори за сравнение
+
+В езика JavaScript можем да използваме следните оператори за сравнение на данни:
+
+<table>
+<tr>
+<th>Оператор</th> <th>Означение</th> <th>Работи за</th>
+</tr>
+<tr>
+<td>Проверка за равенство</td><td align="center"> === </td><td rowspan="2"> числа, стрингове, дати</td>
+</tr>
+<tr>
+<td>Проверка за различие</td><td align="center"> !== </td>
+</tr>
+<tr>
+<td>По-голямо</td><td align="center"> > </td><td rowspan="4">числа, дати, други сравними типове</td>
+</tr>
+<tr>
+<td>По-голямо или равно</td><td align="center"> >= </td>
+</tr>
+<tr>
+<td>По-малко</td><td align="center"> &lt; </td>
+</tr>
+<tr>
+<td>По-малко или равно</td><td align="center"> &lt;= </td>
+</tr>
+</table>
+
 
 ## Прости проверки
 
@@ -62,8 +90,6 @@ if (булев израз) {
 Тествайте програмата от примера в judge системата на СофтУни:
 [https://judge.softuni.bg/Contests/Practice/Index/152#0](https://judge.softuni.bg/Contests/Practice/Index/152#0).
 
-Не забравяйте да изберете езикът **JavaScript** от падащото меню, за да може Judge правилно да разпознае вашият код.
-![](assets/chapter-3-1-images/01.CodeSelect.png)
 
 ## Проверки с if-else конструкция
 
@@ -139,8 +165,6 @@ else {
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#3](https://judge.softuni.bg/Contests/Practice/Index/152#3).
 
-========================== **HERE** =========================
-
 ## Живот на променлива
 
 Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика JavaScript областта, в която една променлива съществува, започва от реда, на който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **}** (на функцията, на **`if` конструкцията** и т.н.). За това е важно да знаем, че **всяка променлива, дефинирана вътре в тялото на `if`, няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
@@ -154,51 +178,33 @@ else {
 Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-else if…-else` в серия**. За целта използваме следния формат: 
 
 ```javascript
-if (условие)
-{
+if (условие) {
     // тяло на условната конструкция;
 }
-else if (условие2)
-{
+else if (условие2) {
     // тяло на условната конструкция;
 }
-else if (условие3)
-{
+else if (условие3) {
     // тяло на условната конструкция;
 }
 …
-else
-{
+else {
     // тяло на else-конструкция;
 }
 ```
 
 ### Пример: число от 1 до 9 на английски
 
-Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се чете от конзолата). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
+Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се подава като параметър при извикване на функцията). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
 
 ```javascript
-int num = int.Parse(Console.ReadLine());
-
-if (num == 1)
-{
-    Console.WriteLine("one");
-}
-else if (num == 2)
-{
-    Console.WriteLine("two");
-}
-else if (…) 
-{
-    …
-} 
-else if (num == 9)
-{
-    Console.WriteLine("nine");
-} 
-else 
-{
-    Console.WriteLine("number too big");
+function number1to9([arg1]) {
+  let num = parseInt(arg1);
+  if (num === 1) { console.log("one"); }
+  else if (num === 2) { console.log("two"); }
+  else if (num === 3) { console.log("three"); }
+  // TODO: add more checks
+  else { console.log("number too big"); }
 }
 ```
 
@@ -206,7 +212,7 @@ else
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#4](https://judge.softuni.bg/Contests/Practice/Index/506#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#4](https://judge.softuni.bg/Contests/Practice/Index/152#4).
 
 
 ## Упражнения: прости проверки
@@ -247,7 +253,7 @@ else
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#5](https://judge.softuni.bg/Contests/Practice/Index/506#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#5](https://judge.softuni.bg/Contests/Practice/Index/152#5).
 
 
 ### Задача: сумиране на секунди
@@ -275,7 +281,7 @@ else
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#6](https://judge.softuni.bg/Contests/Practice/Index/506#6).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#6](https://judge.softuni.bg/Contests/Practice/Index/152#6).
 
 
 ### Задача: конвертор за мерни единици
@@ -308,13 +314,13 @@ else
 
 #### Насоки и подсказки
 
-Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`ToLower()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
+Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`toLowerCase()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#7](https://judge.softuni.bg/Contests/Practice/Index/506#7).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#7](https://judge.softuni.bg/Contests/Practice/Index/152#7).
 
 
 ## Дебъгване - прости операции с дебъгер
@@ -327,33 +333,29 @@ else
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
 
-### Дебъгване във Visual Studio
+### Дебъгване във Visual Studio Code
 
-Чрез натискане на бутона [**F10**], стартираме програмата в **debug режим**. Преминаваме към **следващия ред** отново с [**F10**]. 
-
-![](assets/chapter-3-1-images/00.Debugging-02.png)
-
-Чрез [**F9**] създаваме стопери – така наречените **breakpoints**, до които можем да стигнем директно използвайки [**F5**] при стартирането на програмата.
+Добавяме точка, до която програмата да спре изпълнението си (**breakpoint**) и след това стартираме програмата в **debug режим** чрез натискане на бутона [**F5**]. Програмата се изпълнява до моментът, в който достигне нашият брейкпойнт. След това преминаваме към **следващия ред** на изпълнение с [**F10**]. 
 
 ## Упражнения: прости проверки
 
 Нека затвърдим наученото в тази глава с няколко задачи.
 
-### Празно Visual Studio решение (Blank Solution)
+### Празен Visual Studio Code файл
 
-Създаваме празно решение (**Blank Solution**) във Visual Studio, за да организираме по-добре решенията на задачите от упражненията – всяка задача ще бъде в отделен проект и всички проекти ще бъдат в общ solution.
-
-Стартираме Visual Studio. Създаваме нов **Blank Solution:** [**File**] -> [**New**] -> [**Project**].
+Стартираме Visual Studio Code. Създаваме нов файл [**File**] -> [**New File**].
 
 ![](assets/chapter-3-1-images/00.Visual-studio-01.png)
 
-Избираме от диалоговия прозорец [**Templates**] -> [**Other Project Types**] -> [**Visual Studio Solutions**] -> [**Blank Solution**] и даваме подходящо име на проекта, например “Simple-Conditions”:  
+След това ни се появява нов файл, който за момента е анонимен за нашата система. За да може нашият код да бъде правилно разпознаваем е нужно да го запазим като JavaScript файл [**File**] -> [**Save**].
 
-![](assets/chapter-3-1-images/00.Visual-studio-02.png)
+![](assets/chapter-3-1-images/00.VisualStuido-Save.png)
 
-Сега имаме създаден празен Visual Studio Solution (без проекти в него):  
+След това ни се отваря прозорец, в който трябва да зададем име на нашия файл, задължително с разширение **.js**
 
-![](assets/chapter-3-1-images/00.Visual-studio-03.png)
+
+![](assets/chapter-3-1-images/00.VisualStuido-Save-01.png)
+
 
 ### Задача: проверка за отлична оценка
 
@@ -370,34 +372,32 @@ else
 
 #### Насоки и подсказки
 
-Създаваме **нов проект** в съществуващото Visual Studio решение. В **Solution Explorer** кликваме с десен бутон на мишката върху **Solution 'Simple-Conditions'**. Избираме [**Add**] -> [**New Project**]:  
-
- ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
-
-Ще се отвори диалогов прозорец за избор на тип проект за създаване. Избираме **JavaScript конзолно приложение** и задаваме име, например “`Excellent-Result`”:
-
- ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
+Създаваме **нов анонимен файл** чрез [**File**] -> [**New File**].
+След това го запаметяваме [**File**] -> [**Save**] като **JavaScript файл**, като го запазим използвайки име с разширение **.js**  
  
-Вече имаме solution с едно конзолно приложение в него. Остава да напишем кода за решаване на задачата.
+Вече имаме готов JavaScript файл. Остава да напишем кода за решаване на задачата.
 
-За целта отиваме в тялото на функцията **`Main(string[] args)`** и пишем следния код:
+За целта пишем следния код:
 
- ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult.png)
 
 **Стартираме** програмата с [**Ctrl+F5**], за да я **тестваме** с различни входни стойности:
 
- ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-true.png)
+При стойности **над 5.50** - получаваме резултат Excellent!
 
- ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
+ ![](assets/chapter-3-1-images/01.ЕxcellentResult-false.png)
+ При стойности **под 5.50** - не получаваме резултат.
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/506#0](https://judge.softuni.bg/Contests/Practice/Index/506#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#0](https://judge.softuni.bg/Contests/Practice/Index/152#0).
 
- ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
+ ![](assets/chapter-3-1-images/01-Judge00.png) 
 
- ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
+ ![](assets/chapter-3-1-images/01-Judge01.png)
 
+========================== **HERE** =========================
 
 ### Задача: отлична оценка или не
 
