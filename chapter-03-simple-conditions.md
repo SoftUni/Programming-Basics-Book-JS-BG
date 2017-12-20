@@ -745,7 +745,6 @@ function number1to9([arg1]) {
 ```css
 body {
   background-color: #fff;
-  // #1f2124
 }
 
 main {
