@@ -390,11 +390,11 @@
 
 Сега може да променим и усложним кода на **костенурката**: 
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-09.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-09.png)
 
 Отново **стартираме** приложението с [**Ctrl+F5**]. Тестваме дали работи новата програма за костенурката:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-10.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
 Вече нашата костенурката чертае по-сложни фигури чрез приятно анимирано движение.
 
