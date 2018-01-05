@@ -38,26 +38,25 @@ Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}.",
 ### Оператор +
 
 ```javascript
-var result = 3 + 5; // резултатът е 8
+let result = 3 + 5; // резултатът е 8
 ```
 
 ### Оператор -
 
 ```javascript
-var result = 3 - 5; // резултатът е -2
+let result = 3 - 5; // резултатът е -2
 ```
 
 ### Оператор *
 
 ```javascript
-var result = 3 * 5; // резултатът е 15
+let result = 3 * 5; // резултатът е 15
 ```
 
 ### Оператор /
 
 ```javascript
-var result = 7 / 3; // резултатът е 2 (целочислено деление)
-var result2 = 5 / 2.0; // резултатът е 2.5 (дробно деление)
+let result2 = 5 / 2.0; // резултатът е 2.5 (дробно деление)
 ```
 
 ## Конкатенация
@@ -65,10 +64,10 @@ var result2 = 5 / 2.0; // резултатът е 2.5 (дробно делени
 При използване на оператора **`+`** между променливи от тип текст (или между текст и число) се извършва т.нар. конкатенация (слепване на низове).
 
 ```javascript
-var firstName = "Ivan";
-var lastName = "Ivanov";
-var age = 19;
-var str = firstName + " " + lastName + " is " + age + " years old";
+let firstName = "Ivan";
+let lastName = "Ivanov";
+let age = 19;
+let str = firstName + " " + lastName + " is " + age + " years old";
 // Ivan Ivanov is 19 years old
 ```
 
@@ -146,7 +145,7 @@ var str = firstName + " " + lastName + " is " + age + " years old";
 
 ![](assets/old-images/chapter-2-2-images/01.Training-lab-05.png)
 
-С **`Console.WriteLine(…)`** отпечатваме резултата на конзолата.
+С **`console.log(…)`** отпечатваме резултата на конзолата.
 
 ![](assets/old-images/chapter-2-2-images/01.Training-lab-06.png)
 
