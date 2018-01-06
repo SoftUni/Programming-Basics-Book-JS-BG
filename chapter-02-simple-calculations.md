@@ -185,9 +185,9 @@ console.log(`${a} + ${a} = ${a + a}`);
 Можем да събираме числа с оператора **`+`**:
 
 ```javascript
-var a = 5;
-var b = 7;
-var sum = a + b; // резултатът е 12
+let a = 5;
+let b = 7;
+let sum = a + b; // резултатът е 12
 ```
 
 ### Изваждане на числа (оператор **`-`**)
@@ -195,14 +195,17 @@ var sum = a + b; // резултатът е 12
 Изваждането на числа се извършва с оператора **`-`**:
 
 ```javascript
-var a = int.Parse(Console.ReadLine());
-var b = int.Parse(Console.ReadLine());
-var result = a - b;
-Console.WriteLine(result);
+function substractNumbers([a, b]) {
+    let a = Number(a);
+    let b = Number(b);
+    let result = a - b;
+    console.log(result);
+}
 ```
 
 Ето резултатът от изпълнението на програмата (при числа 10 и 3):
 
+[TODO: change image]
 ![](assets/old-images/chapter-2-images/00.Subtracting-01.jpg)
 
 ### Умножение на числа (оператор **`*`**)
@@ -210,9 +213,9 @@ Console.WriteLine(result);
 За умножение на числа използваме оператора **`*`**:
 
 ```javascript
-var a = 5;
-var b = 7;
-var product = a * b; // 35
+let a = 5;
+let b = 7;
+let product = a * b; // 35
 ```
 
 ### Деление на числа (оператор /)
@@ -226,6 +229,8 @@ var product = a * b; // 35
 Ето няколко примера за използване на оператора за делене:
 
 ```javascript
+
+2 + 0.0000000000000001
 var a = 25;
 var i = a / 4;      // извършваме т.нар. целочислено деление:
                     // резултатът от тази операция ще бъде 6 – дробната част се отрязва, 
