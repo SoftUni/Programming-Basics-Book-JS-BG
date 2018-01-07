@@ -99,8 +99,8 @@ let str = firstName + " " + lastName + " is " + age + " years old";
 
 | Вход   | Изход | Чертеж |
 |---------|-------|--------|
-|15<br>8.9  |129  | ![](assets/old-images/chapter-2-2-images/01.Training-lab-01.png)       | 
-|8.4<br>5.2 |39    | ![](assets/old-images/chapter-2-2-images/01.Training-lab-02.png)        |
+|15<br>8.9  |129  | ![](assets/chapter-2-2-images/01.Training-lab-01.png)       | 
+|8.4<br>5.2 |39    | ![](assets/chapter-2-2-images/01.Training-lab-02.png)        |
 
 #### Пояснения към примерите
 
@@ -277,7 +277,7 @@ let str = firstName + " " + lastName + " is " + age + " years old";
 
 Нека да си направим чертеж, за да поясним условието на задачата. Той може да изглежда по следния начин:
 
-![](assets/old-images/chapter-2-2-images/03.Change-tiles-01.png)
+![](assets/chapter-2-2-images/03.Change-tiles-01.png)
 
 #### Идея за решение
 
