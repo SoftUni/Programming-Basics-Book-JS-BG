@@ -22,27 +22,64 @@
 // let input = [2, 4]
 // console.log(passwordGenerator(input))
 
+// function magicNumber (input) {
+//   const magicNum = Number(input);
+
+//   let solution = '';
+
+//   for (let d1 = 1; d1 < 10; d1++) {
+//     for (let d2 = 1; d2 < 10; d2++) {
+//       for (let d3 = 1; d3 < 10; d3++) {
+//         for (let d4 = 1; d4 < 10; d4++) {
+//           for (let d5 = 1; d5 < 10; d5++) {
+//             for (let d6 = 1; d6 < 10; d6++) {
+//               if (d1 * d2 * d3 * d4 * d5 * d6 === magicNum) {
+//                 solution = solution.concat(d1, d2, d3, d4, d5, d6, ' ');
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   return solution;
+// }
+
+// console.log(magicNumber(531441))
+
 function magicNumber (input) {
-  const magicNum = Number(input);
+  const magicNum = Number(input)
+  let d1, d2, d3, d4, d5, d6;
 
   let solution = '';
-
-  for (let d1 = 1; d1 < 10; d1++) {
-    for (let d2 = 1; d2 < 10; d2++) {
-      for (let d3 = 1; d3 < 10; d3++) {
-        for (let d4 = 1; d4 < 10; d4++) {
-          for (let d5 = 1; d5 < 10; d5++) {
-            for (let d6 = 1; d6 < 10; d6++) {
+  d1 = 1;
+  while (d1 < 10) {
+    d2 = 1;
+    while (d2 < 10) {
+      d3 = 1;
+      while (d3 < 10) {
+        d4 = 1;
+        while (d4 < 10) {
+          d5 = 1;
+          while (d5 < 10) {
+            d6 = 1;
+            while (d6 < 10) {
               if (d1 * d2 * d3 * d4 * d5 * d6 === magicNum) {
                 solution = solution.concat(d1, d2, d3, d4, d5, d6, ' ');
               }
+              d6++;
             }
+            d5++;
           }
+          d4++;
         }
+        d3++;
       }
+      d2++;
     }
+    d1++;
   }
   return solution;
 }
 
-console.log(magicNumber(531441))
+console.log(magicNumber(2))
