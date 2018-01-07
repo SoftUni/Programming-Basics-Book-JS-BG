@@ -416,7 +416,7 @@ for (let i = 1; i <= 10; i++) {
 
 Добавете бутон [**Hexagon**], който чертае правилен шестоъгълник:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-13.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-13.png)
 
 **Подсказка:**
 
@@ -428,7 +428,7 @@ for (let i = 1; i <= 10; i++) {
 
 Добавете бутон [**Star**], който чертае звезда с 5 върха (**петолъчка**), като на фигурата по-долу:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-14.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-14.png)
 
 **Подсказка:**
 
@@ -442,7 +442,7 @@ for (let i = 1; i <= 10; i++) {
 
 Добавете бутон [**Spiral**], който чертае спирала с 20 върха като на фигурата по-долу:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-15.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-15.png)
 
 **Подсказка:**
 
@@ -452,13 +452,13 @@ for (let i = 1; i <= 10; i++) {
 
 Добавете бутон [**Sun**], който чертае слънце с 36 върха като на фигурата по-долу:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-16.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-16.png)
 
 ### Задача: * чертане на спирален триъгълник с костенурката
 
 Добавете бутон [**Triangle**], който чертае три триъгълника с по 22 върха като на фигурата по-долу:
 
-![](assets/old-images/chapter-5-images/13.Turtle-graphics-17.png)
+![](assets/chapter-5-1-images/13.Turtle-graphics-17.png)
 
 **Подсказка:**
 
