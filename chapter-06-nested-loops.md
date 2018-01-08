@@ -23,6 +23,7 @@
 #### Насоки и подсказки
 
 [//]: <> (![](assets/old-images/chapter-6-images/01.Rectangle-of-10-x-10-stars-01.png)
+)
 
 ```javascript
   for(var i = 0; i <= 10; i++)
@@ -50,6 +51,7 @@
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/02.Rectangle-of-N-x-N-stars-01.png)
+)
 
 ```javascript
   function drawSquare(n)
@@ -85,6 +87,7 @@
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/00.Nested-loops-01.png)
+)
 
 ```javascript
   function drawSquare(n)
@@ -121,6 +124,7 @@
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/03.Square-01.png)
+)
 
 ```javascript
   function drawSquare(n)
@@ -161,6 +165,7 @@
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/04.Triangle-of-dollars-01.png)
+)
 
 ```javascript
   function drawTriangle(n)
@@ -212,6 +217,7 @@
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/05.Square-frame-01.png)
+)
 
 ```javascript
   function drawSquare(n) 
@@ -279,6 +285,7 @@ drawSquare(6);
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/06.Rhombus-of-stars-01.png)
+)
 
 ```javascript
   function drawRhombus(n)
@@ -330,6 +337,7 @@ drawSquare(6);
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/07.Christmas-tree-01.png)
+)
 
 ```javascript
   function drawTree(n) 
