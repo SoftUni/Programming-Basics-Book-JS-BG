@@ -99,7 +99,6 @@
       }
 
       console.log(stars);
-      console.log("\n")
     }
   }
 
@@ -172,7 +171,7 @@
 
       for(var j = 1; j < i; j++)
       {
-        dolars += " *";
+        dolars += " $";
       }
 
       console.log(dolars);
@@ -180,7 +179,7 @@
     }
   }
 
-  drawSquare(4);
+  drawTriangle(4);
 ```
 
 #### Тестване в Judge системата
@@ -215,40 +214,39 @@
 ![](assets/old-images/chapter-6-images/05.Square-frame-01.png)
 
 ```javascript
-  function drawSquare(n)
+  function drawSquare(n) 
   {
     // print the top row -> + - - +
     var topRow = "+";
-    for(var top = 0; top < n - 2; top++)
+    for (var top = 0; top < n - 2; top++) 
     {
-      topRow += " -";
+        topRow += " -";
     }
     topRow += " +";
     console.log(topRow);
 
     // print the middle row -> | - - |
-    for(var mid = 0; mid < n - 2; mid++)
+    for (var mid = 0; mid < n - 2; mid++) 
     {
-      var middleRow = "|"
-      for(var j = 0; j < n - 2; j++)
-      {
-        middleRow += " -"
-      }
-      middleRow = " |"
-      console.log(middleRow);
+        var middleRow = "|"
+        for (var j = 0; j < n - 2; j++) {
+            middleRow += " -"
+        }
+        middleRow += " |"
+        console.log(middleRow);
     }
 
     // print the bottom row -> + - - +
     var bottomRow = "+";
-    for(var bot = 0; bot < n - 2; bot++)
+    for (var bot = 0; bot < n - 2; bot++) 
     {
-      bottomRow += "--";
+        bottomRow += " -";
     }
-    bottomRow += "+";
+    bottomRow += " +";
     console.log(bottomRow);
-  }
+}
 
-  drawSquare(4);
+drawSquare(6);
 ```
 
 #### Тестване в Judge системата
@@ -328,25 +326,27 @@
 
 #### Насоки и подсказки
 
-От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките и празните места преди и след тях**, **средната** част е **` | `**, а **последната** част са отново **звездички**, като този път **празни** места има само **преди** тях. Разпечатването може да бъде постигнато само с **един цикъл** и стринг метода **`String.prototype.repeat(n)`**, който ще използваме един път за звездичките и един път за интервалите. 
+От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките и празните места преди и след тях**, **средната** част е **` | `**, а **последната** част са отново **звездички**, като този път **празни** места има само **преди** тях. Разпечатването може да бъде постигнато само с **един цикъл** и стринг метода **`.repeat(n)`**, който ще използваме един път за звездичките и един път за интервалите. 
 
 [//]: <> (
 ![](assets/old-images/chapter-6-images/07.Christmas-tree-01.png)
 
 ```javascript
-  function drawTree(n)
+  function drawTree(n) 
   {
-    for(var i = 0; i <= n; i++)
-    {
-      var stars = "*".repeat(i);
-      var spaces = " ".repeat(n - i);
-      console.log(spaces);
-      console.log(stars);
-      console.log(" | ");
-      console.log(stars);
-      console.log(spaces);
-    }
+      for (var i = 0; i <= n; i++) 
+      {
+          var stars = "*".repeat(i);
+          var spaces = " ".repeat(n - i);
+          var body = " | ";
+
+          var row = spaces + stars + body + stars + spaces;
+          
+          console.log(row);
+      }
   }
+
+  drawTree(6)
 ```
 
 
