@@ -88,11 +88,11 @@ function calculateSquareArea([input]) {
 Да напишем програма, която чете дробно число в инчове и го обръща в сантиметри:
 
 ```javascript
-Console.Write("Inches = ");              
-var inches = double.Parse(Console.ReadLine());
-var centimeters = inches * 2.54;
-Console.Write("Centimeters = ");
-Console.WriteLine(centimeters);
+function convertInchesToCentimeters([arg1]) {
+    let inches = Number(arg1);
+    let centimeters = inches * 2.54;
+    console.log('Centimeters = ' + centimeters);
+}
 ```
 
 Да стартираме програмата и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
@@ -283,14 +283,13 @@ let expr = (3 + 5) * (4 – 2);
 Да напишем програма, която въвежда дължините на двете основи на трапец и неговата височина (по едно дробно число на ред) и пресмята **лицето на трапеца** по стандартната математическа формула:
 
 ```javascript
-function printТrapezoidArea([b1, b2, h]) {
-    let parsedB1 = Number(b1);
-    let parsedB2 = Number(b2);
-    let parsedH = Number(h);
-    let area = (parsedB1 + parsedB2) * parsedH / 2;
+function printТrapezoidArea([arg1, arg2, arg3]) {
+    let b1 = Number(arg1);
+    let b2 = Number(arg2);
+    let h = Number(arg3);
+    let area = (b1 + b2) * h / 2;
     console.log("Trapezoid area = " + area);
 }
-
 ```
 
 Ако стартираме програмата и въведем за страните съответно `3`, `4` и `5`, ще получим следния резултат:
@@ -302,7 +301,9 @@ Trapezoid area = 17.5
 #### Тестване в Judge системата
 
 Тествайте решението си тук: 
+
 [TODO: change link]
+
 [https://judge.softuni.bg/Contests/Practice/Index/504#4](https://judge.softuni.bg/Contests/Practice/Index/504#4).
 
 
@@ -316,18 +317,21 @@ Trapezoid area = 17.5
 - π ≈ 3.14159265358979323846…
 
 ```javascript
-Console.Write("Enter circle radius. r = ");
-var r = double.Parse(Console.ReadLine());
-Console.WriteLine("Area = " + Math.PI * r * r); 
-  // Math.PI - вградена в JavaScript константа за π
-Console.WriteLine("Perimeter = " + 2 * Math.PI * r);
+function calculateCircleAreaAndPerimeter([arg1]) {
+    let r = Number(arg1);
+    console.log("Area = " + Math.PI * r * r); 
+    // Math.PI - вградена в JavaScript константа за π
+    console.log("Perimeter = " + 2 * Math.PI * r);
+}
 ```
 Нека изпробваме програмата с **радиус `r = 10`**:
 
+[TODO: change image]
 ![](/assets/old-images/chapter-2-images/00.Circle-area-01.jpg)
 
 #### Тестване в Judge системата
 
+[TODO: change link]
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#5](https://judge.softuni.bg/Contests/Practice/Index/504#5).
 
 
@@ -340,38 +344,41 @@ Console.WriteLine("Perimeter = " + 2 * Math.PI * r);
 В тази задача трябва да съобразим, че ако от по-големия `x` извадим по-малкия `x`, ще получим дължината на правоъгълника. Аналогично, ако от по-големия `y` извадим по-малкия `y`, ще получим височината на правоъгълника. Остава да умножим двете страни. Ето примерна имплементация на описаната логика:
 
 ```javascript
-var x1 = double.Parse(Console.ReadLine());
-var y1 = double.Parse(Console.ReadLine());
-var x2 = double.Parse(Console.ReadLine());
-var y2 = double.Parse(Console.ReadLine());
+function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
+    var x1 = Number(arg1);
+    var y1 = Number(arg2);
+    var x2 = Number(arg3);
+    var y2 = Number(arg4);
+    
+    // Изчисляване страните на правоъгълника:
+    var width = Math.max(x1, x2) - Math.min(x1, x2);
+    var height = Math.max(y1, y2) - Math.min(y1, y2);
 
-// Изчисляване страните на правоъгълника:
-var width = Math.Max(x1, x2) - Math.Min(x1, x2);
-var height = Math.Max(y1, y2) - Math.Min(y1, y2);
-
-Console.WriteLine("Area = " + width * height);
-Console.WriteLine("Perimeter = " + 2 * (width + height));
+    console.log("Area = " + width * height);
+    console.log("Perimeter = " + 2 * (width + height));
+}
 ```
 
-Използваме **`Math.Max(a, b)`**, за да намерим по-голямата измежду стойностите **`a`** и **`b`** и аналогично **`Math.Min(a, b)`** за намиране на по-малката от двете стойности.
+Използваме **`Math.max(a, b)`**, за да намерим по-голямата измежду стойностите **`a`** и **`b`** и аналогично **`Math.min(a, b)`** за намиране на по-малката от двете стойности.
 
 При стартиране на програмата със стойностите от координатната система в условието, получаваме следния резултат:
 
+[TODO: Change image]
 ![](/assets/old-images/chapter-2-images/00.Rectangle-area-02.jpg)
 
 #### Тестване в Judge системата
 
+[TODO: Change link]
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#6](https://judge.softuni.bg/Contests/Practice/Index/504#6).
 
 
 ## Какво научихме от тази глава?
 
 Да резюмираме какво научихме от тази глава на книгата:
-- **Въвеждане на текст**: **`var str = Console.ReadLine();`**.
-- **Въвеждане на цяло число**: **`var num = int.Parse(Console.ReadLine());`**.
-- **Въвеждане на дробно число**: **`var num = double.Parse(Console.ReadLine());`**.
-- **Извършване на пресмятания с числа** и използване на съответните **аритметични оператори** [+, -, \*, /, ()]: **`var sum = 5 + 3;`**.
-- **Извеждане на текст по шаблон** на конзолата: **`Console.WriteLine("{0} + {1} = {2}", 3, 5, 3 + 5);`**.
+- **Четене на потребителски вход**: **`sum([number1, number2])`**.
+- **Преобразуване към число**: **`let num = Number(arg1);`**.
+- **Извършване на пресмятания с числа** и използване на съответните **аритметични оператори** [+, -, \*, /, ()]: **`let sum = 5 + 3;`**.
+- **Извеждане на текст по шаблон** на конзолата: **```console.log(`3 + 5 = ${3 + 5}`);```**.
 
 ## Упражнения: прости пресмятания
 
