@@ -1,0 +1,6 @@
+{
+    "jshint.options": {"esversion": 6},
+    "editor.fontSize" : 16,
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.tabCompletion": true
+}
