@@ -54,7 +54,7 @@ if (condition1) {
 
 След прочитане на входните данни от конзолата ще трябва да се изпълни следната примерна програмна логика:
 
-![](/assets/old-images/chapter-4-images/01.Personal-titles-02.png)
+![](/assets/chapter-4-1-images/01.Personal_Titles_02.png)
 
 #### Тестване в Judge системата
 
