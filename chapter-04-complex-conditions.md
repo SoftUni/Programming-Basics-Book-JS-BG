@@ -113,11 +113,11 @@ if (condition1) {
 **Пример**:
 
 ```javascript
-var a = true;
-var b = true;
-var c = false;
-var d = true;
-var result = a && b && c && d;
+let a = true;
+let b = true;
+let c = false;
+let d = true;
+let result = a && b && c && d;
 // false (като d не се проверява)
 ```
 
@@ -169,11 +169,11 @@ var result = a && b && c && d;
 Ето един **пример** за оператора **`||`** в действие:
 
 ```javascript
-var a = false;
-var b = true;
-var c = false;
-var d = true;
-var result = a || b || c || d;
+let a = false;
+let b = true;
+let c = false;
+let d = true;
+let result = a || b || c || d;
 // true (като c и d не се проверяват)
 ```
 
