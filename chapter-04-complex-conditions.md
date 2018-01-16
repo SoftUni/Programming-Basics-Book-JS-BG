@@ -193,7 +193,7 @@ let result = a || b || c || d;
 
 Трябва да използваме няколко условни проверки с логическо "**ИЛИ**" (**`||`**):
 
-![](assets/old-images/chapter-4-images/04.Fruit-or-vegetable-01.png)
+![](assets/chapter-4-1-images/04.Fruit_Or_Vegetable.png)
 
 #### Тестване в Judge системата
 
