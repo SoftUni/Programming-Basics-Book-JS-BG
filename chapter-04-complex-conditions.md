@@ -85,7 +85,7 @@ if (condition1) {
 
 **Прехвърляме** всички букви в **долен регистър** с функцията **`.toLowerCase()`**, за да сравняваме продукти и градове **без значение** от малки/главни букви.
 
-![](/assets/chapter-4-images/02.Small_Shop.png)
+![](/assets/chapter-4-1-images/02.Small_Shop.png)
 
 #### Тестване в Judge системата
 
@@ -144,7 +144,7 @@ let result = a && b && c && d;
 * Точката е надолу от горната страна на правоъгълника.
 * Точката е нагоре от долната страна на правоъгълника.
 
-![](/assets/chapter-4-images/03.Point_In_Rectangle.png)
+![](/assets/chapter-4-1-images/03.Point_In_Rectangle.png)
 
 #### Тестване в Judge системата
 
