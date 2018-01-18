@@ -55,7 +55,7 @@
 
 | Вход | Изход |Вход | Изход |
 |------|-------|------|-------|
-| 110<br>['mall.Enter'<br>'%'<br>'mall.Exit']|1 purchases. Money left: 55.00 lv.| 100<br>mall.Enter<br>Ab<br>\*\*<br>mall.Exit|2 purchases. Money left: 58.10 lv.|
+| 110<br>['mall.Enter'<br>'%'<br>'mall.Exit']|1 purchases. Money left: 55.00 lv.| 100<br>['mall.Enter',<br>'Ab',<br>'\*\*',<br>'mall.Exit']|2 purchases. Money left: 58.10 lv.|
 
 ### Насоки и подсказки
 
