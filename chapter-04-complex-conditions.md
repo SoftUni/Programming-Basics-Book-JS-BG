@@ -502,7 +502,7 @@ switch (селектор) {
 
 Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
 
-![](assets/old-images/chapter-4-images/11.Cinema-01.png)
+![](assets/chapter-4-1-images/11.Cinema-01.png)
 
 #### Тестване в Judge системата
 
@@ -536,7 +536,7 @@ switch (селектор) {
 
 Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
 
-![](assets/old-images/chapter-4-images/11.Volleyball-01.png)
+![](assets/chapter-4-1-images/12.Volleyball-01.png)
 
 #### Тестване в Judge системата
 
@@ -587,7 +587,7 @@ switch (селектор) {
 
 Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
 
-![](assets/old-images/chapter-4-images/13.Point-in-the-figure-02.png)
+![](assets/chapter-4-1-images/13.Point-in-the-figure-02.png)
 
 #### Тестване в Judge системата
 
