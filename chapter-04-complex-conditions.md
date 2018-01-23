@@ -611,71 +611,52 @@ switch (селектор) {
 <td>Внимание: това приложение е значително <b>по-сложно</b> от предходните графични приложения, които разработвахме до сега, защото изисква ползване на функции за чертане и нетривиални изчисления за преоразмеряване и преместване на правоъгълника и точката. Следват инструкции за изграждане на приложението стъпка по стъпка.</td>
 </tr></table>
 
-Създаваме нов проект **Windows Forms Application** с подходящо име, например “Point-and-Rectangle”:
+1. За целта ще използваме Electron.js framework. Създайте нов Visual Studio проект. Изберете от диалоговия прозорец [Templates]->[JavaScript]->[Node.js]->**`[Blank Node.js Console Application]`** и дайте подходящо име на проекта, например **`"Point-in-Rectangle"`**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.png)
 
-**Нареждаме контролите** във формата, както е показано на фигурата по-долу:
-* 6 кутийки за въвеждане на число (**`NumericUpDown`**).
-* Надписи (**`Label`**) пред всяка кутийка за въвеждане на число.
-* Бутон (**`Button`**) за изчертаване на правоъгълника и точката. 
-* Текстов блок за резултата (**`Label`**).
-
-Нагласяме **размерите** и **свойствата** на контролите, за да изглеждат приблизително като на картинката:
+2. Добавете в проекта JavaScript файл с име "**`main.js`**". 
+3. Отворете файла **`package.json`**, който съдържа настройките на проекта и и променете името на стартовия скриптов файл с **`main.js`**:
 
 ![](assets/old-images/chapter-4-images/14.Point-in-rectangle-gui-05.png)
 
-Задаваме следните препоръчителни настройки на контролите:
-
-1. За **главната форма (`Form`)**, която съдържа всички контроли:
-  *	(name) = **`FormPointAndRectangle`**
-  *	**`Text`** = **`Point and Rectangle`**
-  *	**`Font.Size`** = **`12`**
-  *	**`Size`** = **`700`**, **`410`**
-  *	**`MinimumSize`** = **`500`**, **`400`**
-  *	**`FormBorderStyle`** = **`FixedSingle`**
-* За **полетата за въвеждане на число (`NumericUpDown`)**:
-  *	(name) = **`numericUpDownX1`**; **`numericUpDownY1`**; **`numericUpDownX2`**; **`numericUpDownY2`**; **`numericUpDownX`**; **`numericUpDownY`**
-  *	**`Value`** = **`2`**; **`-3`**; **`12`**; **`3`**; **`8`**; **`-1`**
-  *	**`Minimum`** = **`-100000`**
-  *	**`Maximum`** = **`100000`**
-  *	**`DecimalPlaces`** = **`2`**
-* За **бутона (`Button`)** за **визуализация** на правоъгълника и точката:
-  *	(name) = **`buttonDraw`**
-  *	**Text** = **`Draw`**
-* За **текстовия блок за резултата (`Label`)**:
-  *	(name) = **`labelLocation`**
-  *	**`AutoSize`** = **`false`**
-  *	**`BackColor`** = **`PaleGreen`**
-  *	**`TextAlign`** = **`MiddleCenter`**
-* За **полето с чертежа (`PictureBox`)**:
-  *	(name) = **`pictureBox`**
-  *	**`Anchor`** = **`Top`**, **`Bottom`**, **`Left`**, **`Right`**
-
-Следва да хванем следните **събития**, за да напишем C# кода, който ще се изпълни при настъпването им:
-
-*	Събитието **`Click`** на бутона **`buttonDraw`** (извиква се при натискане на бутона).
-*	Събитието **`ValueChanged`** на контролите за въвеждане на числа **`numericUpDownX1`**, **`numericUpDownY1`**, **`numericUpDownX2`**, **`numericUpDownY2`**, **`numericUpDownX`** и **`numericUpDownY`** (извиква се при промяна на стойността в контролата за въвеждане на число).
-*	Събитието **`Load`** на формата **`FormPointAndRectangle`** (извиква се при стартиране на приложението, преди да се появи главната форма на екрана).
-*	Събитието **`Resize`** на формата **`FormPointAndRectangle`** (извиква се при промяна на размера на главната формата).
-
-Всички изброени по-горе събития ще изпълняват едно и също действие – **`Draw()`**, което ще визуализира правоъгълника и точката и ще показва дали тя е вътре, вън или на някоя от страните. Кодът трябва да изглежда така: 
+4. Кодът, описан в **`main.js`**, управлява събитията и създава нови прозорци в приложението. Трябва да изглежда по следния начин: 
 
 ```javascript
-private void buttonDraw_Click(object sender, EventArgs e)
-{
-    Draw();
+const {app, BrowserWindow} = require('electron');
+const path = require('path');
+const url = require('url');
+
+let win;
+
+function createWindow () {
+    win = new BrowserWindow({width: 750, height: 300, resizable: false});
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
+        slashes: true
+    }));
+    
+    win.on('closed', ()=>{
+        win = null;
+    });
 }
 
-private void FormPointAndRectangle_Load(object sender, EventArgs e)
-{
-    Draw();
-}
+app.on('ready', createWindow);
 
-private void FormPointAndRectangle_Resize(object sender, EventArgs e)
-{
-    Draw();
-}
+app.on('window-all-closed', () => {
+    app.quit()
+})
+
+app.on('activate', () => {
+    if (win === null) {
+        createWindow()
+    }
+})
+
+
+
+
 
 private void numericUpDownX1_ValueChanged(object sender, EventArgs e)
 {
