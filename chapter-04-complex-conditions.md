@@ -618,7 +618,7 @@ switch (селектор) {
 2. Добавете в проекта JavaScript файл с име "**`main.js`**". 
 3. Отворете файла **`package.json`**, който съдържа настройките на проекта и и променете името на стартовия скриптов файл с **`main.js`**:
 
-![](assets/old-images/chapter-4-images/14.Point-in-rectangle-gui-05.png)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.png)
 
 4. Кодът, описан в **`main.js`**, управлява събитията и създава нови прозорци в приложението. Трябва да изглежда по следния начин: 
 
@@ -653,150 +653,94 @@ app.on('activate', () => {
         createWindow()
     }
 })
-
-
-
-
-
-private void numericUpDownX1_ValueChanged(object sender, EventArgs e)
-{
-    Draw();
-}
-
- /* TODO: implement in the same way event handlers
-    numericUpDownY1_ValueChanged, 
-    numericUpDownX2_ValueChanged, 
-    numericUpDownY2_ValueChanged, 
-    numericUpDownX_ValueChanged and 
-    numericUpDownY_ValueChanged */
-
-private void Draw()
-{
-    // TODO: implement this a bit later …
-}
 ```
 
-Нека започнем от по-лесната част: **печат на информация къде е точката спрямо правоъгълника** (Inside, Outside или Border). Кодът трябва да изглежда така:
+5. Създайте нов **`*.html`** файл с име **`index.html`**. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влезте в него и напишете **`"Point in Rectangle"`**:
+
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png)
+
+Добавете следния код под тага **`"<title>"`** в **`index.html`**:
 
 ```javascript
-private void Draw()
-{
-    // Get the rectangle and point coordinates from the form
-    var x1 = this.numericUpDownX1.Value;
-    var y1 = this.numericUpDownY1.Value;
-    var x2 = this.numericUpDownX2.Value;
-    var y2 = this.numericUpDownY2.Value;
-    var x = this.numericUpDownX.Value;
-    var y = this.numericUpDownY.Value;
-
-    // Display the location of the point: Inside / Border / Outside
-    DisplayPointLocation(x1, y1, x2, y2, x, y);
-}
-
-private void DisplayPointLocation(
-    decimal x1, decimal y1, decimal x2, decimal y2, decimal x, decimal y)
-{
-    var left = Math.Min(x1, x2);
-    var right = Math.Max(x1, x2);
-    var top = Math.Min(y1, y2);
-    var bottom = Math.Max(y1, y2);
-    if (x > left && x < right && …)
-    {
-        this.labelLocation.Text = "Inside";
-        this.labelLocation.BackColor = Color.LightGreen;
-    }
-    else if (… || y < top || y > bottom)
-    {
-        this.labelLocation.Text = "Outside";
-        this.labelLocation.BackColor = Color.LightSalmon;
-    }
-    else
-    {
-        this.labelLocation.Text = "Border";
-        this.labelLocation.BackColor = Color.Gold;
-    }
-}
+<script src="app.js" type="text/javascript"></script>
 ```
-Горният код взима координатите на правоъгълника и точките и проверява дали точката е вътре, вън или на страната на правоъгълника. При    визуализацията на резултата се сменя и цвета на фона на текстовия блок, който го съдържа.
 
-Помислете как **да допишете** недовършените (нарочно) условия в **`if` проверките**! Кодът по-горе **нарочно не се компилира**, защото целта му е да помислите как и защо работи и да **допишете сами липсващите части**.
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png)
 
-Остава да се имплементира най-сложната част: визуализация на правоъгълника и точката в контролата **`pictureBox`** с преоразмеряване. Може да си помогнем с **кода по-долу**, който прави малко изчисления и рисува син правоъгълник и тъмносиньо кръгче (точката) според зададените във формата координати. За съжаление сложността на кода надхвърля изучавания до момента материал и е сложно да се обясни в детайли как точно работи. Оставени са коментари за ориентация. Това е пълната версия на действието **`Draw()`**:
+По този начин се осъществява връзката между **`index.html`** и **`app.js`**.
+Тагът "**`<body>`**" дефинира тялото на html документа. Напишете в него следния код:
 
 ```javascript
-private void Draw()
-{
-  // Get the rectangle and point coordinates from the form
-  var x1 = this.numericUpDownX1.Value;
-  var y1 = this.numericUpDownY1.Value;
-  var x2 = this.numericUpDownX2.Value;
-  var y2 = this.numericUpDownY2.Value;
-  var x = this.numericUpDownX.Value;
-  var y = this.numericUpDownY.Value;
+<body>
+    <div style="float:left">
+        <br />
+        <label>Rectangle X1:</label>
+        <input id="rect-x1" type="number" />
+        <br />
+        <label>Rectangle Y1:</label>
+        <input id="rect-y1" type="number" />
+        <br />
+        <label>Rectangle X2:</label>
+        <input id="rect-x2" type="number" />
+        <br />
+        <label>Rectangle Y2:</label>
+        <input id="rect-y2" type="number" />
+        <br />
+        <label>Point X:</label>
+        <input id="point-x" type="number" />
+        <br />
+        <label>Point Y:</label>
+        <input id="point-y" type="number" />
+        <br />
+        <input type="button" onclick="draw()" value="Draw!" />
+        <br />
 
-  // Display the location of the point: Inside / Border / Outside
-  DisplayPointLocation(x1, y1, x2, y2, x, y);
+        <div id="result">
+            <label>Status:</label>
+            <span id="status"></span>
+        </div>
+    </div>
+    <div style="float:right">
+        <canvas style="border: 2px solid orange;" id="a" width="400" height="200">
+        This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+    </div>
+</body>
+```
+За въввеждане координатите на правоъгълника и на точката, използваме input полета от тип Number, с надписи (**`<label>`**).
 
-  // Calculate the scale factor (ratio) for the diagram holding the
-  // rectangle and point in order to fit them well in the picture box
-  var minX = Min(x1, x2, x);
-  var maxX = Max(x1, x2, x);
-  var minY = Min(y1, y2, y);
-  var maxY = Max(y1, y2, y);
-  var diagramWidth = maxX - minX;
-  var diagramHeight = maxY - minY;
-  var ratio = 1.0m;
-  var offset = 10;
-  if (diagramWidth != 0 && diagramHeight != 0)
-  {
-    var ratioX = (pictureBox.Width - 2 * offset - 1) / diagramWidth;
-    var ratioY = (pictureBox.Height - 2 * offset - 1) / diagramHeight;
-    ratio = Math.Min(ratioX, ratioY);
-  }
+За да чертаем геометрични фигури в приложението, използваме html елемента **`<canvas>`**:
 
-  // Calculate the scaled rectangle coordinates
-  var rectLeft = offset + (int)Math.Round((Math.Min(x1, x2) - minX) * ratio);
-  var rectTop = offset + (int)Math.Round((Math.Min(y1, y2) - minY) * ratio);
-  var rectWidth = (int)Math.Round(Math.Abs(x2 - x1) * ratio);
-  var rectHeight = (int)Math.Round(Math.Abs(y2 - y1) * ratio);
-  var rect = new Rectangle(rectLeft, rectTop, rectWidth, rectHeight);
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-11.png)
 
-  // Calculate the scalled point coordinates
-  var pointX = (int)Math.Round(offset + (x - minX) * ratio);
-  var pointY = (int)Math.Round(offset + (y - minY) * ratio);
-  var pointRect = new Rectangle(pointX - 2, pointY - 2, 5, 5);
+Той приема следните параметри:
+  - Ширина (width) в пиксели (px);
+  - височина (height) в пиксели (px);
+  - Очертание (border).
+За да се отрази промяната в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
+Отворете **`cmd`** с десен клик на мишката върху проекта и стартирайте приложението с командата "**`electron .`**":
 
-  // Draw the rectangle and point
-  pictureBox.Image = new Bitmap(pictureBox.Width, pictureBox.Height);
-  using (var g = Graphics.FromImage(pictureBox.Image))
-  {
-    // Draw diagram background (white area)
-    g.Clear(Color.White);
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
 
-    // Draw the rectangle (scalled to the picture box size)
-    var pen = new Pen(Color.Blue, 3);
-    g.DrawRectangle(pen, rect);
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png)
 
-    // Draw the point (scalled to the picture box size)
-    pen = new Pen(Color.DarkBlue, 5);
-    g.DrawEllipse(pen, pointRect);
-  }
-}
+Приложението трябва да изглежда по следния начин:
 
-private decimal Min(decimal val1, decimal val2, decimal val3)
-{
-  return Math.Min(val1, Math.Min(val2, val3));
-}
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-08.png)
 
-private decimal Max(decimal val1, decimal val2, decimal val3)
-{
-  return Math.Max(val1, Math.Max(val2, val3));
-}
+6. Остава да се имплементира най-сложната част: визуализация на правоъгълника и точката в полето на елемента <canvas> чрез функцията **`draw()`** в **`app.js`**.
+  
+  Създайте **`CanvasRenderingContext2D`** обект като напишете следния код:
+
+```javascript
+//Create canvas element
+    let canvas = document.getElementById('a');
+    let context = canvas.getContext('2d');
 ```
 
-В горния код се срещат доста **преобразувания на типове**, защото се работи с различни типове числа (десетични числа, реални числа и цели числа) и понякога се изисква да се преминава между тях.
+Елементът <canvas> е поле, в което обектът, генериран чрез метода **`.getContext('2d')`**, чертае графики, текст, изображения и други елементи. В случая променливата **`context`** представлява този обект.
 
-Накрая **компилираме кода**. Ако има грешки, ги отстраняваме. Най-вероятната **причина** за грешка е **несъответстващо име на някоя от контролите** или ако **сте написали кода на неправилно място**.
+
 
 **Стартираме приложението** и го **тестваме**. Въвеждаме различни данни, за да видим дали се държи коректно.
 
