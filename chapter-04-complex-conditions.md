@@ -547,6 +547,8 @@ switch (селектор) {
 
 Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
 
+<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
+
 ![](assets/chapter-4-1-images/13.Point-in-the-figure-01.png)
 
 Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
@@ -657,6 +659,8 @@ app.on('activate', () => {
 
 5. Създайте нов **`*.html`** файл с име **`index.html`**. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влезте в него и напишете **`"Point in Rectangle"`**:
 
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png" /></p>
+
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png)
 
 Добавете следния код под тага **`"<title>"`** в **`index.html`**:
@@ -664,6 +668,8 @@ app.on('activate', () => {
 ```javascript
 <script src="app.js" type="text/javascript"></script>
 ```
+
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png)
 
@@ -711,6 +717,8 @@ app.on('activate', () => {
 
 За да чертаем геометрични фигури в приложението, използваме html елемента **`<canvas>`**:
 
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-11.png" /></p>
+
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-11.png)
 
 Той приема следните параметри:
@@ -721,7 +729,11 @@ app.on('activate', () => {
 За да се отрази промяната в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
 Отворете **`cmd`** с десен клик на мишката върху проекта и стартирайте приложението с командата "**`electron .`**":
 
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png" /></p>
+
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
+
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png)
 
@@ -881,7 +893,7 @@ function draw() {
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-01.png)
 
-**`Случай 2: Точката лежи на една от страните на правоъгълника`**:
+**Случай 2: Точката лежи на една от страните на правоъгълника**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-02.png)
 
