@@ -663,7 +663,7 @@ app.on('activate', () => {
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
 
 ```javascript
-<center><script src="app.js" type="text/javascript"></script></center>
+<p style="text-align: center;"> <script src="app.js" type="text/javascript"></script> </p>
 ```
 
 <p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
