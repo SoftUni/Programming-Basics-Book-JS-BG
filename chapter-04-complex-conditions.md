@@ -549,8 +549,6 @@ switch (селектор) {
 
 <p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
-![](assets/chapter-4-1-images/13.Point-in-the-figure-01.png)
-
 Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
 
 #### Примерен вход и изход
@@ -596,7 +594,7 @@ switch (селектор) {
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
 
 
-## Упражнения: графично приложение с по-сложни проверки
+## Упражнениe: графично приложение с по-сложни проверки
 
 В тази глава научихме как можем да правим **проверки с нетривиални условия**. Нека сега приложим тези знания, за да създадем нещо интересно: настолно приложение, което визуализира точка и правоъгълник. Това е прекрасна визуализация за една от задачите от упражненията.
 
@@ -665,7 +663,7 @@ app.on('activate', () => {
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
 
 ```javascript
-<script src="app.js" type="text/javascript"></script>
+<center><script src="app.js" type="text/javascript"></script></center>
 ```
 
 <p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
