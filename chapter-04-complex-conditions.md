@@ -5,10 +5,9 @@
 ## Видео
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: <a target="_blank"
-  href="https://www.youtube.com/watch?v=z8XxYIyesz0">
-  https://www.youtube.com/watch?v=z8XxYIyesz0</a>.
+  href="https://www.youtube.com/watch?v=JRLA_zpQfpQ&feature=youtu.be">
+  https://www.youtube.com/watch?v=JRLA_zpQfpQ&feature=youtu.be</a>.
 </div>
-<script src="/assets/js/video.js"></script>
 
 
 ## Вложени проверки
@@ -663,7 +662,7 @@ app.on('activate', () => {
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
 
 ```javascript
-                                         <script src="app.js" type="text/javascript"></script>
+                                  <script src="app.js" type="text/javascript"></script>
 ```
 
 <p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
@@ -732,8 +731,8 @@ app.on('activate', () => {
 
 6. Остава да се имплементира най-сложната част: визуализация на правоъгълника и точката в полето на елемента **`<canvas>`** чрез функцията **`draw()`** в **`app.js`**.
   
-  Създаваме **`CanvasRenderingContext2D`** обект като напишете следния код:
-
+  Създаваме  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> обект като напишете следния код:
+  
 ```javascript
 //Create canvas element
     let canvas = document.getElementById('a');
