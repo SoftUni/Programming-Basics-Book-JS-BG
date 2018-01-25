@@ -610,11 +610,11 @@ switch (селектор) {
 <td>Внимание: това приложение е значително <b>по-сложно</b> от предходните графични приложения, които разработвахме до сега, защото изисква ползване на функции за чертане и нетривиални изчисления за преоразмеряване и преместване на правоъгълника и точката. Следват инструкции за изграждане на приложението стъпка по стъпка.</td>
 </tr></table>
 
-1. За целта ще използваме Electron.js framework. Създaваме нов Visual Studio проект. Избираме от диалоговия прозорец [Templates]->[JavaScript]->[Node.js]->**`[Blank Node.js Console Application]`** и задаваме подходящо име на проекта, например **`"Point-in-Rectangle"`**:
+1. За целта ще използваме <a target="_blank" href="https://electronjs.org/">**`Electron.js`**</a> **framework**. Създaваме нов Visual Studio проект. Избираме от диалоговия прозорец [Templates]->[JavaScript]->[Node.js]->**`[Blank Node.js Console Application]`** и задаваме подходящо име на проекта, например **"Point-in-Rectangle"**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.png)
 
-2. Добавяме в проекта JavaScript файл с име "**`main.js`**".
+2. Добавяме в проекта JavaScript файл с име "**`main.js`**". В случай, че не сме инсталирали Electron.js, преминаваме през стъпки **2.** и **3.** от **"7. Десктоп приложение "Суматор на числа""** в **Глава 1. Първи стъпки в програмирането**. 
 
 3. Отваряме файла **`package.json`**, който съдържа настройките на проекта и променяме името на стартовия скриптов файл с **`main.js`**:
 
@@ -662,7 +662,7 @@ app.on('activate', () => {
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
 
 ```javascript
-                                  <script src="app.js" type="text/javascript"></script>
+<script src="app.js" type="text/javascript"></script>
 ```
 
 <p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
@@ -739,7 +739,7 @@ app.on('activate', () => {
     let context = canvas.getContext('2d');
 ```
 
-Елементът **`<canvas>`** е поле, в което обектът, генериран чрез метода **`.getContext('2d')`**, чертае графики, текст, изображения и други елементи. В случая променливата **`context`** представлява този обект.
+Елементът **`<canvas>`** е поле, в което обектът, генериран чрез метода <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, чертае графики, текст, изображения и други елементи. В случая променливата **`context`** представлява този обект.
 Запиswame в отделни променливи координатите на двата ъгъла на правоъгълника:
   
 ```javascript
@@ -760,7 +760,7 @@ app.on('activate', () => {
     let rectHeight = Math.abs(rectY1 - rectY2);
 ```
 
-Можем да използваме кода по-долу, който рисува червен правоъгълник, според зададените във формата координати, използвайки метода **`.strokeRect()`**:
+Можем да използваме кода по-долу, който рисува червен правоъгълник, според зададените във формата координати, използвайки метода <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp">**`.strokeRect()`**</a>:
 
 ```javascript
 //Set rectangle style
