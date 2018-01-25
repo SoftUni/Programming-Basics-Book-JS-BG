@@ -657,15 +657,16 @@ app.on('activate', () => {
 
 5. Създаваме нов **`*.html`** файл с име **`index.html`**. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влизаме в него и написваме **`"Point in Rectangle"`**:
 
-<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png" /></p>
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png)
 
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
 
+
 ```javascript
 <script src="app.js" type="text/javascript"></script>
-```
 
-<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png" /></p>
+```
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png)
 
 По този начин се осъществява връзката между **`index.html`** и **`app.js`**.
 Тагът "**`<body>`**" дефинира тялото на html документа. Написваме в него следния код:
