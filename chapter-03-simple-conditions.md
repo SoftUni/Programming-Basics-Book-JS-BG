@@ -89,7 +89,7 @@ if (булев израз) {
 #### Тестване в Judge системата
 
 Тествайте програмата от примера в judge системата на СофтУни:
-[https://judge.softuni.bg/Contests/Practice/Index/152#0](https://judge.softuni.bg/Contests/Practice/Index/152#0).
+[https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
 
 
 ## Проверки с if-else конструкция
@@ -114,7 +114,7 @@ else {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#1](https://judge.softuni.bg/Contests/Practice/Index/152#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
 
 
 ## За къдравите скоби { } след if / else
@@ -151,7 +151,7 @@ else {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#2](https://judge.softuni.bg/Contests/Practice/Index/152#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
 
 
 ### Пример: по-голямото число
@@ -164,7 +164,7 @@ else {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#3](https://judge.softuni.bg/Contests/Practice/Index/152#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
 ## Живот на променлива
 
@@ -219,7 +219,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#4](https://judge.softuni.bg/Contests/Practice/Index/152#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
 
 
 ## Упражнения: прости проверки
@@ -260,7 +260,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#5](https://judge.softuni.bg/Contests/Practice/Index/152#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#5](https://judge.softuni.bg/Contests/Practice/Index/929#5).
 
 
 ### Задача: сумиране на секунди
@@ -288,7 +288,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#6](https://judge.softuni.bg/Contests/Practice/Index/152#6).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#6](https://judge.softuni.bg/Contests/Practice/Index/929#6).
 
 
 ### Задача: конвертор за мерни единици
@@ -327,7 +327,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#7](https://judge.softuni.bg/Contests/Practice/Index/152#7).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#7](https://judge.softuni.bg/Contests/Practice/Index/929#7).
 
 
 ## Дебъгване - прости операции с дебъгер
@@ -398,7 +398,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#0](https://judge.softuni.bg/Contests/Practice/Index/152#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#0](https://judge.softuni.bg/Contests/Practice/Index/929#0).
 
  ![](assets/chapter-3-1-images/01-Judge00.png) 
 
@@ -436,7 +436,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#1](https://judge.softuni.bg/Contests/Practice/Index/152#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#1](https://judge.softuni.bg/Contests/Practice/Index/929#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-05.png)
 
@@ -464,7 +464,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#2](https://judge.softuni.bg/Contests/Practice/Index/152#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#2](https://judge.softuni.bg/Contests/Practice/Index/929#2).
 
 
 ### Задача: намиране на по-голямото число
@@ -492,7 +492,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#3](https://judge.softuni.bg/Contests/Practice/Index/152#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#3](https://judge.softuni.bg/Contests/Practice/Index/929#3).
 
 
 ### Задача: изписване на число до 9 с думи
@@ -514,7 +514,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#4](https://judge.softuni.bg/Contests/Practice/Index/152#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#4](https://judge.softuni.bg/Contests/Practice/Index/929#4).
 
 
 ### Задача: познай паролата
@@ -535,7 +535,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#8](https://judge.softuni.bg/Contests/Practice/Index/152#8).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#8](https://judge.softuni.bg/Contests/Practice/Index/929#8).
 
 
 ### Задача: число от 100 до 200
@@ -552,7 +552,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#9](https://judge.softuni.bg/Contests/Practice/Index/152#9).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#9](https://judge.softuni.bg/Contests/Practice/Index/929#9).
 
 
 ### Задача: еднакви думи
@@ -575,7 +575,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#10](https://judge.softuni.bg/Contests/Practice/Index/152#10).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#10](https://judge.softuni.bg/Contests/Practice/Index/929#10).
 
 
 ### Задача: информация за скоростта
@@ -594,7 +594,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#11](https://judge.softuni.bg/Contests/Practice/Index/152#11).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#11](https://judge.softuni.bg/Contests/Practice/Index/929#11).
 
 
 ### Задача: лица на фигури
@@ -620,7 +620,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#12](https://judge.softuni.bg/Contests/Practice/Index/152#12).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#12](https://judge.softuni.bg/Contests/Practice/Index/929#12).
 
 
 ### Задача: време + 15 минути
@@ -643,7 +643,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#13](https://judge.softuni.bg/Contests/Practice/Index/152#13).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#13](https://judge.softuni.bg/Contests/Practice/Index/929#13).
 
 
 ### Задача: еднакви 3 числа
@@ -660,7 +660,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#14](https://judge.softuni.bg/Contests/Practice/Index/152#14).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#14](https://judge.softuni.bg/Contests/Practice/Index/929#14).
 
 
 ### Задача\*:  изписване на число от 0 до 100 с думи
@@ -681,7 +681,7 @@ function number1to9([arg1]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/152#15](https://judge.softuni.bg/Contests/Practice/Index/152#15).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/929#15](https://judge.softuni.bg/Contests/Practice/Index/929#15).
 
 
 ## Графично Web приложение
