@@ -534,11 +534,10 @@ sayHello(['Ivan'])
 
 По същия начин създаваме нов файл и го именуваме **`printInfo.js`**:
 
-![](assets/old-images/chapter-2-images/04.Concatenate-data-01.png)
-
 **Кодът**, който отпечатва описаното в условието на задачата съобщение, трябва да се допише.
 
-![](assets/old-images/chapter-2-images/04.Concatenate-data-02.png)
+![](assets/chapter-2-1-images/04.Concatenate-data-solution.png)
+
 
 На горната картинка кодът е нарочно даден замъглен, за да помислите как да си го напишете сами.
 
@@ -546,7 +545,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#3](https://judge.softuni.bg/Contests/Practice/Index/504#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
 
 
 ### Задача:	лице на трапец
@@ -555,7 +554,7 @@ sayHello(['Ivan'])
 
 На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
 
-![](assets/old-images/chapter-2-images/05.Trapezoid-area-01.png)
+![](assets/chapter-2-1-images/05.Calculate-trapezoid-area-solution.png)
 
 #### Насоки и подсказки
 
@@ -569,7 +568,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#4](https://judge.softuni.bg/Contests/Practice/Index/504#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
 
 
 ### Задача:	периметър и лице на кръг
@@ -591,7 +590,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#5](https://judge.softuni.bg/Contests/Practice/Index/504#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
 
 
 ### Задача: лице на правоъгълник в равнината
@@ -610,7 +609,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#6](https://judge.softuni.bg/Contests/Practice/Index/504#6).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
 
 
 ### Задача:	лице на триъгълник
@@ -628,7 +627,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#7](https://judge.softuni.bg/Contests/Practice/Index/504#7).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#7](https://judge.softuni.bg/Contests/Practice/Index/927#7).
 
 
 ### Задача: конвертор - от градуси °C към градуси °F
@@ -646,7 +645,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#8](https://judge.softuni.bg/Contests/Practice/Index/504#8).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#8](https://judge.softuni.bg/Contests/Practice/Index/927#8).
 
 
 ### Задача: конвертор - от радиани в градуси
@@ -664,7 +663,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#9](https://judge.softuni.bg/Contests/Practice/Index/504#9).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#9](https://judge.softuni.bg/Contests/Practice/Index/927#9).
 
 
 ### Задача: конвертор - USD към BGN
@@ -681,7 +680,7 @@ sayHello(['Ivan'])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#10](https://judge.softuni.bg/Contests/Practice/Index/504#10).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#10](https://judge.softuni.bg/Contests/Practice/Index/927#10).
 
 
 ### Задача:	\* конзолен междувалутен конвертор
@@ -705,7 +704,7 @@ sayHello(['Ivan'])
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#11](https://judge.softuni.bg/Contests/Practice/Index/504#11).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#11](https://judge.softuni.bg/Contests/Practice/Index/927#11).
 
 
 ### Задача:	** пресмятане с дати - 1000 дни на Земята
@@ -723,12 +722,12 @@ sayHello(['Ivan'])
 | 1980-06-14 | 10-03-1983 |
 
 #### Насоки и подсказки 
-* Потърсете информация за типа **``Date``** в JavaScript и по-конкретно разгледайте функциите **``setDate(count)``**, **``getDate(format)``**, **``getMonth(format)``** и **``getYear(format)``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
+* Потърсете информация за типа **``Date``** в JavaScript и по-конкретно разгледайте функциите **``setDate()``**, **``getDate()``**, **``getMonth()``** и **``getYear()``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
 * **Не печатайте** нищо допълнително на конзолата освен изискваната дата!
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#12](https://judge.softuni.bg/Contests/Practice/Index/504#12).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#12](https://judge.softuni.bg/Contests/Practice/Index/927#12).
 
 
 ## Графични приложения с числови изрази
