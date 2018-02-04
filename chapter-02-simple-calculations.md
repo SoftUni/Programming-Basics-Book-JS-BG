@@ -10,7 +10,7 @@
 ## Видео
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=0f7c9RIZGaE">https://www.youtube.com/watch?v=0f7c9RIZGaE</a>.
+  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
@@ -72,10 +72,7 @@ function calculateSquareArea([arg1]) {
 }
 ```
 
-Ето как би работила програмата при квадрат с размер на страната 3:
-
-[TODO: Add image]
-![](/assets/old-images/chapter-2-images/00.Square-area-01.jpg)
+Ако извикаме нашата функция с параметър 3 - **`calculateSquareArea([3])`**, резултатът от кода ще e - **`Square area = 9`**:
 
 Ако опитаме да въведем грешно число, например "**hello**". Ще получим съобщение за грешка по време на изпълнение (exception). Това е нормално. По-късно ще разберем как можем да прихващаме такива грешки и да връщаме по-смислени за потребителя съобщения.
 
@@ -94,12 +91,11 @@ _**Забележка**: Ako **`arg1`** съдържа **дробно число
 
 #### Тестване в Judge системата
 
-[TODO: Change link]
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#0](https://judge.softuni.bg/Contests/Practice/Index/504#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
 
 ## Четене на дробно число
 
-За да прочетем потребителски вход под формата на **дробно число** отново е необходимо да **дефинираме аргимент** на нашата функция. Синтаксисът е подобрен както при четене на цяло число, само че тук трябва да използваме функцията `parseFloat()`:
+За да прочетем потребителски вход под формата на **дробно число** отново е необходимо да **дефинираме аргумент** на нашата функция. Синтаксисът е подобрен както при четене на цяло число, само че тук трябва да използваме функцията `parseFloat()`:
 
 ```javascript
 function sum([arg1, arg2]) {
@@ -121,14 +117,14 @@ function convertInchesToCentimeters([arg1]) {
 }
 ```
 
-Да стартираме програмата и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
+Нека извикаме функцията и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
 
-[TODO: Change Image]
-![](assets/old-images/chapter-2-images/00.Inches-to-centimeters-01.jpg)
+```javascript
+convertInchesToCentimeters([5]); // Centimeters = 12.7
+```
 
 #### Тестване в Judge системата
-[TODO: Change Link]
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#1](https://judge.softuni.bg/Contests/Practice/Index/504#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
 
 ## Четене на вход под формата на текст
 
@@ -148,18 +144,19 @@ function print([arg1]) {
 ```javascript  
 function sayHello([arg1]) {
     let name = arg1;
-    console.log(`Hello, ${name}!`, );
+    console.log(`Hello, ${name}!`);
 }
 ```
 
 В този случай, изразът **`${name}`** e заместен от **стойността на променливата `name`**. Ето и резултата ако извикаме функцията с името 'Иван'
 
-[TODO: Change image]
-![](/assets/old-images/chapter-2-images/00.Greeting-by-name-01.jpg)
+```javascript  
+sayHello(['Иван']); // Hello, Иван!
+```
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#2](https://judge.softuni.bg/Contests/Practice/Index/504#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
 
 
 ## Съединяване на текст и числа
@@ -172,10 +169,10 @@ function printInfo([firstName, lastName, age, town]) {
     console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${town}.`);
 }
 ```
-
-Ето резултатът, който ще получим, след изпълнение на този пример:
-[TODO: change image]
-![](assets/old-images/chapter-2-images/00.Placeholders-01.jpg)
+Отново извикваме функцията с тестови параметри и се уверяваме, че работи:
+```javascript
+printInfo(['Ivan', 'Ivanov', 20, 'Sofia']);
+```
 
 Освен променливи, в шаблоните можем да правим и прости изчисления.
 
@@ -192,8 +189,7 @@ console.log(`${a} + ${a} = ${a + a}`);
 
 ### Тестване в Judge системата
 
-[TODO: change link]
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#3](https://judge.softuni.bg/Contests/Practice/Index/504#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
 
 
 ## Аритметични операции
@@ -223,10 +219,10 @@ function substractNumbers([a, b]) {
 }
 ```
 
-Ето резултатът от изпълнението на програмата (при числа 10 и 3):
-
-[TODO: change image]
-![](assets/old-images/chapter-2-images/00.Subtracting-01.jpg)
+Нека провертим резултатът от изпълнението на програмата (при числа 10 и 3):
+```javascript
+substractNumbers([10, 3]);
+```
 
 ### Умножение на числа (оператор **`*`**)
 
@@ -255,8 +251,6 @@ console.log(-a / 0); // Резултат: -Infinity
 console.log(0 / 0); // Резултат: NaN (Not a Number), т.е. резултатът
                     // от операцията не е валидна числена стойност
 ```
-
-[TODO: Add section for devision with remainder]
 
 ## Съединяване на текст и число
 
@@ -315,17 +309,14 @@ function printТrapezoidArea([arg1, arg2, arg3]) {
 
 Ако стартираме програмата и въведем за страните съответно `3`, `4` и `5`, ще получим следния резултат:
 ```javascript
-printТrapezoidArea([3, 4, 5])
-Trapezoid area = 17.5
+printТrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 ```
 
 #### Тестване в Judge системата
 
 Тествайте решението си тук: 
 
-[TODO: change link]
-
-[https://judge.softuni.bg/Contests/Practice/Index/504#4](https://judge.softuni.bg/Contests/Practice/Index/504#4).
+[https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
 
 
 ## Закръгляне на числа
@@ -354,8 +345,6 @@ let trunc = Math.trunc(45.67);	// trunc = 45
 (123.512).toFixed(0);	 // 124
 ```
 
-
-
 ### Пример: периметър и лице на кръг 
 
 Нека напишем програма, която при въвеждане **радиуса r** на кръг **изчислява лицето и периметъра** на кръга / окръжността.
@@ -373,52 +362,53 @@ function calculateCircleAreaAndPerimeter([arg1]) {
     console.log("Perimeter = " + 2 * Math.PI * r);
 }
 ```
-Нека изпробваме програмата с **радиус `r = 10`**:
-
-[TODO: change image]
-![](/assets/old-images/chapter-2-images/00.Circle-area-01.jpg)
+Нека извикаме функцията с **радиус `r = 10`**:
+```javascript
+calculateCircleAreaAndPerimeter([10])
+```
 
 #### Тестване в Judge системата
 
 [TODO: change link]
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#5](https://judge.softuni.bg/Contests/Practice/Index/504#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
 
 
 ### Пример: лице на правоъгълник в равнината
 
 Правоъгълник е зададен с **координатите на два от своите два срещуположни ъгъла**. Да се пресметнат **площта и периметъра** му:
 
-<img alt="rectangleArea" src="/assets/old-images/chapter-2-images/00.Rectangle-area-01.png" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
 В тази задача трябва да съобразим, че ако от по-големия `x` извадим по-малкия `x`, ще получим дължината на правоъгълника. Аналогично, ако от по-големия `y` извадим по-малкия `y`, ще получим височината на правоъгълника. Остава да умножим двете страни. Ето примерна имплементация на описаната логика:
 
 ```javascript
 function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
-    var x1 = parseInt(arg1);
-    var y1 = parseInt(arg2);
-    var x2 = parseInt(arg3);
-    var y2 = parseInt(arg4);
+    var x1 = parseFloat(arg1);
+    var y1 = parseFloat(arg2);
+    var x2 = parseFloat(arg3);
+    var y2 = parseFloat(arg4);
     
     // Изчисляване страните на правоъгълника:
     var width = Math.max(x1, x2) - Math.min(x1, x2);
     var height = Math.max(y1, y2) - Math.min(y1, y2);
 
-    console.log("Area = " + width * height);
-    console.log("Perimeter = " + 2 * (width + height));
+    console.log(width * height);
+    console.log(2 * (width + height));
 }
 ```
 
 Използваме **`Math.max(a, b)`**, за да намерим по-голямата измежду стойностите **`a`** и **`b`** и аналогично **`Math.min(a, b)`** за намиране на по-малката от двете стойности.
 
-При стартиране на програмата със стойностите от координатната система в условието, получаваме следния резултат:
+Нека извикаме функцията с тестови стойности от кординатната система:
 
-[TODO: Change image]
-![](/assets/old-images/chapter-2-images/00.Rectangle-area-02.jpg)
+```javascript
+calculateRectangleArea([60, 20, 10, 50]);
+```
 
 #### Тестване в Judge системата
 
 [TODO: Change link]
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#6](https://judge.softuni.bg/Contests/Practice/Index/504#6).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
 
 
 ## Какво научихме от тази глава?
@@ -466,17 +456,16 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
 Кодът дефинира функция **`calculateSquareArea()`** която приема един аргумент **`arg1**`. Тъй като се очаква аргумента да е цяло число, преобразува аргумента с функцията **`parseInt()`** и след това изчислява **`area = a * a`**. Накрая печата стойността на променливата **`area`**. 
 За да **тестваме** e нужно в същия файл да **извикаме функцията** с произволен параметър и след това да стартираме програмата като натиснем [**Ctrl + F5**]:
 
-
-
-![](assets/old-images/chapter-2-images/01.Square-area-04.png)
-
+```javascript
+calculateSquareArea([5]); // Square = 25
+```
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#0](https://judge.softuni.bg/Contests/Practice/Index/504#0). Трябва да получите 100 точки (напълно коректно решение):
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Трябва да получите 100 точки (напълно коректно решение):
 
-![](assets/old-images/chapter-2-images/01.Square-area-05.png)
+![](assets/chapter-2-1-images/01.Square-area-01.png)
 
-![](assets/old-images/chapter-2-images/01.Square-area-06.png)
+![](assets/chapter-2-1-images/01.Square-area-02.png)
 
 
 ### Задача:	от инчове към сантиметри
@@ -485,31 +474,33 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
 
 #### Насоки и подсказки
 
-[TODO: да се редактира и адаптира за JS]
-
 Първо създаваме **нов файл** в папката с другите решения. Във Visual Studio Code избираме [**File**] -> [**New file**]:
 
 Запаметяваме файла [**Ctrl + S**] под името **`convertInchesToCentimeters.js`** и натискаме бутона **Save**
 
 Следва да напишем **кода на програмата**:
 
-![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-03.png)
+![](assets/chapter-2-1-images/02.Convert-inches-to-centimeters-solution.png)
 
 **Извикваме функцията** с параметър **2** и **Стартираме програмата** с [**Ctrl+F5**]:
 
-![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-04.png)
+```javascript
+convertInchesToCentimeters([2]);
+```
 
 Да тестваме с дробни числа, например с **4.5**:
 
-![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-10.png)
+```javascript
+convertInchesToCentimeters([4.5]);
+```
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/504#1](https://judge.softuni.bg/Contests/Practice/Index/504#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
 
 Решението би трябвало да бъде прието като напълно коректно:
 
-![](assets/old-images/chapter-2-images/02.Inches-to-centimeters-16.png)
+![](assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
 
 ### Задача: поздрав по име
@@ -518,21 +509,21 @@ function calculateRectangleArea([arg1, arg2, arg3, arg4]) {
 
 #### Насоки и подсказки
 
-[TODO: да се редактира и адаптира за JS]
-
 Отново създаваме **нов файл** в папката с другите решения и го запазваме под името **`sayHello.js`**
 
 **Следва да напишем кода** на програмата. Ако се затруднявате, може да ползвате примерния код по-долу:
 
-![](assets/old-images/chapter-2-images/03.Greeting-by-name-02.png)
+![](assets/chapter-2-1-images/03.Greeting-by-name-solution.png)
 
 **Извикваме функцията** с параметър примерен параметър и **Стартираме програмата** с [**Ctrl+F5**] за да тестваме дали работи:
 
-![](assets/old-images/chapter-2-images/03.Greeting-by-name-03.png)
+```javascript
+sayHello(['Ivan'])
+```
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/504#2](https://judge.softuni.bg/Contests/Practice/Index/504#2).
+Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
 
 
 ### Задача:	съединяване на текст и числа
