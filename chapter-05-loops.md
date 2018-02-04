@@ -45,7 +45,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#0](https://judge.softuni.bg/Contests/Practice/Index/510#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#0](https://judge.softuni.bg/Contests/Practice/Index/933#0).
 
 Трябва да получите **100 точки** (напълно коректно решение).
 
@@ -74,7 +74,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#1](https://judge.softuni.bg/Contests/Practice/Index/510#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
 
 
 ### Пример: всички латински букви
@@ -89,7 +89,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#2](https://judge.softuni.bg/Contests/Practice/Index/510#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
 
 
 ### Пример: сумиране на числа
@@ -124,7 +124,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#3](https://judge.softuni.bg/Contests/Practice/Index/510#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
 
 
 ### Пример: най-голямо число
@@ -149,7 +149,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#4](https://judge.softuni.bg/Contests/Practice/Index/510#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
 
 
 ### Пример: най-малко число
@@ -172,7 +172,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#5](https://judge.softuni.bg/Contests/Practice/Index/510#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
 
 
 ### Пример: лява и дясна сума
@@ -193,7 +193,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#6](https://judge.softuni.bg/Contests/Practice/Index/510#6).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
 
 
 ### Пример: четна / нечетна сума
@@ -216,7 +216,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#7](https://judge.softuni.bg/Contests/Practice/Index/510#7).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
 
 
 ### Пример: сумиране на гласните букви
@@ -242,7 +242,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#8](https://judge.softuni.bg/Contests/Practice/Index/510#8).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
 
 
 ## Какво научихме от тази глава?
@@ -279,7 +279,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#9](https://judge.softuni.bg/Contests/Practice/Index/510#9).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
 
 
 ### Задача: четни / нечетни позиции
@@ -303,7 +303,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#10](https://judge.softuni.bg/Contests/Practice/Index/510#10).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
 
 
 ### Задача: еднакви двойки
@@ -331,7 +331,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/510#11](https://judge.softuni.bg/Contests/Practice/Index/510#11).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
 
 
 ## Упражнения: графични и уеб приложения
@@ -352,10 +352,44 @@ for (let i = 1; i <= 10; i++) {
 
 ***
 TODO: Инфо за създаване и стартиране на демото. <br />
-Ако няма проблем след теста, ресурсите ще се зареждат от https://rawgit.com/ <br />
-- допълнителна папка със зип на файловете
-***
 
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TurtleGraphics - Demo</title>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/SoftUni/Programming-Basics-Book-JS-BG/chapter-05-loops/assets/chapter-5-1-assets/style.css">
+</head>
+
+<body>
+    <div id="main-frame">
+        <div id="header">
+            <img id="small-icon" class="title-box" src="https://rawgit.com/SoftUni/Programming-Basics-Book-JS-BG/chapter-05-loops/assets/chapter-5-1-assets/turtle-icon.png" alt="icon" />
+            <span class="title-box">TurtleGraphics - Demo</span>
+        </div>
+        <div id="elements">
+            <button id="justDraw">Draw</button>
+            <button id="reset">Reset</button>
+            <button id="hide">Hide Turtle</button>
+            <button id="drawHexagon">Hexagon</button>
+            <button id="drawStar">Star</button>
+            <button id="drawSpiral">Spiral</button>
+            <button id="drawSun">Sun</button>
+            <button id="drawTriangle">Triangle</button>
+            <div id="turtleCanvas"></div>
+        </div>
+    </div>
+    <script src="https://rawgit.com/SoftUni/Programming-Basics-Book-JS-BG/chapter-05-loops/assets/chapter-5-1-assets/jquery.js"></script>
+    <script src="https://rawgit.com/SoftUni/Programming-Basics-Book-JS-BG/chapter-05-loops/assets/chapter-5-1-assets/jquery-turtle.js"></script>
+    <script>
+    
+    </script>
+</body>
+
+</html>
+```
 ***
 TODO: Инструкции за създаване на първите 3 бутона. 
 ***
