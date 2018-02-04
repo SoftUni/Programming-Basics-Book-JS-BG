@@ -554,13 +554,13 @@ sayHello(['Ivan'])
 
 На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
 
-![](assets/chapter-2-1-images/05.Calculate-trapezoid-area-solution.png)
+![](assets/old-images/chapter-2-images/05.Trapezoid-area-01.png)
 
 #### Насоки и подсказки
 
 Отново трябва да добавим във Visual Studio Code файл с име **`calculateTrapezoidArea.js`** и да напишем **кода, който чете входните данни от аргументите на функция, пресмята лицето на трапеца и го отпечатва**:
 
-![](assets/old-images/chapter-2-images/05.Trapezoid-area-02.png)
+![](assets/chapter-2-1-images/05.Calculate-trapezoid-area-solution.png)
 
 Кодът на картинката е нарочно размазан, за да помислите върху него и да го допишете сами.
 
@@ -732,107 +732,189 @@ sayHello(['Ivan'])
 
 ## Графични приложения с числови изрази
 
-За да упражним работата с променливи и пресмятания с оператори и числови изрази, ще направим нещо интересно: ще разработим **настолно приложение** с графичен потребителски интерфейс. В него ще използваме пресмятания с дробни числа.
+За да упражним работата с променливи и пресмятания с оператори и числови изрази, ще направим нещо интересно: ще разработим **уеб приложение** с графичен потребителски интерфейс. В него ще използваме пресмятания с дробни числа.
 
-### Графично приложение: конвертор от BGN към EUR
+### Уеб приложение: \*\*\* конвертор от BGN към EUR!
+Създайте уеб приложение, което пресмята стойността в **евро** (EUR) на парична сума, зададена в **лева** (BGN). При промяна на стойността в лева, равностойността в евро трябва да се преизчислява автоматично. Използвайте курс лева / евро: **1.95583**.
 
-[TODO: да се адаптира за JS]
+![](assets/chapter-2-1-images/13.Bgn-to-eur-00.png)
 
-От нас се изисква да създадем **графично приложение** (GUI application), което пресмята стойността в **евро** (EUR) на парична сума, зададена в **лева** (BGN). При промяна на стойността в лева, равностойността в евро трябва да се преизчислява автоматично (използваме курс лева / евро: **1.95583**).
+По подобен начин както във първата глава (Първи стъпки в програмирането), за нашето приложение ще използваме езиците **JavaScript**, **HTML** и **CSS**.
 
-![](assets/old-images/chapter-2-images/13.Currency-converter-01.png)
+1. Първата стъпка е да си **създадем папка** в която ще съхраняваме всички файлове които са необходими за нашето приложение.
+2. След това в папката трябва да създадем html файл:
+**`index.html`**
+```html
+<!DOCTYPE html>
 
-Тази задача излиза извън изучавания в книгата материал и има за цел не да ви научи как да програмирате GUI приложения, а да ви запали интереса към разработката на софтуер. Да се залавяме за работа.
-
-Добавяме към текущото Visual Studio решение (solution) още един проект. Този път създаваме **Windows Forms** приложение със C# с име "BGN-to-EUR-Converter":
-
-![](assets/old-images/chapter-2-images/13.Currency-converter-02.png)
-
-Подреждаме следните UI контроли във формата:
-* **`NumericUpDown`** с име **`numericUpDownAmount`** – ще въвежда сумата за конвертиране
-*	**`Label`** с име **`labelResult`** – ще показва резултата след конвертиране
-*	Още два **`Label`** компонента, служещи единствено за статично изобразяване на текст
-Графичният редактор за потребителски интерфейс може да изглежда по подобен начин:
-
-![](assets/old-images/chapter-2-images/13.Currency-converter-03.png)
-
-Задаваме следните настройки на формата и на отделните контроли:
-
-| Настройка                                                                                                                                          | Снимка                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-| **``FormConverter``**:<br>Text = "BGN to EUR",<br>Font.Size = 12,<br>MaximizeBox = False,<br>MinimizeBox = False,<br>FormBorderStyle = FixedSingle | <img alt="formConverter" src ="/assets/old-images/chapter-2-images/13.Currency-converter-04.png" /> |
-| **``numericUpDownAmount``**:<br>Value = 1,<br>Minimum = 0,<br>Maximum = 10000000,<br>TextAlign = Right,<br>DecimalPlaces = 2                       | <img alt="numUpDown" src ="/assets/old-images/chapter-2-images/13.Currency-converter-05.png" />     |
-| **``labelResult``**:<br>AutoSize = False,<br>BackColor = PaleGreen,<br>TextAlign = MiddleCenter,<br>Font.Size = 14,<br>Font.Bold = True            | <img alt="labelResult" src ="/assets/old-images/chapter-2-images/13.Currency-converter-06.png" />   |
-
-Дефинираме следните **обработчици на събития** по контролите:
-
-![](assets/old-images/chapter-2-images/13.Currency-converter-07.png)
-
-След това хващаме следните събития:
-- **``FormConverter.Load``** (като кликнем върху формата 2 пъти с мишката)
-- **``numericUpDownAmount.ValueChanged``** (като кликнем върху **``NumericUpDown``** контролата 2 пъти)
-- **``numericUpDownAmount.KeyUp``** (избираме **``Events``** от таблото **``Properties``** и кликнем 2 пъти върху **``KeyUp``**)
-
-Събитието **`Form.Load`** се изпълнява при стартиране на програмата, преди да се появи прозореца на приложението. Събитието **`NumericUpDown.ValueChanged`** се изпълнява при промяна на стойността в полето за въвеждане на число. Събитието **`NumericUpDown.KeyUp`** се изпълнява след натискане на клавиш в полето за въвеждане на число. При всяко от тези събития ще преизчисляваме резултата.
-
-За **хващане на събитие** ползваме иконката със събитията (Events) в **Properties**  прозореца във Visual Studio:
-
-![](assets/old-images/chapter-2-images/13.Currency-converter-01.png)
-
-Ще използваме следния **JavaScript код** за обработка на събитията:
-
-```javascript
-private void FormConverter_Load(object sender, EventArgs e)
-{
-  ConvertCurrency();
-}
-
-private void numericUpDownAmount_ValueChanged(object sender, EventArgs e)
-{
-  ConvertCurrency();
-}
-
-private void numericUpDownAmount_KeyUp(object sender, KeyEventArgs e)
-{
-  ConvertCurrency();
-}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>BGN to EUR Converter</title>
+</head>
+<body>
+    <form class="content-form">
+        <h2 class="title">BGN to EUR Converter</h2>
+        <section class="items">
+            <label for="bgn" class="currency">
+                <span class="item-currency">BGN: </span>
+                <input class="currency-value" type="number" id="bgn" value="0" />
+            </label>
+            <label for="euro" class="currency">
+                <span class="item-currency">EUR: </span>
+                <input class="currency-value" type="text" id="euro" readonly />
+            </label>
+            <input class="primary-btn" type="button" value="Convert!" />
+        </section>
+    </form>
+</body>
+</html>
 ```
 
-Всички прихванати събития извикват метода **`ConvertCurrency()`**, който конвертира зададената сума от лева в евро и показва резултата в зелената кутийка.
+Обърнете внимание, че всяка html страница трябва да има определена структура. Например винаги основният код който пишем е в тагът **`<body>`**, и винаги заглавието на страницата е в тагът **`<title>`**.
 
-Трябва да напишем **кода** (програмната логика) за конвертиране от лева към евро: 
-
-```javascript
-private void ConvertCurrency()
-{
-  var amountBGN = this.numericUpDownAmount.Value;
-  var amountEUR = amountBGN * 1.95583m;
-  this.labelResult.Text = 
-    amountBGN + " BGN = " + 
-    Math.Round(amountEUR, 2) + " EUR";
-}
-```
-
-Накрая **стартираме проекта** с [**Ctrl+F5**] и тестваме дали работи коректно.
-
-Ако имате проблеми с примера по-горе, **гледайте видеото** в началото на тази глава. Там приложението е направено на живо стъпка по стъпка с много обяснения. Или питайте във **форума на СофтУни**: https://softuni.bg/forum.
-
-### Графично приложение: \*\*\* Хвани бутона!
-
-Създайте забавно графично приложение **„хвани бутона“**: една форма съдържа един бутон. При преместване на курсора на мишката върху бутона той се премества на случайна позиция. Така се създава усещане, че **„бутонът бяга от мишката и е трудно да се хване“**. При „хващане“ на бутона се извежда съобщение-поздрав.
-
-![](assets/old-images/chapter-2-images/14.Catch-the-button-01.png)
-
-
-**Подсказка**: напишете обработчик за събитието **``Button.MouseEnter``** и премествайте бутона на случайна позиция. Използвайте генератор за случайни числа **``Random``**. Позицията на бутона се задава от свойството **``Location``**. За да бъде новата позиция на бутона в рамките на формата, можете да направите изчисления спрямо размера на формата, който е достъпен от свойството **``ClientSize``**. Можете да ползвате следния примерен код:
+3. Вече имаме структурата на страницата, остава да добавим и **JavaScript** файл със самата логика. Създаваме нов файл и го именуваме **`converter.js`**
 
 ```javascript
-private void buttonCatchMe_MouseEnter(object sender, EventArgs e)
-{
-    Random rand = new Random();
-    var maxWidth = this.ClientSize.Width - buttonCatchMe.ClientSize.Width;
-    var maxHeight = this.ClientSize.Height - buttonCatchMe.ClientSize.Height;
-    this.buttonCatchMe.Location = new Point(
-        rand.Next(maxWidth), rand.Next(maxHeight));
+function eurConverter() {
+    let bgn = document.getElementById("bgn").value;
+    let eur = (bgn / 1.95583).toFixed(2);
+    document.getElementById("euro").value = eur;    
 }
 ```
+4. След като имаме логиката на приложението, трябва да намерим начин да кажем къде да се изпoлзва. 
+За целта трябва да направим 2 промени в съществуващия **`index.html`** файл.
+* Първо добавяме следния ред точно под **`title`** тагът 
+```html
+<script src="converter.js" type="text/javascript"></script>
+```
+По този начин се осъществява връзката между файловете **`index.html`** и **`converter.js`**.
+* И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код :
+```html
+<input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
+```
+По този начин задаваме **при клик** на бутона **Convert!** да извикаме функцията **`eurConverter()`**.
+
+Ако стартираме index.html от папката в момента би трябвало да имаме работещо приложение, което да конвертира от bgn към eur.
+
+ 
+![](assets/chapter-2-1-images/13.Bgn-to-eur-01.png)
+
+Нека го направим по-красиво.
+
+5.	Създаваме нов файл с разширение **`*.css`** и име "**index.css"**. [CSS](https://www.w3schools.com/html/html_css.asp) служи за стилизиране на елементите в HTML. Отваряме файла **"index.html"** и добавяме следния ред в тага **`<head>`**:
+
+```html
+<link rel="stylesheet" href="index.css" type="text/css" />
+```
+
+Във файла **`index.css`** слагаме следния код:
+```css
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+}
+
+.content-form {
+    width: 50%;
+    margin: 5% auto;
+    background: #234465;
+    padding: 5px 10px 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #808080, 5px 5px 10px #6793c1 inset;
+}
+
+.currency-value {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.item-currency {
+    font-weight: 700;
+}
+
+.currency {
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.primary-btn {
+    margin: auto;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #ffa000;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+```
+
+6. Стартираме **`index.html`** файла:
+
+![](assets/chapter-2-1-images/13.Bgn-to-eur-02.png)
+
+
+### Уеб приложение: \*\*\* Хвани мишката!
+
+При преместване на курсора на мишката върху изображението, то се премества на случайна позиция. Така се създава усещане, че „**изображението бяга от курсора** и е трудно да се хване“. При „хващане“ на изображението, се извежда съобщение-поздрав.
+
+\* **Подсказка**: напишете обработчик за събитието **`mouseover`** и премествайте изображението на случайна позиция. Използвайте генератор за случайни числа **`Math.random()`**. Позицията на изображението се задава от свойството **`style.position`**. За да „хванете мишката“, напишете функция за събитието **`onclick`**.
+
+
+![](assets/chapter-2-1-images/14.Catch-the-mouse-00.png)
+
+1. Създаваме нова папка **catch-the-mouse** в която ще съхраняваме файловете за уеб приложението.
+2. В папката създаваме два файла: index.html и app.js. Структурата на папката трябва да изглежда по следния начин:
+
+
+![](assets/chapter-2-1-images/14.Catch-the-mouse-01.png)
+
+3.	Можете да си помогнете с кода по-долу:
+
+**`index.html`**
+```html
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Catch the mouse!</title>
+    <script src="app.js" type="text/javascript"></script>
+</head>
+<body>
+    <img id="image" style="position:absolute;top:30%;left:30%; width:10%; height:auto; " src="images/mouse.jpg" />
+</body>
+</html>
+
+```
+
+**`app.js`**
+```javascript
+function chaseMouse() {
+    let img = document.getElementById("image");
+    img.style.position = "absolute";
+    img.style.left = (Math.random() * 300) + "px";
+    img.style.top = (Math.random() * 300) + "px";
+}
+
+function catchMouse() {
+    alert("Congratulations, You Win!")
+}
+```
+4. Намираме изображение от интернет и го добавяме, като го именуваме **`mouse.jpg`**
+
+Тествайте приложението като отворите папката на проекта в **explorer**  и стартирате файла **`index.html`**:
+
+![](assets/chapter-2-1-images/14.Catch-the-mouse-02.png)
