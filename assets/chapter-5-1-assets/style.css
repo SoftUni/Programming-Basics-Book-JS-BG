@@ -1,0 +1,7 @@
+body, #main-frame {background-color: #f0f0f0; text-align: center;}
+#header {background-color: #fff;}
+.title-box {padding-left: 10px; line-height: 36px; font-family: Verdana, Geneva, sans-serif;}
+#elements {text-align: center;}
+button {margin: 12px 6px 0 12px; padding: 8px; min-width: 100px; color: #323131;}
+.turtlefield {z-index:555 !important;}
+.turtle {opacity: initial !important;}
