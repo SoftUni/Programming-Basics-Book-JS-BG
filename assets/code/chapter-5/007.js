@@ -1,13 +1,13 @@
 function drawRhombus(n) {
-    for (var row = 1; row <= n; row++) {
-        var line = "";
-        for (var col = 1; col <= n - row; col++) {
+    for (let row = 1; row <= n; row++) {
+        let line = "";
+        for (let col = 1; col <= n - row; col++) {
             line += " ";
         }
 
         line += "*";
 
-        for (var col = 1; col < row; col++) {
+        for (let col = 1; col < row; col++) {
             line += " *";
         }
 

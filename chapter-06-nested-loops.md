@@ -22,11 +22,8 @@
 
 #### Насоки и подсказки
 
-![](assets/old-images/chapter-6-images/01.Rectangle-of-10-x-10-stars-01.png)
-
 ```javascript
-  for(var i = 0; i <= 10; i++)
-  {
+  for (let i = 0; i <= 10; i++) {
     console.log("*".repeat(10));
   }
 ```
@@ -48,15 +45,11 @@
 
 #### Насоки и подсказки
 
-![](assets/old-images/chapter-6-images/02.Rectangle-of-N-x-N-stars-01.png)
-
 ```javascript
-  function drawSquare(n)
-  {
-    for(var i = 1; i <= n; i++)
-    {
-      console.log("*".repeat(n));
-    }
+  function drawSquare(n) {
+      for (let i = 1; i <= n; i++) {
+          console.log("*".repeat(n));
+      }
   }
 
   drawSquare(4);
@@ -82,28 +75,23 @@
 
 Ето и един **пример**, с който нагледно да илюстрираме вложените цикли. Целта е да се отпечата отново правоъгълник от **`n`** * **`n`** звездички, като за всеки ред се извърта цикъл от **1** до **`n`**, а за всяка колона се извърта вложен цикъл от **1** до **`n`**:
 
-![](assets/old-images/chapter-6-images/00.Nested-loops-01.png)
-
 ```javascript
-  function drawSquare(n)
-  {
-    for (var i = 1; i <= n; i++)
-    {
-      var stars = "";
+  function drawSquare(n) {
+      for (let i = 1; i <= n; i++) {
+          let stars = "";
 
-      for(var j = 1; j <= n; j++)
-      {
-        stars += "*";
+          for (let j = 1; j <= n; j++) {
+              stars += "*";
+          }
+
+          console.log(stars);
       }
-
-      console.log(stars);
-    }
   }
 
   drawSquare(4);
 ```
 
-Да разгледаме примера по-горе. След инициализацията на **първия (външен) цикъл**, започва да се изпълнява неговото **тяло**, което съдържа **втория (вложен) цикъл**. Той сам по себе си кешира низ от **`n`** на брой звездички и след това ги печата на един ред. След като **вътрешният** цикъл **приключи** изпълнението си при първата итерация на външния, то след това **външният ще продължи**, т.е. ще отпечата един празен ред на конзолата използвайки **`\n`**. **След това** ще се извърши **обновяване** на променливата на **първия** цикъл и отново ще бъде изпълнен целият **втори** цикъл. Вътрешният цикъл ще се изпълни толкова пъти, колкото се изпълнява тялото на външния цикъл, в случая **`n`** пъти.
+Да разгледаме примера по-горе. След инициализацията на **първия (външен) цикъл**, започва да се изпълнява неговото **тяло**, което съдържа **втория (вложен) цикъл**. Той сам по себе запазва низ от **`n`** на брой звездички, в променлива, и след това ги печата на един ред. След като **вътрешният** цикъл **приключи** изпълнението си при първата итерация на външния, то след това **външният ще продължи**. **След това** ще се извърши **обновяване** на променливата на **първия** цикъл и отново ще бъде изпълнен целият **втори** цикъл. Вътрешният цикъл ще се изпълни толкова пъти, колкото се изпълнява тялото на външния цикъл, в случая **`n`** пъти.
 
 ### Пример: квадрат от звездички
 
@@ -117,23 +105,17 @@
 
 Задачата е аналогична на предходната. Разликата тук е, че в тази трябва да обмислим как да печатаме интервал след звездичките по такъв начин, че да няма излишни интервали в началото или края.
 
-![](assets/old-images/chapter-6-images/03.Square-01.png)
-
 ```javascript
-  function drawSquare(n)
-  {
-    for (var i = 1; i <= n; i++)
-    {
-      var stars = "*";
+  function drawSquare(n) {
+      for (let i = 1; i <= n; i++) {
+          let stars = "*";
 
-      for(var j = 1; j < n; j++)
-      {
-        stars += " *";
+          for (let j = 1; j < n; j++) {
+              stars += " *";
+          }
+
+          console.log(stars);
       }
-
-      console.log(stars);
-      console.log("\n")
-    }
   }
 
   drawSquare(4);
@@ -159,20 +141,16 @@
 ![](assets/old-images/chapter-6-images/04.Triangle-of-dollars-01.png)
 
 ```javascript
-  function drawTriangle(n)
-  {
-    for (var i = 1; i <= n; i++)
-    {
-      var dolars = "$";
+  function drawTriangle(n) {
+      for (let i = 1; i <= n; i++) {
+          let dollars = "$";
 
-      for(var j = 1; j < i; j++)
-      {
-        dolars += " $";
+          for (let j = 1; j < i; j++) {
+              dollars += " $";
+          }
+
+          console.log(dollars);
       }
-
-      console.log(dolars);
-      console.log("\n")
-    }
   }
 
   drawTriangle(4);
@@ -205,42 +183,36 @@
 
 Ето и примерна имплементация на описаната идея, с вложени цикли:
 
-![](assets/old-images/chapter-6-images/05.Square-frame-01.png)
-
 ```javascript
-  function drawSquare(n) 
-  {
-    // print the top row -> + - - +
-    var topRow = "+";
-    for (var top = 0; top < n - 2; top++) 
-    {
-        topRow += " -";
-    }
-    topRow += " +";
-    console.log(topRow);
+  function drawSquare(n) {
+      // print the top row -> + - - +
+      let topRow = "+";
+      for (let top = 0; top < n - 2; top++) {
+          topRow += " -";
+      }
+      topRow += " +";
+      console.log(topRow);
 
-    // print the middle row -> | - - |
-    for (var mid = 0; mid < n - 2; mid++) 
-    {
-        var middleRow = "|"
-        for (var j = 0; j < n - 2; j++) {
-            middleRow += " -"
-        }
-        middleRow += " |"
-        console.log(middleRow);
-    }
+      // print the middle row -> | - - |
+      for (let mid = 0; mid < n - 2; mid++) {
+          let middleRow = "|"
+          for (let j = 0; j < n - 2; j++) {
+              middleRow += " -"
+          }
+          middleRow += " |"
+          console.log(middleRow);
+      }
 
-    // print the bottom row -> + - - +
-    var bottomRow = "+";
-    for (var bot = 0; bot < n - 2; bot++) 
-    {
-        bottomRow += " -";
-    }
-    bottomRow += " +";
-    console.log(bottomRow);
-}
+      // print the bottom row -> + - - +
+      let bottomRow = "+";
+      for (let bot = 0; bot < n - 2; bot++) {
+          bottomRow += " -";
+      }
+      bottomRow += " +";
+      console.log(bottomRow);
+  }
 
-drawSquare(6);
+  drawSquare(6);
 ```
 
 #### Тестване в Judge системата
@@ -274,25 +246,21 @@ drawSquare(6);
 ![](assets/old-images/chapter-6-images/06.Rhombus-of-stars-01.png)
 
 ```javascript
-  function drawRhombus(n)
-  {
-    for(var row = 1; row <= n; row++)
-    {
-      var line = "";
-      for(var col = 1; col <= n - row; col++)
-      {
-        line += " ";
-      }
-      
-      line += "*";
-      
-      for(var col = 1; col < row; col++)
-      {
-        line += " *";
-      }
+  function drawRhombus(n) {
+      for (let row = 1; row <= n; row++) {
+          let line = "";
+          for (let col = 1; col <= n - row; col++) {
+              line += " ";
+          }
 
-      console.log(line);
-    }
+          line += "*";
+
+          for (let col = 1; col < row; col++) {
+              line += " *";
+          }
+
+          console.log(line);
+      }
   }
 
   // Todo: print the bottom half of the rhombus
@@ -324,21 +292,17 @@ drawSquare(6);
 ![](assets/old-images/chapter-6-images/07.Christmas-tree-01.png)
 
 ```javascript
-  function drawTree(n) 
-  {
-      for (var i = 0; i <= n; i++) 
-      {
-          var stars = "*".repeat(i);
-          var spaces = " ".repeat(n - i);
-          var body = " | ";
-
-          var row = spaces + stars + body + stars + spaces;
-          
+  function drawTree(n) {
+      for (let i = 0; i <= n; i++) {
+          let stars = "*".repeat(i);
+          let spaces = " ".repeat(n - i);
+          let body = " | ";
+          let row = spaces + stars + body + stars + spaces;
           console.log(row);
       }
   }
 
-  drawTree(6)
+  drawTree(6);
 ```
 
 

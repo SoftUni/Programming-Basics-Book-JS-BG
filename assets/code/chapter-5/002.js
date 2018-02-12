@@ -1,5 +1,5 @@
 function drawSquare(n) {
-    for (var i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         console.log("*".repeat(n));
     }
 }

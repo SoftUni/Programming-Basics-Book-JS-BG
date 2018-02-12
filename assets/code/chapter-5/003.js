@@ -1,8 +1,8 @@
 function drawSquare(n) {
-    for (var i = 1; i <= n; i++) {
-        var stars = "";
+    for (let i = 1; i <= n; i++) {
+        let stars = "";
 
-        for (var j = 1; j <= n; j++) {
+        for (let j = 1; j <= n; j++) {
             stars += "*";
         }
 

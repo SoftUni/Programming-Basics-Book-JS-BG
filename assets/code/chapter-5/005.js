@@ -1,12 +1,12 @@
 function drawTriangle(n) {
-    for (var i = 1; i <= n; i++) {
-        var dolars = "$";
+    for (let i = 1; i <= n; i++) {
+        let dollars = "$";
 
-        for (var j = 1; j < i; j++) {
-            dolars += " $";
+        for (let j = 1; j < i; j++) {
+            dollars += " $";
         }
 
-        console.log(dolars);
+        console.log(dollars);
     }
 }
 
