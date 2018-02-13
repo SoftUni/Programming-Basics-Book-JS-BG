@@ -53,7 +53,7 @@
 
 За **прочитане** на **входните** данни ще декларираме две константи **`const`**: **`n`** и **`l`**, освен това ще създадем променлива `solution`, в която ще пазим **string** с отговора.
 
-![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
+![](assets/chapter-7-2-images/01.Stupid-password-generator-01.PNG)
 
 #### Извеждане на резултат
 
