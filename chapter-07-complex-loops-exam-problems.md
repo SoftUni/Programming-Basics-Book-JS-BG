@@ -53,25 +53,17 @@
 
 За **прочитане** на **входните** данни ще декларираме две константи **`const`**: **`n`** и **`l`**, освен това ще създадем променлива `solution`, в която ще пазим **string** с отговора.
 
-<img src="assets/chapter-7-2-images/chapter-7-exam-preparation-images01.stupid-password-generator-1.png" width="380">
-
-
+![](assets/chapter-7-2-images/01.Stupid-password-generator-01.png)
 
 #### Извеждане на резултат
 
-Един от начинте да намерим решението на тази задаче е да създадем **пет** **`for`** цикъла, вложени един в друг, по един за всеки символ. За да гарантираме условието последния символ, който по условие е число, да бъде **по-голям** от първите два,които също са числа, ще използваме вградената функция **`Math.max(…)`**. 
+Един от начинте да намерим решението на тази задаче е да създадем **пет** **`for`** цикъла, вложени един в друг, по един за всеки символ. За да гарантираме условието последния символ, който по условие е число, да бъде **по-голям** от първите два, които също са числа, ще използваме вградената функция **`Math.max(…)`**. 
 
-<img src="assets/chapter-7-2-images/chapter-7-exam-preparation-images02.stupid-password-generator-1.png" width="500">
-
-
-**Как решихме задачата …?** 
-
-//TODO mabye add explanation
+![](assets/chapter-7-2-images/02.Stupid-password-generator-02.png)
 
 ### Тестване в Judge системата
-//TODO add LINK to the book
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/169#5](https://judge.softuni.bg/Contests/Practice/Index/169#5).
 
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#0](https://judge.softuni.bg/Contests/Practice/Index/938#0).
 
 ## Задача: магически числа
 
