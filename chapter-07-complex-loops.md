@@ -41,7 +41,7 @@
 
 Можем да решим задачата чрез следната поредица от действия (алгоритъм):
 
-  * Създаваме функция, която ще приема числото **`n`**
+  * Създаваме функция, която ще приема числото **`n`**.
   * Изпълняваме **`for` цикъл** от **1** до **`n`** с размер на стъпката **3**.
   * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
   
@@ -49,8 +49,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#0](https://judge.softuni.bg/Contests/Practice/Index/514#0).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#0](https://judge.softuni.bg/Contests/Practice/Index/937#0).
 
 ### Пример: числата от N до 1 в обратен ред
 
@@ -58,8 +57,8 @@
 
 Можем да решим задачата по следния начин:
 
-  * Създаваме функция, която ще приема числото **`n`**
-  * В него изпълняваме **`for` цикъл**, като присвояваме **`int i = n`** .
+  * Създаваме функция, която ще приема числото **`n`**.
+  * В него изпълняваме **`for` цикъл**, като присвояваме **`let i = n`** .
   * Обръщаме условието на цикъла: **`i >= 1`**.
   * Дефинираме размера на стъпката: **-1**.
   * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
@@ -68,8 +67,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#1](https://judge.softuni.bg/Contests/Practice/Index/514#1).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#1](https://judge.softuni.bg/Contests/Practice/Index/937#1).
 
 ### Пример: числата от 1 до 2^n с for цикъл
 
@@ -81,8 +79,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#2](https://judge.softuni.bg/Contests/Practice/Index/514#2).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#2](https://judge.softuni.bg/Contests/Practice/Index/937#2).
 
 ### Пример: четни степени на 2
 
@@ -90,7 +87,7 @@
 
 Ето как можем да решим задачата:
 
-  * Създаваме функция, която ще приема числото **`n`**
+  * Създаваме функция, която ще приема числото **`n`**.
   * Декларираме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
   * За **стъпка** на цикъла задаваме стойност **2**.
   * В **тялото на цикъла**: oтпечатваме стойността на текущото число и **увеличаваме текущото число `num` 4 пъти** (според условието на задачата).
@@ -99,8 +96,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#3](https://judge.softuni.bg/Contests/Practice/Index/514#3).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#3](https://judge.softuni.bg/Contests/Practice/Index/937#3).
 
 ## While цикъл
 
@@ -122,19 +118,18 @@
 
 Ето как можем да решим задачата:
 
-* Създаваме функция, която ще приема числото **`n`**
+* Създаваме функция, която ще приема числото **`n`**.
 * Декларираме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
 * За условие на цикъла слагаме **текущото число <= n**.
 * В **тялото на цикъла**: отпечатваме стойността на променливата и я увеличаваме, използвайки формулата от условието на задачата.
 
 Ето и примерна реализация на описаната идея:
 
-![](assets/chapter-7-1-images/05.Numbers-2k+1-01.png)
+![](assets/chapter-7-1-images/05.Numbers-2k+1-01.PNG)
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#4](https://judge.softuni.bg/Contests/Practice/Index/514#4).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#4](https://judge.softuni.bg/Contests/Practice/Index/937#1).
 
 ### Пример: число в диапазона [1 … 100]
 
@@ -154,7 +149,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#5](https://judge.softuni.bg/Contests/Practice/Index/514#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#5](https://judge.softuni.bg/Contests/Practice/Index/937#5).
 
 
 ## Най-голям общ делител (НОД)
@@ -210,8 +205,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#6](https://judge.softuni.bg/Contests/Practice/Index/514#6).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#6](https://judge.softuni.bg/Contests/Practice/Index/937#6).
 
 ## Do-while цикъл
 
@@ -240,8 +234,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#7](https://judge.softuni.bg/Contests/Practice/Index/514#7).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#7](https://judge.softuni.bg/Contests/Practice/Index/937#7).
 
 ### Пример: сумиране на цифрите на число
 
@@ -266,8 +259,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#8](https://judge.softuni.bg/Contests/Practice/Index/514#8).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#8](https://judge.softuni.bg/Contests/Practice/Index/937#8).
 
 ## Безкрайни цикли и операторът break
 
@@ -300,7 +292,7 @@ print а;
 
 **Определение**: едно цяло число е **просто**, ако се дели без остатък единствено на себе си и на 1. По дефиниция простите числа са положителни и по-големи от 1. Най-малкото просто число е **2**.
 
-Можем да приемем, че цяло число **n** е просто, ако **n > 1** и **n** не се дели на число между **2** и **n-1**.
+Можем да приемем, че едно цяло число **n** е просто, ако **n > 1** и **n** не се дели на число между **2** и **n-1**.
 
 Първите няколко прости числа са: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
 
@@ -311,7 +303,7 @@ print а;
 * **42** = 2 * 3 * 7
 * **143** = 13 * 11
 
-**Алгоритъм за проверка** дали дадено цяло число е **просто**: проверяваме дали **n > 1** и **n** се дели на **2**, **3**, …, **n-1** без остатък.
+**Алгоритъм за проверка** дали дадено цяло число е **просто**: проверяваме дали **n > 1** и дали **n** се дели на **2**, **3**, …, **n-1** без остатък.
 * Ако се раздели на някое от числата, значи е **композитно**.
 * Ако не се раздели на никое от числата, значи е **просто**.
 
@@ -339,8 +331,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/514#9](https://judge.softuni.bg/Contests/Practice/Index/514#9).
-
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#9](https://judge.softuni.bg/Contests/Practice/Index/937#9).
 
 ### Пример: оператор break в безкраен цикъл
 
