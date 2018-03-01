@@ -238,22 +238,21 @@ switch (селектор) {
 
 Например следният блок:
 
-![](assets/chapter-4-2-images/02.Trip-03.png)
+![](assets/chapter-4-2-images/02.Trip-04.png)
 
 може да бъде съкратен до този си вид:
 
-![](assets/chapter-4-2-images/02.Trip-06.png)
+![](assets/chapter-4-2-images/02.Trip-05.png)
 
 #### Отпечатване на резултата
 
 Остава ни да покажем изчисления резултат на конзолата:
 
-![](assets/chapter-4-2-images/02.Trip-07.png)
+![](assets/chapter-4-2-images/02.Trip-06.png)
 
 ### Тестване в Judge системата
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/932#1](https://judge.softuni.bg/Contests/Practice/Index/932#1).
-
 
 ## Задача: операции между числа
 
