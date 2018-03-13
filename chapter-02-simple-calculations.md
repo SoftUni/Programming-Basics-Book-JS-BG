@@ -427,22 +427,19 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 ### Празен **JS** файл за решението на задачата ни във Visual Studio Code
 
-Започваме като създадем празен **JS файл** във Visual Studio Code. 
-В настоящото практическо занимание ще създадем нова папка и ще добавяме нов JS файл за всяка задача, за да организираме решенията на задачите от упражненията.
+Започваме като създадем празен **JS файл** във Visual Studio Code. В настоящото практическо занимание ще създадем нова папка и ще добавяме нов **JS файл** за всяка задача, за да организираме решенията на задачите от упражненията:
 
-* Стартираме Visual Studio Code.
-* Създаваме **нов файл:** [**File**] -> [**New File**].
+Стартираме Visual Studio Code и създаваме **нов файл:** [**File**] -> [**New File**]:
 
-![](assets/chapter-2-1-images/00.Visual-studio-new-file.png)
+![](assets/chapter-2-1-images/00.Visual-studio-01.png)
 
-* **Запаметяваме** файла [**File**] -> [**Save**] или чрез клавишната комбинация [**Ctrl + S**].
+**Запаметяваме** файла от [**File**] -> [**Save**] или чрез клавишната комбинация [**Ctrl + S**]:
 
-![](assets/chapter-2-1-images/00.Visual-stuido-save.png)
+![](assets/chapter-2-1-images/00.Visual-studio-02.png)
 
-* Даваме **значещо име** и разширение **.js** на нашия файл.
-* Натискаме бутона **Save**.
+Даваме **значещо име** и разширение **.js** на нашия файл, след което натискаме бутона [**Save**]:
 
-![](assets/chapter-2-1-images/00.Visual-stuido-save-sith-name.png)
+![](assets/chapter-2-1-images/00.Visual-studio-03.png)
 
 ### Задача:	пресмятане на лице на квадрат
 
@@ -452,21 +449,22 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 Вече имаме правилно именуван празен файл. Остава да напишем **кода за решаване на задачата**. За целта пишем следния код:
 
-![](assets/chapter-2-1-images/01.Calculate-square-area-solution.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-01.png)
 
-Кодът дефинира функция **`calculateSquareArea()`**, която приема един аргумент **`arg1**`. Тъй като се очаква аргументът да е цяло число, преобразуваме аргумента с функцията **`parseInt()`** и след това изчисляваме **`area = a * a`**. Накрая печатаме стойността на променливата **`area`**. 
+Кодът дефинира функция **`calculateSquareArea()`**, която приема един аргумент **`arg1`**. Тъй като се очаква аргументът да е цяло число, преобразуваме аргумента с функцията **`parseInt()`** и след това изчисляваме лицето: **`area = a * a`**. Накрая печатаме стойността на променливата **`area`**. 
 За да **тестваме** e нужно в същия файл да **извикаме функцията** с произволен параметър и след това да стартираме програмата като натиснем [**Ctrl + F5**]:
 
-```javascript
-calculateSquareArea([5]); // Square = 25
-```
+![](assets/chapter-2-1-images/01.Calculate-square-area-02.png)
+
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Трябва да получите 100 точки (напълно коректно решение):
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
 
-![](assets/chapter-2-1-images/01.Square-area-01.png)
+Трябва да получите 100 точки (напълно коректно решение):
 
-![](assets/chapter-2-1-images/01.Square-area-02.png)
+![](assets/chapter-2-1-images/01.Calculate-square-area-03.png)
+
+![](assets/chapter-2-1-images/01.Calculate-square-area-04.png)
 
 
 ### Задача:	от инчове към сантиметри
@@ -475,15 +473,11 @@ calculateSquareArea([5]); // Square = 25
 
 #### Насоки и подсказки
 
-Първо създаваме **нов файл** в папката с другите решения. Във Visual Studio Code избираме [**File**] -> [**New file**]:
-
-Запаметяваме файла [**Ctrl + S**] под името **`convertInchesToCentimeters.js`** и натискаме бутона **Save**
-
-Следва да напишем **кода на програмата**:
+Първо създаваме **нов файл** в папката с другите решения - във Visual Studio Code избираме [**File**] -> [**New file**]. Запаметяваме файла под името **`convertInchesToCentimeters.js`** и натискаме бутона [**Save**]. Следва да напишем **кода на програмата**:
 
 ![](assets/chapter-2-1-images/02.Convert-inches-to-centimeters-solution.png)
 
-**Извикваме функцията** с параметър **2** и **Стартираме програмата** с [**Ctrl+F5**]:
+**Извикваме функцията** с параметър **2** и стартираме програмата с [**Ctrl + F5**]:
 
 ```javascript
 convertInchesToCentimeters([2]);
