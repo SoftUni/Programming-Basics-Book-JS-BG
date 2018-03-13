@@ -764,14 +764,18 @@ function eurConverter() {
 ```
 
 4. След като имаме логиката на приложението, трябва да намерим начин да кажем къде да се изпoлзва. За целта трябва да направим 2 промени в съществуващия **index.html** файл:
-   * Първо добавяме следния ред точно под **`title`** тагъ, чрез който се осъществява връзката между файловете **index.html** и **converter.js**:
-   ```html
-    <script src="converter.js" type="text/javascript"></script>
-   ```
-   * И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код. По този начин задаваме **при клик** на бутона **Convert!** да извикаме функцията **`eurConverter()`**:
-   ```html
-   <input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
-   ```
+
+Първо добавяме следния ред точно под **`title`** тагъ, чрез който се осъществява връзката между файловете **index.html** и **converter.js**:
+   
+```html
+ <script src="converter.js" type="text/javascript"></script>
+```
+
+И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код. По този начин задаваме **при клик** на бутона **Convert!** да извикаме функцията **`eurConverter()`**:
+
+```html
+<input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
+```
 
 Ако стартираме файла **index.html** от папката, в момента би трябвало да имаме работещо приложение, което да конвертира от BGN към EUR:
  
