@@ -360,13 +360,14 @@ function calculateCircleAreaAndPerimeter([arg1]) {
 }
 ```
 Нека извикаме функцията с **радиус `r = 10`**:
+
 ```javascript
 calculateCircleAreaAndPerimeter([10])
 ```
 
 Резултатът е следният:
 
-![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter)
+![](assets/chapter-2-1-images/00.Calculate-circle-area-and-perimeter.png)
 
 #### Тестване в Judge системата
 
