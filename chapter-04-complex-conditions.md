@@ -612,12 +612,11 @@ switch (селектор) {
 
 1. Първо ще си създадем отделна папка за проекта на нашето приложение с подходящо име, например: **"Point-in-Rectangle"**.
 
-2. В папката на проекта създаваме JavaScript файл с име "**`main.js`**". 
+2. В папката на проекта създаваме JavaScript файл с име "**`main.js`**" като във VSCode натиснем **Ctrl + N**. След това записваме новия файл натискайки **Ctrl + Shift + S** и въвеждайки желаното име на файла.
 
 3. Кодът, описан в **`main.js`**, управлява събитията и създава нови прозорци в приложението. Трябва да изглежда по следния начин: 
 
 ```javascript
-const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
 
@@ -649,12 +648,11 @@ app.on('activate', () => {
 })
 ```
 
-4. В папката на проекта създаваме и нов **`*.html`** файл с име **`index.html`**. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влизаме в него и написваме **`"Point in Rectangle"`**:
+4. В папката на проекта създаваме и нов **`*.html`** файл с име **`index.html`** по начина, описан в точка 2. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влизаме в него и написваме **`"Point in Rectangle"`**:
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png)
 
 Добавяме следния код под тага **`"<title>"`** в **`index.html`**:
-
 
 ```javascript
 <script src="app.js" type="text/javascript"></script>
@@ -662,7 +660,7 @@ app.on('activate', () => {
 ```
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png)
 
-По този начин се осъществява връзката между **`index.html`** и **`app.js`**.
+По този начин се осъществява връзката между **`index.html`** и файла **`app.js`**, който ще създадем малко по-късно.
 Тагът "**`<body>`**" дефинира тялото на html документа. Написваме в него следния код:
 
 ```javascript
@@ -702,7 +700,8 @@ app.on('activate', () => {
     </div>
 </body>
 ```
-За въвеждане координатите на правоъгълника и на точката, използваме input полета от тип Number, с надписи (**`<label>`**).
+
+За въвеждане координатите на правоъгълника и на точката, използваме **`input`** полета от тип Number, с тагове (**`<label>`**).
 
 За да чертаем геометрични фигури в приложението, използваме html елемента **`<canvas>`**:
 
@@ -713,7 +712,7 @@ app.on('activate', () => {
   - Височина (height) в пиксели (px);
   - Очертание (border).
   
-За да се отрази промяната в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
+За да се отразяват промените в приложението, файловете трябва да се запазват с **`[Ctrl+S]`**.
 
 <p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-06_.png" /></p>
 
@@ -723,7 +722,7 @@ app.on('activate', () => {
 
 ![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-08.png)
 
-5. Остава да се имплементира най-сложната част: визуализация на правоъгълника и точката в полето на елемента **`<canvas>`** чрез функцията **`draw()`** в **`app.js`**.
+5. Остава да се имплементира най-сложната част: визуализация на правоъгълника и точката в полето на елемента **`<canvas>`** чрез функцията **`draw()`** във файла **`app.js`**, който създаваме в директорията на приложението, по начина, описан в точка 2.
   
   Създаваме  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> обект като напишете следния код:
   
@@ -856,8 +855,8 @@ function draw() {
         result.innerHTML = "Inside";
         output.style.backgroundColor = "palegreen";
         }
-        else if ((pointX == rectX1 || pointX == rectX2) && pointY > rectY1 && pointY < rectY2 ||
-        (pointY == rectY1 || pointY == rectY2) && pointX > rectX1 && pointX < rectX2) {
+        else if ((pointX === rectX1 || pointX === rectX2) && pointY >= rectY1 && pointY <= rectY2 ||
+        (pointY === rectY1 || pointY === rectY2) && pointX >= rectX1 && pointX <= rectX2) {
         result.innerHTML = "Border";
         output.style.backgroundColor = "gold";
         }
