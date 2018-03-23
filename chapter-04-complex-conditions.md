@@ -651,7 +651,7 @@ app.on('activate', () => {
 
 4. В папката на проекта създаваме и нов **\*.html** файл с име **index.html** по начина, описан в Точка 2. Тагът **`"<title>"`** е задължителен за всеки **`html`** документ и дефинира заглавието му. Влизаме в него и написваме **`"Point in Rectangle"`**:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-09.png)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-05.png)
 
 Добавяме следния код под тага **`<title>`** в **index.html** файла:
 
@@ -659,7 +659,7 @@ app.on('activate', () => {
 <script src="app.js" type="text/javascript"></script>
 ```
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-10.png)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-06.png)
 
 По този начин се осъществява връзката между файловете **index.html** и **app.js** (който ще създадем малко по-късно). Тагът **`<body>`** дефинира **тялото на html документа**. Написваме в него следния код:
 
@@ -710,7 +710,7 @@ app.on('activate', () => {
 
 За въвеждане координатите на правоъгълника и на точката, използваме **`input`** полета от тип **`Number`**, с тагове **`<label>`**. За да чертаем геометрични фигури в приложението, използваме html тага **`<canvas>`**:
 
-<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-11.png" /></p>
+<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
 
 Той приема следните параметри:
   - **Ширина** (width) в пиксели (px);
@@ -721,153 +721,147 @@ app.on('activate', () => {
 
 Приложението трябва да изглежда по следния начин:
 
-![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-08.png)
+![](assets/chapter-4-1-images/14.Point-in-rectangle-gui-04.png)
 
 5. Остава да се имплементира най-сложната част: **визуализация на правоъгълника и точката** в полето на елемента **`<canvas>`**. чрез функцията **`draw()`** във файла **app.js**, който създаваме в директорията на приложението, по начина, описан в Точка 2.
   
 Създаваме  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">**`CanvasRenderingContext2D`**</a> обект като напишем следния код:
   
 ```javascript
-//Create canvas element
-    let canvas = document.getElementById('a');
-    let context = canvas.getContext('2d');
+// Create canvas element
+let canvas = document.getElementById('a');
+let context = canvas.getContext('2d');
 ```
 
 Елементът **`<canvas>`** е поле, в което обектът, генериран чрез метода <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext">**`.getContext('2d')`**</a>, чертае графики, текст, изображения и други елементи. В случая променливата **`context`** представлява този обект. Записваме в отделни променливи координатите на двата ъгъла на правоъгълника:
   
 ```javascript
-//Get input for rectangle coordinates
-    let rectX1 = Number(document.getElementById("rect-x1").value) * 10;
-    let rectY1 = Number(document.getElementById("rect-y1").value) * 10;
-    let rectX2 = Number(document.getElementById("rect-x2").value) * 10;
-    let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
+// Get input for rectangle coordinates
+let rectX1 = Number(document.getElementById("rect-x1").value) * 10;
+let rectY1 = Number(document.getElementById("rect-y1").value) * 10;
+let rectX2 = Number(document.getElementById("rect-x2").value) * 10;
+let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
 ```
 
-Стойностите на координатите са достъпни чрез **`id`** на **`<input>`** полетата. За по-добра визуализация на екрана, мащабираме стойностите като **`ги увеличaваме 10 пъти`**.
-
-Следващата стъпка е да се пресметнат страните на правоъгълника, тъй като обектът **`context`** рисува правоъгълник по четири параметъра: **`x`** - координата, **`y`** - координата, **`ширина`** в пиксели и **`височина`** в пиксели:
+Стойностите на координатите са достъпни чрез **`id`** на **`<input>`** полетата. За по-добра визуализация на екрана, мащабираме стойностите като **ги увеличaваме 10 пъти**. Следващата стъпка е да се пресметнат страните на правоъгълника, тъй като обектът **`context`** рисува правоъгълник по четири параметъра: **`x`** - координата, **`y`** - координата, **`ширина`** в пиксели и **`височина`** в пиксели:
 
 ```javascript
-//Calculate rectangle parameters
-    let rectWidth = Math.abs(rectX1 - rectX2);
-    let rectHeight = Math.abs(rectY1 - rectY2);
+// Calculate rectangle parameters
+let rectWidth = Math.abs(rectX1 - rectX2);
+let rectHeight = Math.abs(rectY1 - rectY2);
 ```
 
 Можем да използваме кода по-долу, който рисува червен правоъгълник, според зададените във формата координати, използвайки метода <a target="_blank" href="https://www.w3schools.com/tags/canvas_strokerect.asp">**`.strokeRect()`**</a>:
 
 ```javascript
-//Set rectangle style
-    context.strokeStyle = "#ff0000";
-    context.lineWidth = 3;
-//Draw rectangle with given parameters
-    context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
+// Set rectangle style
+context.strokeStyle = "#ff0000";
+context.lineWidth = 3;
+
+// Draw rectangle with given parameters
+context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
 ```
 
 Аналогично на правоъгълника, взимаме координатите на точката и ги мащабираме. След това задаваме стил на точката - оранжев цвят. За по-добра визуализация на екрана, преобразуваме точката в кръг с метода <a target="_blank" href="https://www.w3schools.com/tags/canvas_arc.asp">**`.arc()`**</a>. Този метод приема пет параметъра: **`x`** - координата, **`y`** - координата, **`радиус`**, **`начало на дъгата`** в радиани, **`край на дъгата`** в радиани:
 
 ```javascript
-//Get input for point coordinates
-    let pointX = Number(document.getElementById("point-x").value) * 10;
-    let pointY = Number(document.getElementById("point-y").value) * 10;
-//Set point style and draw point
-    context.beginPath();
-    context.fillStyle = "#ffcc00";
-    context.arc(pointX, pointY, 4, 0, 2 * Math.PI);
-    context.closePath();
-    context.fill();
+// Get input for point coordinates
+let pointX = Number(document.getElementById("point-x").value) * 10;
+let pointY = Number(document.getElementById("point-y").value) * 10;
+
+// Set point style and draw point
+context.beginPath();
+context.fillStyle = "#ffcc00";
+context.arc(pointX, pointY, 4, 0, 2 * Math.PI);
+context.closePath();
+context.fill();
 ```
 
 За да отрaзим резултатите в `if`-проверките, запазваме в отделни променливи следните елементи от `html` кода:
 
 ```javascript
-//Assign variables to (<div id="result">) and (<span id="status">) html elements
-    let result = document.getElementById("status");
-    let output = document.getElementById("result");
+// Assign variables to (<div id="result">) and (<span id="status">) html elements
+let result = document.getElementById("status");
+let output = document.getElementById("result");
 ```
 
 Последната стъпка е проверка на позицията на точката спрямо правоъгълника:
 
 ```javascript
-//Check point position
-    if () {
-        result.innerHTML = "Inside";
-        output.style.backgroundColor = "palegreen";
-    }
-    else if () {
-        result.innerHTML = "Border";
-        output.style.backgroundColor = "gold";
-    }
-    else {
-        result.innerHTML = "Outside";
-        output.style.backgroundColor = "lightsalmon";
-    }
+// Check point position
+if () {
+    result.innerHTML = "Inside";
+    output.style.backgroundColor = "palegreen";
+} else if () {
+    result.innerHTML = "Border";
+    output.style.backgroundColor = "gold";
+} else {
+    result.innerHTML = "Outside";
+    output.style.backgroundColor = "lightsalmon";
+}
 ```
 
-Нека помислим как **да допишем** недовършените (нарочно) условия в `if`-проверките! Кодът по-горе нарочно не се компилира, защото целта му е да помислим как и защо работи и да допълним липсващите части.
-
-Горният код взима координатите на правоъгълника и точката и проверява дали точката е вътре, вън или на страната на правоъгълника. При визуализацията на резултата се сменя и цвета на фона на текстовия блок, който го съдържа.
+Нека помислим как **да допишем** недовършените (нарочно) условия в **`if`** конструкциите! Кодът по-горе нарочно не се компилира, защото целта му е читателят да помисли как и защо работи и да допълним липсващите части. Горният код взима координатите на правоъгълника и точката и проверява дали точката е вътре, вън или на страна на правоъгълника. При визуализацията на резултата се сменя и цвета на фона на текстовия блок, който го съдържа.
 
 6. Това е пълната версия на функцията **`Draw()`**:
 
 ```javascript
 function draw() {
-    //Create canvas element
-        let canvas = document.getElementById('a');
-       let context = canvas.getContext('2d');
+    // Create canvas element
+    let canvas = document.getElementById('a');
+    let context = canvas.getContext('2d');
        
-    //Clear canvas window
-        context.clearRect(0, 0, canvas.width, canvas.height);
+    // Clear canvas window
+    context.clearRect(0, 0, canvas.width, canvas.height);
         
-    //Get input for rectangle coordinates
-        let rectX1 = Number(document.getElementById("rect-x1").value) * 10;
-        let rectY1 = Number(document.getElementById("rect-y1").value) * 10;
-        let rectX2 = Number(document.getElementById("rect-x2").value) * 10;
-        let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
+    // Get input for rectangle coordinates
+    let rectX1 = Number(document.getElementById("rect-x1").value) * 10;
+    let rectY1 = Number(document.getElementById("rect-y1").value) * 10;
+    let rectX2 = Number(document.getElementById("rect-x2").value) * 10;
+    let rectY2 = Number(document.getElementById("rect-y2").value) * 10;
         
-    //Calculate rectangle parameters
-        let rectWidth = Math.abs(rectX1 - rectX2);
-        let rectHeight = Math.abs(rectY1 - rectY2);
+    // Calculate rectangle parameters
+    let rectWidth = Math.abs(rectX1 - rectX2);
+    let rectHeight = Math.abs(rectY1 - rectY2);
         
-    //Set rectangle style
-        context.strokeStyle = "#ff0000";
-        context.lineWidth = 3;
+    // Set rectangle style
+    context.strokeStyle = "#ff0000";
+    context.lineWidth = 3;
         
-    //Draw rectangle with given parameters
-        context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
+    // Draw rectangle with given parameters
+    context.strokeRect(rectX1, rectY1, rectWidth, rectHeight);
         
-    //Get input for point coordinates
-        let pointX = Number(document.getElementById("point-x").value) * 10;
-        let pointY = Number(document.getElementById("point-y").value) * 10;
+    // Get input for point coordinates
+    let pointX = Number(document.getElementById("point-x").value) * 10;
+    let pointY = Number(document.getElementById("point-y").value) * 10;
         
-    //Set point style and draw point
-        context.beginPath();
-        context.fillStyle = "#ffcc00";
-        context.arc(pointX, pointY, 4, 0, 2 * Math.PI);
-        context.closePath();
-        context.fill();
+    // Set point style and draw point
+    context.beginPath();
+    context.fillStyle = "#ffcc00";
+    context.arc(pointX, pointY, 4, 0, 2 * Math.PI);
+    context.closePath();
+    context.fill();
         
-    //Assign variables to (div id="result") and (span id="status") html elements
-        let result = document.getElementById("status");
-        let output = document.getElementById("result");
+    // Assign variables to (div id="result") and (span id="status") html elements
+    let result = document.getElementById("status");
+    let output = document.getElementById("result");
         
-    //Check point position
-        if (pointX > rectX1 && pointX < rectX2 && pointY > rectY1 && pointY < rectY2) {
+    // Check point position
+    if (pointX > rectX1 && pointX < rectX2 && pointY > rectY1 && pointY < rectY2) {
         result.innerHTML = "Inside";
         output.style.backgroundColor = "palegreen";
-        }
-        else if ((pointX === rectX1 || pointX === rectX2) && pointY >= rectY1 && pointY <= rectY2 ||
-        (pointY === rectY1 || pointY === rectY2) && pointX >= rectX1 && pointX <= rectX2) {
+    } else if ((pointX === rectX1 || pointX === rectX2) && pointY >= rectY1 && pointY <= rectY2 
+                || (pointY === rectY1 || pointY === rectY2) && pointX >= rectX1 && pointX <= rectX2) {
         result.innerHTML = "Border";
         output.style.backgroundColor = "gold";
-        }
-        else {
+    } else {
         result.innerHTML = "Outside";
         output.style.backgroundColor = "lightsalmon";
-        }
     }
+}
 ```
 
-7. Стартираме приложението чрез файла **`index.html`** и го тестваме (с въвеждане на различни входни данни). Пробваме да въвеждаме различни правоъгълници и да позиционираме точката на различни позиции, да преоразмеряваме приложението и виждаме дали се държи коректно. Ако приложението не работи коректно, проверяваме за грешки. Най-вероятната причина за грешка е, ако сме написали кода на неправилно място.
+7. Стартираме приложението чрез файла **index.html** и го тестваме (с въвеждане на различни входни данни). Пробваме да въвеждаме различни правоъгълници и да позиционираме точката на различни позиции, да преоразмеряваме приложението и виждаме дали се държи коректно. Ако приложението не работи коректно, проверяваме за грешки. Най-вероятната причина за грешка е, ако сме написали кода на неправилно място.
 
 **Случай 1: Точката се намира в правоъгълника**:
 
