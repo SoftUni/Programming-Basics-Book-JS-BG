@@ -1,10 +1,10 @@
 /**
- * drawRating, рисува ХТМЛ, който е нужен за визуализацията на звездичките
+ * drawRating, рисува HTML, който е нужен за визуализацията на звездичките
  * @param {Number} rating
  * @return {String} html
  */
 function drawRating(rating) {
-    // низ от ХТМЛ
+    // низ от HTML
     let html = "";
 
     // краен брой звезди
@@ -19,7 +19,7 @@ function drawRating(rating) {
     // всички наполовина запълнени звезди
     let halfStars = allStars - fullStars - emptyStars;
 
-    // построяване на ХТМЛ
+    // построяване на HTML
     for (let i = 0; i < fullStars; i++) {
         html += '<img src="images/full-star.png">';
     }
@@ -30,7 +30,7 @@ function drawRating(rating) {
         html += '<img src="images/empty-star.png">';
     }
 
-    // връщане на готовият ХТМЛ
+    // връщане на готовият HTML
     return html;
 }
 
@@ -51,7 +51,7 @@ function drawHandler() {
     // намиране на елемнта, който държи звездичките
     let ratingHolder = document.getElementById("ratingHolder");
 
-    // генериране на ХТМЛ на база въведеният от потребителя рейтинг
+    // генериране на HTML на база въведеният от потребителя рейтинг
     let html = drawRating(rating);
 
     // рисуване на страницата
@@ -63,7 +63,7 @@ function drawHandler() {
  * @return {Void}
  */
 function appInit() {
-    // намиране на бутон елемента в ХТМЛ
+    // намиране на бутон елемента в HTML
     let button = document.getElementById("input-draw");
 
     // Закачане към събитието "click" за изпълнение на рисуването
@@ -77,5 +77,4 @@ function appInit() {
  * Стартиране на приложението асинхронно, чрез "event listener".
  * Слушане за "DOMContentLoaded".
  */
-
 document.addEventListener("DOMContentLoaded", appInit);
