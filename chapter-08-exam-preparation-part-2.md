@@ -97,7 +97,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#0](https://judge.softuni.bg/Contests/Practice/Index/517#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#0](https://judge.softuni.bg/Contests/Practice/Index/940#0).
 
 
 ## Задача: смяна на плочки
@@ -158,7 +158,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#1](https://judge.softuni.bg/Contests/Practice/Index/517#1).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#1](https://judge.softuni.bg/Contests/Practice/Index/940#1).
 
 
 ## Задача: магазин за цветя
@@ -209,25 +209,25 @@
 
 След като прочитаме внимателно условието разбираме, че отново се налага да извършваме **прости пресмятания**, но с разликата, че този път ще са необходими и **повече** логически **проверки**. Следва да обърнем повече **внимание** на това в какъв момент се **извършват промените** по крайната цена, за да можем правилно да изградим логиката на нашата програма. Отново, удебеленият текст ни дава достатъчно **насоки** как да подходим. Като за начало, отделяме вече **дефинираните** стойности в **променливи**, както направихме и в предишните задачи:
 
-![](assets/old-images/chapter-8-2-images/03.Flowers-01.png)
+![](assets/chapter-8-2-images/03.Flowers-01.png)
 
 Правим същото и за останалите вече дефинирани стойности:
 
-![](assets/old-images/chapter-8-2-images/03.Flowers-02.png)
+![](assets/chapter-8-2-images/03.Flowers-02.png)
 
 Следващата ни подзадача е да **прочетем** правилно **входните** данни от конзолата. Подхождаме по добре познатия ни вече начин, но този път **комбинираме две** отделни функции – една за **прочитане** на ред от конзолата и друга за **преобразуването** му в числен тип данни:
 
-![](assets/old-images/chapter-8-2-images/03.Flowers-03.png)
+![](assets/chapter-8-2-images/03.Flowers-03.png)
 
 Нека помислим кой е най-подходящият начин да **структурираме** нашата програмна логика. От условието става ясно, че пътят на програмата се разделя основно на две части: **пролет / лято** и **есен / зима**. Разделението правим с условна конструкция, като преди това заделяме променливи за **цените** на отделните цветя, както и за **крайния резултат**.
 
-![](assets/old-images/chapter-8-2-images/03.Flowers-04.png)
+![](assets/chapter-8-2-images/03.Flowers-04.png)
 
 Остава ни да извършим **няколко проверки** относно **намаленията** на различните видове цветя, в зависимост от сезона, и да модифицираме крайния резултат. 
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#2](https://judge.softuni.bg/Contests/Practice/Index/517#2).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#2](https://judge.softuni.bg/Contests/Practice/Index/940#2).
 
 
 ## Задача: оценки
@@ -287,7 +287,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#3](https://judge.softuni.bg/Contests/Practice/Index/517#3).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#3](https://judge.softuni.bg/Contests/Practice/Index/940#3).
 
 
 ## Задача: коледна шапка
@@ -343,7 +343,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#4](https://judge.softuni.bg/Contests/Practice/Index/517#4).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#4](https://judge.softuni.bg/Contests/Practice/Index/940#4).
 
 
 ## Задача: комбинации от букви
@@ -397,4 +397,4 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/517#5](https://judge.softuni.bg/Contests/Practice/Index/517#5).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/940#5](https://judge.softuni.bg/Contests/Practice/Index/940#5).
