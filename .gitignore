@@ -19,7 +19,9 @@ _book
 
 **/*.DS_Store
 
+
 # VScode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
