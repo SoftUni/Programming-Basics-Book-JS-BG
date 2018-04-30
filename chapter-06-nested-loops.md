@@ -6,7 +6,7 @@
 ## Видео
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="\_blank"
+  Гледайте видео-урок по тази глава тук: <a target="_blank"
   href="https://youtu.be/XgzvxbtirRI">
   https://youtu.be/XgzvxbtirRI</a>.
 </div>
