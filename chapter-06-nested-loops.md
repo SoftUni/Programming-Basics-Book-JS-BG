@@ -435,42 +435,7 @@ for (let i = 1; i <= n; i++) {
 
 Отваряме **`index.html`** и въвеждаме следният код:
 
-```
-<!-- HTML Документ структура -->
-<!DOCTYPE html> <!-- HTML5 тип на документа -->
-<html lang="en">
-
-    <!-- Заглавна секция, съдържа описателни тагове за нашето съдържание -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <!-- Име на документа -->
-        <title>Ratings</title>
-    </head>
-
-    <!-- Тяло на нашето приложение, описва съдържанието, което вижда потребителя -->
-    <body>
-
-        <!-- Заглавие на страницата -->
-        <h1>Ratings</h1>
-
-        <!-- Елементи за потребителска интеракция -->
-        <input id="input-rating" type="number" name="input-rating" min="0" max="100" value="35" />
-        <input id="input-draw" type="button" name="input-draw" value="Draw" />
-
-        <!-- Нов ред -->
-        <br>
-
-        <!-- Елемент, който държи генерираният HTML със звездички -->
-        <div id="ratingHolder"></div>
-
-        <!-- Включване на нашето JavaScript приложение -->
-        <script src="script.js"></script>
-    </body>
-</html>
-```
+// ADD
 
 Този код създава едно поле **`input-rating`**, в което потребителят може да въвежда число в интервала [**0 … 100**] и бутон [**Draw**], който осъществява пресмятането на звездичките с въведената стойност. Действието, което ще обработи данните, се казва **`drawRating`**. След формата се отпечатва съдържанието на **`<div id="ratingHolder"></div>`**. Кодът, който ще се съдържа в него, ще бъде динамично генериран HTML с поредица от звездички.
 
