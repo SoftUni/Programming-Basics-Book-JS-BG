@@ -8,7 +8,6 @@
   href="https://www.youtube.com/watch?v=JRLA_zpQfpQ&feature=youtu.be">
   https://www.youtube.com/watch?v=JRLA_zpQfpQ&feature=youtu.be</a>.
 </div>
-<script src="/assets/js/video.js"></script>
 
 ## Вложени проверки
 
@@ -545,7 +544,7 @@ switch (селектор) {
 
 Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
 
-<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
 Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
 
@@ -577,7 +576,7 @@ switch (селектор) {
 
 * Може да разделим фигурата на **два правоъгълника** с обща стена:
 
-<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
+<p><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
 
 * Една точка е **външна (outside)** за фигурата, когато е едновременно **извън** двата правоъгълника.
 * Една точка е **вътрешна (inside)** за фигурата, ако е вътре в някой от правоъгълниците (изключвайки стените им) или лежи върху общата им стена.
@@ -710,7 +709,7 @@ app.on('activate', () => {
 
 За въвеждане координатите на правоъгълника и на точката, използваме **`input`** полета от тип **`Number`**, с тагове **`<label>`**. За да чертаем геометрични фигури в приложението, използваме html тага **`<canvas>`**:
 
-<p align="center"><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
+<p><img src="assets/chapter-4-1-images/14.Point-in-rectangle-gui-07.png" /></p>
 
 Той приема следните параметри:
   - **Ширина** (width) в пиксели (px)
