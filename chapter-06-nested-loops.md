@@ -496,7 +496,7 @@ function drawHandler() {
     // за това се налага да ги обърнем в число чрез "parseInt()"
     let rating = parseInt(ratingInput.value);
 
-    // намиране на елемнта, който държи звездичките
+    // намиране на елемента, който държи звездичките
     let ratingHolder = document.getElementById("ratingHolder");
 
     // генериране на HTML на база въведеният от потребителя рейтинг
