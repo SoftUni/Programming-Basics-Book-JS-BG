@@ -14,8 +14,8 @@
 
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: <a target="_blank"
-  href="https://www.youtube.com/watch?v=fDVHaakZODU">
-  https://www.youtube.com/watch?v=fDVHaakZODU</a>.
+  href="https://www.youtube.com/watch?v=KuaOHr3RpNs">
+  https://www.youtube.com/watch?v=KuaOHr3RpNs</a>.
 </div>
 <script src="/assets/js/video.js"></script>
 
