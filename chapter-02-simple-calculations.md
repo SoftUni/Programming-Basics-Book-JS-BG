@@ -808,7 +808,7 @@ function eurConverter() {
  <script src="converter.js" type="text/javascript"></script>
 ```
 
-И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код. По този начин задаваме **при клик** на бутона **Convert!** да извикаме функцията **`eurConverter()`**:
+И второ, намираме и заместваме **`input`** полето с тип **`button`** със следния код. По този начин задаваме **при клик** на бутона [**Convert!**] да се извиква функцията **`eurConverter()`**:
 
 ```html
 <input class="primary-btn" type="button" onclick="eurConverter()" value="Convert!" />
