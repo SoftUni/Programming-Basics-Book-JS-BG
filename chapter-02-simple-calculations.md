@@ -90,9 +90,35 @@ function calculateSquareArea([arg1]) {
 
 Следващата команда **`console.log('Square area = ' + area);`** отпечатва посочения текст, като до него долепя изчисленото лице на квадрата, който сме записали в променливата **`area`**.
 
+Всъщност горната програма може малко да се опрости, ето така:
+
+```js
+function calculateSquareArea([a]) {
+    let area = a * a;
+    console.log('Square area = ' + area);
+}
+```
+
+Горният код ще работи коректно, защото при умножението променливата `a` ще се преобразува към число. Когато входът е само едно единствено число, може да се пропуснат и скобите `[]`, ето така:
+
+```js
+function calculateSquareArea(a) {
+    let area = a * a;
+    console.log('Square area = ' + area);
+}
+```
+
+Кодът може да бъде съкратен дори още, ето така:
+
+```js
+function calculateSquareArea(a) {
+    console.log('Square area = ' + a * a);
+}
+```
+
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
+Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Пробвайте четирите варианта на решението на задачата.
 
 ## Четене на дробно число
 
