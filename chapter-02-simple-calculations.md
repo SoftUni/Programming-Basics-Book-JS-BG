@@ -826,7 +826,7 @@ function eurConverter() {
 <link rel="stylesheet" href="index.css" type="text/css" />
 ```
 
-Във файла **index.css** слагаме следния код:
+Във файла **index.css** слагаме следния код (дефинираме стилове за отделните елементи от HTML формата):
 
 ```css
 body {
