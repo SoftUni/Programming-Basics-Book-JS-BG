@@ -1,5 +1,4 @@
-#
-Книга "Основи на програмирането" (с JavaScript)
+# Книга "Основи на програмирането" (с JavaScript)
 
 Книгата "**Основи на програмирането с JavaScript**" запознава читателите с писането на **програмен код** на начално ниво (работа с данни, проверки, цикли и функции) с езика **JavaScript**.
 
@@ -26,7 +25,6 @@
 * [10. Функции](chapter-10-functions.md)
 * [11. Хитрости и хакове](chapter-11-tricks-and-hacks.md)
 * [Заключение](chapter-12-conclusion.md)
-
 
 Изтеглете книгата "Основи на програмирането с JavaScript" в PDF формат:
 * <a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/blob/master/resources/Programming-Basics-JavaScript-v2018.pdf">Programming-Basics-JavaScript-v2018.pdf</a>
