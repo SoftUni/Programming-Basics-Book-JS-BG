@@ -2,7 +2,7 @@
 
 Книгата "**Основи на програмирането с JavaScript**" запознава читателите с писането на **програмен код** на начално ниво (работа с данни, проверки, цикли и функции) с езика **JavaScript**.
 
-<img src="/assets/JavaScript-Programming-Basics-Book-Cover.png" alt="Книга основи на програмирането с JavaScript - корица" class="readme-book-cover-image" />
+<a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/blob/master/resources/Programming-Basics-JavaScript-v2018.pdf"><img src="/assets/JavaScript-Programming-Basics-Book-Cover.png" alt="Книга основи на програмирането с JavaScript - корица" class="readme-book-cover-image" /></a>
 
 * [Предговор](chapter-00-preface.md)
 * [1. Първи стъпки в програмирането](chapter-01-first-steps-in-programming.md)
@@ -26,6 +26,9 @@
 * [11. Хитрости и хакове](chapter-11-tricks-and-hacks.md)
 * [Заключение](chapter-12-conclusion.md)
 
+Изтеглете книгата "Основи на програмирането с JavaScript" в PDF формат:
+* <a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/blob/master/resources/Programming-Basics-JavaScript-v2018.pdf">Programming-Basics-JavaScript-v2018.pdf</a>
+
 Настоящата книга е достъпна в няколко варианта с различни езици за програмиране:
 * [Основи на програмирането със C#](https://csharp-book.softuni.bg)
 * [Programming Basics with C# (English)](https://csharp-book.softuni.org)
@@ -36,7 +39,7 @@
 * [Основи на програмирането с PHP](https://php-book.softuni.bg)
 
 Кратка информация за изданието:
-* Заглавие: **Основи на програмирането със JavaScript**
+* Заглавие: **Основи на програмирането с JavaScript**
 * Автори: **Светлин Наков и колектив**
 * ISBN: **978-619-00-0702-9**
 * Издание: **Faber Publishing, София, 2018 г.**
