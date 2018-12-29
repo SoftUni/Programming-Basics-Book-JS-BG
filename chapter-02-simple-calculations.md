@@ -941,3 +941,5 @@ function catchMouse() {
 ![](assets/chapter-2-1-images/14.Catch-the-mouse-02.png)
 
 5. Завършете приложението.
+
+Ако имате трудности питайте във **форума на СофтУни**: https://softuni.bg/forum.
