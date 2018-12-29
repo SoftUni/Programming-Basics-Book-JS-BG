@@ -400,7 +400,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 ### Какво е локална функция?
 
-Виждаме, че в този код, в нашата функция **`solve()`** има **другa** декларирана функция **`sum()`**. Такавa **вложенa** функция се нарича **локална** функция. Локалните функции могат да се декларират във всяка една друга функция.
+Виждаме, че в този код, в нашата функция **`solve()`** има **другa** декларирана функция **`sum()`**. Такава **вложенa** функция се нарича **локална** функция. Локалните функции могат да се декларират във всяка една друга функция.
 
 ### Защо да използваме локални функции?
 
@@ -674,11 +674,11 @@ function integerToBase(number, toBase) {
 
 |Вход|Изход|Вход|Изход|
 |---|---|---|---|
-|3<br>999<br>-420<br>1020|nine-hundred and ninety nine<br>minus four-hundred and twenty<br>too large|2<br>15<br>350|three-hundred and fifty|
+|3<br>999<br>-420<br>1020|nine-hundred and ninety nine<br>minus four-hundred and twenty<br>too large|2<br>15<br>350|fifteen<br>three-hundred and fifty|
 
 |Вход|Изход|Вход|Изход|
 |---|---|---|---|
-|4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|2<br>500<br>123|five-hundred<br>one-hundred and twenty three|
+|4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
 #### Насоки и подсказки
 
