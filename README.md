@@ -42,7 +42,7 @@
 * Заглавие: **Основи на програмирането с JavaScript**
 * Автори: **Светлин Наков и колектив**
 * ISBN: **978-619-00-0702-9**
-* Издание: **Faber Publishing, София, 2018 г.**
+* Издание: **Faber Publishing, София, май 2018 г.**
 * Лиценз: **CC-BY-NC-SA**
 * Сорс код: https://github.com/SoftUni/Programming-Basics-Book-JS-BG
 
