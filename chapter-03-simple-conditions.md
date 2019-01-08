@@ -7,7 +7,7 @@
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=0GTknpT5mw8">https://www.youtube.com/watch?v=0GTknpT5mw8</a>.
 </div>
-<script src="/assets/js/video.js"></script>
+
 
 ## Оператори за сравнение
 
