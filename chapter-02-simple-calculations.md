@@ -12,7 +12,7 @@
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=kP_1cKnciyA">https://www.youtube.com/watch?v=kP_1cKnciyA</a>.
 </div>
-<script src="/assets/js/video.js"></script>
+
 
 ## Пресмятания в програмирането
 
