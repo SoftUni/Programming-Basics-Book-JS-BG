@@ -28,7 +28,7 @@
 
 ## Изтеглете книгата
 
-Изтеглете книгата "Основи на програмирането с JavaScript" в PDF формат:
+Изтеглете книгата "**Основи на програмирането с JavaScript**" в **PDF** формат:
 * <a href="https://github.com/SoftUni/Programming-Basics-Book-JS-BG/blob/master/resources/Programming-Basics-JavaScript-v2018.pdf">Programming-Basics-JavaScript-v2018.pdf</a>
 
 ## Варианти на книгата
