@@ -4,9 +4,11 @@ call gitbook install
 
 call gitbook build . --log=debug --debug
 
-git checkout gh-pages
+git worktree add ./_gh-pages gh-pages
 
-xcopy /s /y _book .
+cd _gh-pages
+
+xcopy /s /y ..\_book .
 
 git add .
 
@@ -16,6 +18,8 @@ git commit -m "Book web site deployment"
 
 git push
 
-git checkout master
+cd ..
+
+git worktree remove ./_gh-pages
 
 pause
