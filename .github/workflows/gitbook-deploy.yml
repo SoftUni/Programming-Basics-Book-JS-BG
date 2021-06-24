@@ -19,7 +19,7 @@ jobs:
       - name: Build the book to the `_book` folder (git build)
         run: gitbook build . --log=debug --debug
       - name: Checkout the `gh-pages` branch into the `_gh-pages` folder
-        run: git worktree add ./_gh-pages gh-pages
+        run: ls -al && git worktree add ./_gh-pages gh-pages
       - name: Copy the compiled book files to `_gh-pages`
         run: cp -R ./_book/* ./_gh-pages
       - name: Commit and push the changed book files in the `gh-pages` branch
