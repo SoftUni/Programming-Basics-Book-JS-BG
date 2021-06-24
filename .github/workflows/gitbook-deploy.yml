@@ -28,5 +28,7 @@ jobs:
           cd _gh-pages
           git add .
           git status
+          git config --local user.name "github-actions-gitbook-bot"
+          git config --local user.email "github-actions-gitbook-bot@users.noreply.github.com"
           git commit -m "Book web site deployment"
           git push
