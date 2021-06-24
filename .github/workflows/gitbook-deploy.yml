@@ -7,11 +7,20 @@ jobs:
     name: Build and Deploy Gitbook
     runs-on: ubuntu-latest
     steps:
-      # Check out the repo first
-      - name: Checkout code
+      - name: Checkout the source code from GitHub
         uses: actions/checkout@v2
-      # Run this action to build and publish gitbook
-      - name: Publish
-        uses: tuliren/publish-gitbook@v1.0.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Node.js (version 12)
+        uses: actions/setup-node@v2
+        with: { node-version: '12' }
+      - name: Install Gitbook CLI client (gitbook-cli)
+        run: npm install -g gitbook-cli
+      - name: Install Gitbook plugins (git install)
+        run: gitbook install
+      - name: Build the book to the `_book` folder (git build)
+        run: gitbook build . --log=debug --debug
+      - name: Checkout the `gh-pages` branch into the `_gh-pages` folder
+        run: git worktree add ./_gh-pages gh-pages
+      - name: Copy the compiled book files to `_gh-pages`
+        run: cp -R ./_book/* ./_gh-pages
+      - name: Commit and push the changed book files in the `gh-pages` branch
+        run: cd _gh-pages && git add . && git status && git commit -m "Book web site deployment" && git push
