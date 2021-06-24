@@ -14,7 +14,7 @@
         "expandable-chapters-small",
         "katex",
         "scripts",
-		"page-toc-button"
+	"page-toc-button"
     ],
     "pluginsConfig": {
         "ga": {
