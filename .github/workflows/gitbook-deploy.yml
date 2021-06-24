@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Checkout the source code from GitHub
         uses: actions/checkout@v2
-      - name: Install Node.js (version 12)
+      - name: Install Node.js (version 10, not higher!)
         uses: actions/setup-node@v2
-        with: { node-version: '12' }
+        with: { node-version: '10' }
       - name: Install Gitbook CLI client (gitbook-cli)
         run: npm install -g gitbook-cli
       - name: Install Gitbook plugins (git install)
