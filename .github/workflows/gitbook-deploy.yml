@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Checkout the source code from GitHub
         uses: actions/checkout@v2
+        with: { fetch-depth: 0 }
       - name: Install Node.js (version 10, not higher!)
         uses: actions/setup-node@v2
         with: { node-version: '10' }
@@ -19,8 +20,13 @@ jobs:
       - name: Build the book to the `_book` folder (git build)
         run: gitbook build . --log=debug --debug
       - name: Checkout the `gh-pages` branch into the `_gh-pages` folder
-        run: ls -al && git worktree add ./_gh-pages gh-pages
+        run: git worktree add ./_gh-pages gh-pages
       - name: Copy the compiled book files to `_gh-pages`
         run: cp -R ./_book/* ./_gh-pages
       - name: Commit and push the changed book files in the `gh-pages` branch
-        run: cd _gh-pages && git add . && git status && git commit -m "Book web site deployment" && git push
+        run: |
+          cd _gh-pages
+          git add .
+          git status
+          git commit -m "Book web site deployment"
+          git push
