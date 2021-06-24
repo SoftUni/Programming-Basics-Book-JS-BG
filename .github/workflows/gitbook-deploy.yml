@@ -1,0 +1,17 @@
+name: Gitbook Build & Deploy to gh-pages
+
+on: [workflow_dispatch]
+
+jobs:
+  build-and-publish:
+    name: Build and Deploy Gitbook
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the repo first
+      - name: Checkout code
+        uses: actions/checkout@v2
+      # Run this action to build and publish gitbook
+      - name: Publish
+        uses: tuliren/publish-gitbook@v1.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
