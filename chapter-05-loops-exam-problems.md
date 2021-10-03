@@ -155,7 +155,7 @@ p1Percentage = (p1 / n * 100).toFixed(2);
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#0](https://judge.softuni.bg/Contests/Practice/Index/934#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#0](https://judge.softuni.org/Contests/Practice/Index/934#0).
 
 
 ## Задача: умната Лили
@@ -253,7 +253,7 @@ moneyFromBirthdays += 10 * i/2;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#1](https://judge.softuni.bg/Contests/Practice/Index/934#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#1](https://judge.softuni.org/Contests/Practice/Index/934#1).
 
 ## Задача: завръщане в миналото
 
@@ -329,7 +329,7 @@ moneyFromBirthdays += 10 * i/2;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#2](https://judge.softuni.bg/Contests/Practice/Index/934#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#2](https://judge.softuni.org/Contests/Practice/Index/934#2).
 
 
 ## Задача: болница
@@ -418,7 +418,7 @@ moneyFromBirthdays += 10 * i/2;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#3](https://judge.softuni.bg/Contests/Practice/Index/934#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#3](https://judge.softuni.org/Contests/Practice/Index/934#3).
 
 
 ## Задача: деление без остатък
@@ -506,7 +506,7 @@ moneyFromBirthdays += 10 * i/2;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#4](https://judge.softuni.bg/Contests/Practice/Index/934#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#4](https://judge.softuni.org/Contests/Practice/Index/934#4).
 
 
 ## Задача: логистика
@@ -601,4 +601,4 @@ moneyFromBirthdays += 10 * i/2;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/934#5](https://judge.softuni.bg/Contests/Practice/Index/934#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/934#5](https://judge.softuni.org/Contests/Practice/Index/934#5).

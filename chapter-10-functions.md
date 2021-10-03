@@ -121,7 +121,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Програмата с общо четири функции, които се извикват една от друга, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в Judge системата: [https://judge.softuni.bg/Contests/Practice/Index/943#0](https://judge.softuni.bg/Contests/Practice/Index/943#0).
+Програмата с общо четири функции, които се извикват една от друга, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в Judge системата: [https://judge.softuni.org/Contests/Practice/Index/943#0](https://judge.softuni.org/Contests/Practice/Index/943#0).
 
 ## Функции с параметри
 
@@ -181,7 +181,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#1](https://judge.softuni.bg/Contests/Practice/Index/943#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#1](https://judge.softuni.org/Contests/Practice/Index/943#1).
 
 
 ### Незадължителни параметри
@@ -230,7 +230,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#2](https://judge.softuni.bg/Contests/Practice/Index/943#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#2](https://judge.softuni.org/Contests/Practice/Index/943#2).
 
 
 ### Пример: рисуване на запълнен квадрат
@@ -259,7 +259,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#3](https://judge.softuni.bg/Contests/Practice/Index/943#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#3](https://judge.softuni.org/Contests/Practice/Index/943#3).
 
 
 ## Връщане на резултат от функция
@@ -330,7 +330,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#4](https://judge.softuni.bg/Contests/Practice/Index/943#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#4](https://judge.softuni.org/Contests/Practice/Index/943#4).
 
 
 ### Пример: степен на число
@@ -353,7 +353,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#5](https://judge.softuni.bg/Contests/Practice/Index/943#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#5](https://judge.softuni.org/Contests/Practice/Index/943#5).
 
 
 ### Функции, връщащи няколко стойности
@@ -526,7 +526,7 @@ JavaScript не е **силно типизиран** език (strongly typed). 
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#7](https://judge.softuni.bg/Contests/Practice/Index/943#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#7](https://judge.softuni.org/Contests/Practice/Index/943#7).
 
 
 ### Задача: по-малко число
@@ -551,7 +551,7 @@ function solve([num1, num2, num3]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#8](https://judge.softuni.bg/Contests/Practice/Index/943#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#8](https://judge.softuni.org/Contests/Practice/Index/943#8).
 
 
 ### Задача: повтаряне на низ
@@ -572,7 +572,7 @@ function solve([num1, num2, num3]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#9](https://judge.softuni.bg/Contests/Practice/Index/943#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#9](https://judge.softuni.org/Contests/Practice/Index/943#9).
 
 
 ### Задача: n-та цифра
@@ -591,7 +591,7 @@ function solve([num1, num2, num3]) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#10](https://judge.softuni.bg/Contests/Practice/Index/943#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#10](https://judge.softuni.org/Contests/Practice/Index/943#10).
 
 
 ### Задача: число към бройна система
@@ -626,7 +626,7 @@ function integerToBase(number, toBase) {
 
 #### Тестване в Judge системата 
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#11](https://judge.softuni.bg/Contests/Practice/Index/943#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#11](https://judge.softuni.org/Contests/Practice/Index/943#11).
 
 
 ### Задача: известия
@@ -658,7 +658,7 @@ function integerToBase(number, toBase) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#12](https://judge.softuni.bg/Contests/Practice/Index/943#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#12](https://judge.softuni.org/Contests/Practice/Index/943#12).
 
 
 ### Задача: числа към думи
@@ -692,7 +692,7 @@ function integerToBase(number, toBase) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#13](https://judge.softuni.bg/Contests/Practice/Index/943#13).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#13](https://judge.softuni.org/Contests/Practice/Index/943#13).
 
 
 ### Задача: криптиране на низ
@@ -734,4 +734,4 @@ function integerToBase(number, toBase) {
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/943#14](https://judge.softuni.bg/Contests/Practice/Index/943#14).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/943#14](https://judge.softuni.org/Contests/Practice/Index/943#14).

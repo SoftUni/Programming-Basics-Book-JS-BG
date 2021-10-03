@@ -55,7 +55,7 @@ if (condition1) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#0](https://judge.softuni.bg/Contests/Practice/Index/931#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#0](https://judge.softuni.org/Contests/Practice/Index/931#0).
 
 
 ### Пример: квартално магазинче
@@ -86,7 +86,7 @@ if (condition1) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#1](https://judge.softuni.bg/Contests/Practice/Index/931#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#1](https://judge.softuni.org/Contests/Practice/Index/931#1).
 
 
 ## По-сложни проверки
@@ -144,7 +144,7 @@ let result = a && b && c && d;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#2](https://judge.softuni.bg/Contests/Practice/Index/931#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#2](https://judge.softuni.org/Contests/Practice/Index/931#2).
 
 
 ## Логическо "ИЛИ"
@@ -194,7 +194,7 @@ let result = a || b || c || d;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#3](https://judge.softuni.bg/Contests/Practice/Index/931#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#3](https://judge.softuni.org/Contests/Practice/Index/931#3).
 
 
 ## Логическо отрицание
@@ -225,7 +225,7 @@ let result = a || b || c || d;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#4](https://judge.softuni.bg/Contests/Practice/Index/931#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#4](https://judge.softuni.org/Contests/Practice/Index/931#4).
 
 
 ## Операторът скоби `()`
@@ -267,7 +267,7 @@ let result = a || b || c || d;
 
 #### Тестване в Judge системата
 
-След като допишете решението, може да го тествате тук: [https://judge.softuni.bg/Contests/Practice/Index/931#5](https://judge.softuni.bg/Contests/Practice/Index/931#5).
+След като допишете решението, може да го тествате тук: [https://judge.softuni.org/Contests/Practice/Index/931#5](https://judge.softuni.org/Contests/Practice/Index/931#5).
 
 
 ### Пример: магазин за плодове
@@ -302,7 +302,7 @@ let result = a || b || c || d;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#6](https://judge.softuni.bg/Contests/Practice/Index/931#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#6](https://judge.softuni.org/Contests/Practice/Index/931#6).
 
 
 ### Пример: търговски комисионни
@@ -329,7 +329,7 @@ let result = a || b || c || d;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#7](https://judge.softuni.bg/Contests/Practice/Index/931#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#7](https://judge.softuni.org/Contests/Practice/Index/931#7).
 
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -381,7 +381,7 @@ switch (селектор) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#8](https://judge.softuni.bg/Contests/Practice/Index/931#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#8](https://judge.softuni.org/Contests/Practice/Index/931#8).
 
 
 ### Множество етикети в switch-case
@@ -428,7 +428,7 @@ switch (селектор) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#9](https://judge.softuni.bg/Contests/Practice/Index/931#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#9](https://judge.softuni.org/Contests/Practice/Index/931#9).
 
 
 ## Какво научихме от тази глава?
@@ -503,7 +503,7 @@ switch (селектор) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#10](https://judge.softuni.bg/Contests/Practice/Index/931#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#10](https://judge.softuni.org/Contests/Practice/Index/931#10).
 
 
 ### Задача: волейбол
@@ -537,7 +537,7 @@ switch (селектор) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#11](https://judge.softuni.bg/Contests/Practice/Index/931#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#11](https://judge.softuni.org/Contests/Practice/Index/931#11).
 
 
 ### Задача: * точка във фигурата
@@ -588,7 +588,7 @@ switch (селектор) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/931#12](https://judge.softuni.bg/Contests/Practice/Index/931#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/931#12](https://judge.softuni.org/Contests/Practice/Index/931#12).
 
 
 ## Упражнениe: графично приложение с по-сложни проверки

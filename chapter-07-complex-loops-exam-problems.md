@@ -63,7 +63,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#0](https://judge.softuni.bg/Contests/Practice/Index/938#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/938#0](https://judge.softuni.org/Contests/Practice/Index/938#0).
 
 ## Задача: магически числа
 
@@ -120,7 +120,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#1](https://judge.softuni.bg/Contests/Practice/Index/938#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/938#1](https://judge.softuni.org/Contests/Practice/Index/938#1).
 
 ## Задача: спиращо число
 
@@ -173,7 +173,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#2](https://judge.softuni.bg/Contests/Practice/Index/938#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/938#2](https://judge.softuni.org/Contests/Practice/Index/938#2).
 
 ## Задача: специални числа
 
@@ -210,7 +210,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#3](https://judge.softuni.bg/Contests/Practice/Index/938#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/938#3](https://judge.softuni.org/Contests/Practice/Index/938#3).
 
 
 ## Задача: цифри
@@ -247,4 +247,4 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/938#4](https://judge.softuni.bg/Contests/Practice/Index/938#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/938#4](https://judge.softuni.org/Contests/Practice/Index/938#4).

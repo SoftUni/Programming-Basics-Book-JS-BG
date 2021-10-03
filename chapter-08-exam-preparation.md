@@ -25,7 +25,7 @@
 
 ## Система за онлайн оценяване (Judge)
 
-**Всички изпити и домашни** се **тестват** автоматизирано през онлайн **Judge система**: [https://judge.softuni.bg](https://judge.softuni.bg). За **всяка** от задачите има **открити** (нулеви) тестове, които ще ви помогнат да разберете какво се очаква от задачата и да поправите грешките си, както и **състезателни** тестове, които са **скрити** и проверяват дали задачата ви работи правилно. В **Judge** системата се влиза с вашия **softuni.bg акаунт**.
+**Всички изпити и домашни** се **тестват** автоматизирано през онлайн **Judge система**: [https://judge.softuni.org](https://judge.softuni.org). За **всяка** от задачите има **открити** (нулеви) тестове, които ще ви помогнат да разберете какво се очаква от задачата и да поправите грешките си, както и **състезателни** тестове, които са **скрити** и проверяват дали задачата ви работи правилно. В **Judge** системата се влиза с вашия **softuni.bg акаунт**.
 
 **Как** работи тестването в **Judge** системата? **Качвате** сорс кода и от менюто под него избирате да се изпълни с **JavaScript**. Програмата бива **тествана** с поредица от тестове, като за всеки **успешен** тест получавате **точки**.
 
@@ -86,7 +86,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#0](https://judge.softuni.bg/Contests/Practice/Index/939#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#0](https://judge.softuni.org/Contests/Practice/Index/939#0).
 
 
 ### Задача: пренасяне на тухли
@@ -140,7 +140,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#1](https://judge.softuni.bg/Contests/Practice/Index/939#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#1](https://judge.softuni.org/Contests/Practice/Index/939#1).
 
 
 ## Задачи с единична проверка
@@ -204,7 +204,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#2](https://judge.softuni.bg/Contests/Practice/Index/939#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#2](https://judge.softuni.org/Contests/Practice/Index/939#3).
 
 
 ### Задача: точка във фигура
@@ -256,7 +256,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#3](https://judge.softuni.bg/Contests/Practice/Index/939#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#3](https://judge.softuni.org/Contests/Practice/Index/939#3).
 
 
 ## Задачи с по-сложни проверки
@@ -315,7 +315,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#4](https://judge.softuni.bg/Contests/Practice/Index/939#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#4](https://judge.softuni.org/Contests/Practice/Index/939#4).
 
 
 ### Задача: суми от 3 числа
@@ -366,7 +366,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#5](https://judge.softuni.bg/Contests/Practice/Index/939#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#5](https://judge.softuni.org/Contests/Practice/Index/939#5).
 
 
 ## Задачи с единичен цикъл
@@ -414,7 +414,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#6](https://judge.softuni.bg/Contests/Practice/Index/939#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#6](https://judge.softuni.org/Contests/Practice/Index/939#6).
 
 
 ### Задача: поредица от нарастващи елементи
@@ -459,7 +459,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#7](https://judge.softuni.bg/Contests/Practice/Index/939#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#7](https://judge.softuni.org/Contests/Practice/Index/939#7).
 
 
 ## Задачи за чертане на фигурки на конзолата
@@ -518,7 +518,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#8](https://judge.softuni.bg/Contests/Practice/Index/939#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#8](https://judge.softuni.org/Contests/Practice/Index/939#8).
 
 
 ### Задача: правоъгълник със звездички в центъра
@@ -565,7 +565,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#9](https://judge.softuni.bg/Contests/Practice/Index/939#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#9](https://judge.softuni.org/Contests/Practice/Index/939#9).
 
 
 ## Задачи с вложени цикли с по-сложна логика
@@ -619,7 +619,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#10](https://judge.softuni.bg/Contests/Practice/Index/939#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#10](https://judge.softuni.org/Contests/Practice/Index/939#10).
 
 
 ### Задача: генериране на правоъгълници
@@ -675,4 +675,4 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/939#11](https://judge.softuni.bg/Contests/Practice/Index/939#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/939#11](https://judge.softuni.org/Contests/Practice/Index/939#11).

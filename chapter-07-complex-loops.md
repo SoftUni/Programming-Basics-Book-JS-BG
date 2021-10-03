@@ -48,7 +48,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#0](https://judge.softuni.bg/Contests/Practice/Index/937#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#0](https://judge.softuni.org/Contests/Practice/Index/937#0).
 
 ### Пример: числата от N до 1 в обратен ред
 
@@ -66,7 +66,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#1](https://judge.softuni.bg/Contests/Practice/Index/937#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#1](https://judge.softuni.org/Contests/Practice/Index/937#1).
 
 ### Пример: числата от 1 до 2^n с for цикъл
 
@@ -78,7 +78,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#2](https://judge.softuni.bg/Contests/Practice/Index/937#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#2](https://judge.softuni.org/Contests/Practice/Index/937#2).
 
 ### Пример: четни степени на 2
 
@@ -95,7 +95,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#3](https://judge.softuni.bg/Contests/Practice/Index/937#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#3](https://judge.softuni.org/Contests/Practice/Index/937#3).
 
 ## While цикъл
 
@@ -128,7 +128,7 @@
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#4](https://judge.softuni.bg/Contests/Practice/Index/937#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#4](https://judge.softuni.org/Contests/Practice/Index/937#1).
 
 ### Пример: число в диапазона [1 … 100]
 
@@ -148,7 +148,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#5](https://judge.softuni.bg/Contests/Practice/Index/937#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#5](https://judge.softuni.org/Contests/Practice/Index/937#5).
 
 
 ## Най-голям общ делител (НОД)
@@ -204,7 +204,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#6](https://judge.softuni.bg/Contests/Practice/Index/937#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#6](https://judge.softuni.org/Contests/Practice/Index/937#6).
 
 ## Do-while цикъл
 
@@ -233,7 +233,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#7](https://judge.softuni.bg/Contests/Practice/Index/937#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#7](https://judge.softuni.org/Contests/Practice/Index/937#7).
 
 ### Пример: сумиране на цифрите на число
 
@@ -258,7 +258,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#8](https://judge.softuni.bg/Contests/Practice/Index/937#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#8](https://judge.softuni.org/Contests/Practice/Index/937#8).
 
 ## Безкрайни цикли и операторът break
 
@@ -330,7 +330,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#9](https://judge.softuni.bg/Contests/Practice/Index/937#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#9](https://judge.softuni.org/Contests/Practice/Index/937#9).
 
 ### Пример: оператор break в безкраен цикъл
 
@@ -353,7 +353,7 @@ print а;
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#10](https://judge.softuni.bg/Contests/Practice/Index/937#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#10](https://judge.softuni.org/Contests/Practice/Index/937#10).
 
 ## Вложени цикли и операторът break
 
@@ -385,7 +385,7 @@ print а;
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#11](https://judge.softuni.bg/Contests/Practice/Index/937#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#11](https://judge.softuni.org/Contests/Practice/Index/937#11).
 
 ## Задачи с цикли
 
@@ -434,7 +434,7 @@ Fn = Fn-1 + Fn-2
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#12](https://judge.softuni.bg/Contests/Practice/Index/937#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#12](https://judge.softuni.org/Contests/Practice/Index/937#12).
 
 ### Задача: пирамида от числа
 
@@ -468,7 +468,7 @@ Fn = Fn-1 + Fn-2
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#13](https://judge.softuni.bg/Contests/Practice/Index/937#13).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#13](https://judge.softuni.org/Contests/Practice/Index/937#13).
 
 
 ### Задача: таблица с числа
@@ -499,7 +499,7 @@ Fn = Fn-1 + Fn-2
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/937#14](https://judge.softuni.bg/Contests/Practice/Index/937#14).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/937#14](https://judge.softuni.org/Contests/Practice/Index/937#14).
 
 ## Какво научихме от тази глава?
 

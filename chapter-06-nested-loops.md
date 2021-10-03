@@ -25,7 +25,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#0](https://judge.softuni.bg/Contests/Practice/Index/935#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#0](https://judge.softuni.org/Contests/Practice/Index/935#0).
 
 
 ### Пример: правоъгълник от N x N звездички
@@ -46,7 +46,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#1](https://judge.softuni.bg/Contests/Practice/Index/935#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#1](https://judge.softuni.org/Contests/Practice/Index/935#1).
 
 
 ## Вложени цикли
@@ -92,7 +92,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#2](https://judge.softuni.bg/Contests/Practice/Index/935#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#2](https://judge.softuni.org/Contests/Practice/Index/935#2).
 
 
 ### Пример: триъгълник от долари
@@ -111,7 +111,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#3](https://judge.softuni.bg/Contests/Practice/Index/935#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#3](https://judge.softuni.org/Contests/Practice/Index/935#3).
 
 
 ### Пример: квадратна рамка
@@ -139,7 +139,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#4](https://judge.softuni.bg/Contests/Practice/Index/935#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#4](https://judge.softuni.org/Contests/Practice/Index/935#4).
 
 
 ### Пример: ромбче от звездички
@@ -169,7 +169,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#5](https://judge.softuni.bg/Contests/Practice/Index/935#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#5](https://judge.softuni.org/Contests/Practice/Index/935#5).
 
 
 ### Пример: коледна елха
@@ -192,7 +192,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#6](https://judge.softuni.bg/Contests/Practice/Index/935#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#6](https://judge.softuni.org/Contests/Practice/Index/935#6).
 
 
 ## Чертане на по-сложни фигури
@@ -222,7 +222,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#7](https://judge.softuni.bg/Contests/Practice/Index/935#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#7](https://judge.softuni.org/Contests/Practice/Index/935#7).
 
 
 ### Пример: къщичка
@@ -309,7 +309,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#8](https://judge.softuni.bg/Contests/Practice/Index/935#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#8](https://judge.softuni.org/Contests/Practice/Index/935#8).
 
 
 ### Пример: диамант
@@ -388,7 +388,7 @@ function drawSquare(n) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/935#9](https://judge.softuni.bg/Contests/Practice/Index/935#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/935#9](https://judge.softuni.org/Contests/Practice/Index/935#9).
 
 
 ## Какво научихме от тази глава?

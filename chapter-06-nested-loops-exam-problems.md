@@ -97,7 +97,7 @@ for (let i = 0; i < 10; i++) {
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/936#0](https://judge.softuni.bg/Contests/Practice/Index/936#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/936#0](https://judge.softuni.org/Contests/Practice/Index/936#0).
 
 ## Задача: пеперуда
 
@@ -148,7 +148,7 @@ for (let i = 0; i < 10; i++) {
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/936#1](https://judge.softuni.bg/Contests/Practice/Index/936#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/936#1](https://judge.softuni.org/Contests/Practice/Index/936#1).
 
 ## Задача: знак "Стоп"
 
@@ -210,7 +210,7 @@ for (let i = 0; i < 10; i++) {
 	
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/936#2](https://judge.softuni.bg/Contests/Practice/Index/936#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/936#2](https://judge.softuni.org/Contests/Practice/Index/936#2).
 
 ## Задача: стрелка
 Да се напише програма, която приема **цяло нечетно число n** и чертае **вертикална стрелка** с размери като в примерите по-долу.
@@ -274,7 +274,7 @@ for (let i = 0; i < 10; i++) {
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/936#3](https://judge.softuni.bg/Contests/Practice/Index/936#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/936#3](https://judge.softuni.org/Contests/Practice/Index/936#3).
 
 
 ## Задача: брадва
@@ -330,4 +330,4 @@ for (let i = 0; i < 10; i++) {
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/936#4](https://judge.softuni.bg/Contests/Practice/Index/936#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/936#4](https://judge.softuni.org/Contests/Practice/Index/936#4).

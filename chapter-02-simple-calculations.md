@@ -118,7 +118,7 @@ function calculateSquareArea(a) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0). Пробвайте четирите варианта на решението на задачата.
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0). Пробвайте четирите варианта на решението на задачата.
 
 ## Четене на дробно число
 
@@ -151,7 +151,7 @@ convertInchesToCentimeters([5]); // Centimeters = 12.7
 ```
 
 #### Тестване в Judge системата
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
 ## Четене на вход под формата на текст
 
@@ -183,7 +183,7 @@ sayHello(['Иван']); // Hello, Иван!
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
 
 ## Съединяване на текст и числа
@@ -217,7 +217,7 @@ console.log(`${a} + ${a} = ${a + a}`);
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
 
 ## Аритметични операции
@@ -344,7 +344,7 @@ printТrapezoidArea([3, 4, 5]); // Trapezoid area = 17.5
 
 Тествайте решението си тук: 
 
-[https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
+[https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
 
 ## Закръгляне на числа
@@ -408,7 +408,7 @@ calculateCircleAreaAndPerimeter([10])
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
 
 ### Пример: лице на правоъгълник в равнината
@@ -446,7 +446,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
 ## Какво научихме от тази глава?
@@ -495,7 +495,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#0](https://judge.softuni.bg/Contests/Practice/Index/927#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#0](https://judge.softuni.org/Contests/Practice/Index/927#0).
 
 Трябва да получите 100 точки (напълно коректно решение):
 
@@ -524,7 +524,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#1](https://judge.softuni.bg/Contests/Practice/Index/927#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#1](https://judge.softuni.org/Contests/Practice/Index/927#1).
 
 Решението би трябвало да бъде прието като напълно коректно:
 
@@ -547,7 +547,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/927#2](https://judge.softuni.bg/Contests/Practice/Index/927#2).
+Тествайте решението си тук:  [https://judge.softuni.org/Contests/Practice/Index/927#2](https://judge.softuni.org/Contests/Practice/Index/927#2).
 
 
 ### Задача:	съединяване на текст и числа
@@ -564,7 +564,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#3](https://judge.softuni.bg/Contests/Practice/Index/927#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#3](https://judge.softuni.org/Contests/Practice/Index/927#3).
 
 
 ### Задача:	лице на трапец
@@ -585,7 +585,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#4](https://judge.softuni.bg/Contests/Practice/Index/927#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#4](https://judge.softuni.org/Contests/Practice/Index/927#4).
 
 
 ### Задача:	периметър и лице на кръг
@@ -607,7 +607,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#5](https://judge.softuni.bg/Contests/Practice/Index/927#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#5](https://judge.softuni.org/Contests/Practice/Index/927#5).
 
 
 ### Задача: лице на правоъгълник в равнината
@@ -626,7 +626,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#6](https://judge.softuni.bg/Contests/Practice/Index/927#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#6](https://judge.softuni.org/Contests/Practice/Index/927#6).
 
 
 ### Задача:	лице на триъгълник
@@ -644,12 +644,12 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#7](https://judge.softuni.bg/Contests/Practice/Index/927#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#7](https://judge.softuni.org/Contests/Practice/Index/927#7).
 
 
 ### Задача: конвертор - от градуси °C към градуси °F
 
-Напишете функция, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](http://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**. Ето няколко примера:
+Напишете функция, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](https://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**. Ето няколко примера:
 
 #### Примерен вход и изход
 
@@ -662,7 +662,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#8](https://judge.softuni.bg/Contests/Practice/Index/927#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#8](https://judge.softuni.org/Contests/Practice/Index/927#8).
 
 
 ### Задача: конвертор - от радиани в градуси
@@ -680,7 +680,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#9](https://judge.softuni.bg/Contests/Practice/Index/927#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#9](https://judge.softuni.org/Contests/Practice/Index/927#9).
 
 
 ### Задача: конвертор - USD към BGN
@@ -697,7 +697,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#10](https://judge.softuni.bg/Contests/Practice/Index/927#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#10](https://judge.softuni.org/Contests/Practice/Index/927#10).
 
 
 ### Задача:	\*  междувалутен конвертор
@@ -721,7 +721,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#11](https://judge.softuni.bg/Contests/Practice/Index/927#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#11](https://judge.softuni.org/Contests/Practice/Index/927#11).
 
 
 ### Задача:	** пресмятане с дати - 1000 дни на Земята
@@ -744,7 +744,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/927#12](https://judge.softuni.bg/Contests/Practice/Index/927#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/927#12](https://judge.softuni.org/Contests/Practice/Index/927#12).
 
 
 ## Графични приложения с числови изрази
@@ -764,7 +764,7 @@ calculateRectangleArea([60, 20, 10, 50]); // 1500
 ```html
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8">
     <title>BGN to EUR Converter</title>
@@ -906,7 +906,7 @@ body {
 ```html
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Catch the mouse!</title>

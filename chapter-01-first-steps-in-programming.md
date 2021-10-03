@@ -226,9 +226,9 @@ Hello JavaScript!
 
 ### Тестване на програмата в Judge системата
 
-Тестването на задачите от тази книга е автоматизирано и се осъществява през Интернет, от сайта на **Judge системата на СофтУни**: [https://judge.softuni.bg](https://judge.softuni.bg). Оценяването на задачите се извършва в реално време от системата. Всяка задача минава поредица от тестове, като всеки успешно преминат тест дава предвидените за него точки. Тестовете, които се подават на задачите, са скрити.
+Тестването на задачите от тази книга е автоматизирано и се осъществява през Интернет, от сайта на **Judge системата на СофтУни**: [https://judge.softuni.org](https://judge.softuni.org). Оценяването на задачите се извършва в реално време от системата. Всяка задача минава поредица от тестове, като всеки успешно преминат тест дава предвидените за него точки. Тестовете, които се подават на задачите, са скрити.
 
-Горната програма може да тестваме тук: [https://judge.softuni.bg/Contests/Practice/Index/926#0](https://judge.softuni.bg/Contests/Practice/Index/926#0). 
+Горната програма може да тестваме тук: [https://judge.softuni.org/Contests/Practice/Index/926#0](https://judge.softuni.org/Contests/Practice/Index/926#0). 
 
 Всеки **JavaScript код**, който искаме да тестваме в **Judge системата** трябва да бъде ограден от следните редове допълнителен код:
 
@@ -333,7 +333,7 @@ function solve() {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#1](https://judge.softuni.bg/Contests/Practice/Index/926#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/926#1](https://judge.softuni.org/Contests/Practice/Index/926#1).
 
 **Забележка**: Не забравяйте да оградите кодът си със **`solve()`** функцията:
 
@@ -365,7 +365,7 @@ function solve() {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#2](https://judge.softuni.bg/Contests/Practice/Index/926#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/926#2](https://judge.softuni.org/Contests/Practice/Index/926#2).
 
 Получихте ли 100 точки? Ако не сте помислете какво изпускате. А след това помислете дали може да напишем програмата по **по-умен начин**, така че да не повтаряме 20 пъти една и съща команда. Потърсете в Интернет информация за "**[for loop JavaScript](https://www.google.bg/search?q=for+loop+JavaScript)**".
 
@@ -399,7 +399,7 @@ console.log("**");
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#3](https://judge.softuni.bg/Contests/Practice/Index/926#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/926#3](https://judge.softuni.org/Contests/Practice/Index/926#3).
 
 Опитайте да **подобрите решението**, така че да няма много повтарящи се команди. Може ли това да стане с **`for`** цикъл? Успяхте ли да намерите умно решение (например с цикъл) на предната задача? При тази задача може да се ползва нещо подобно, но малко по-сложно (два цикъла един в друг). Ако не успеете, няма проблем, ще учим цикли след няколко глави и ще си спомните за тази задача тогава.
 
@@ -428,7 +428,7 @@ console.log("**");
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#4](https://judge.softuni.bg/Contests/Practice/Index/926#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/926#4](https://judge.softuni.org/Contests/Practice/Index/926#4).
 
 
 ### \* Задача: квадрат от звездички
@@ -454,7 +454,7 @@ console.log("**");
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/926#5](https://judge.softuni.bg/Contests/Practice/Index/926#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/926#5](https://judge.softuni.org/Contests/Practice/Index/926#5).
 
 
 ## Конзолни, графични и уеб приложения

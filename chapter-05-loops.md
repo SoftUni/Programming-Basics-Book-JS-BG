@@ -46,7 +46,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#0](https://judge.softuni.bg/Contests/Practice/Index/933#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#0](https://judge.softuni.org/Contests/Practice/Index/933#0).
 
 Трябва да получите **100 точки** (напълно коректно решение).
 
@@ -75,7 +75,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#1](https://judge.softuni.bg/Contests/Practice/Index/933#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#1](https://judge.softuni.org/Contests/Practice/Index/933#1).
 
 ### Пример: всички латински букви
 
@@ -93,7 +93,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#2](https://judge.softuni.bg/Contests/Practice/Index/933#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#2](https://judge.softuni.org/Contests/Practice/Index/933#2).
 
 ### Пример: сумиране на числа
 
@@ -127,7 +127,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#3](https://judge.softuni.bg/Contests/Practice/Index/933#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#3](https://judge.softuni.org/Contests/Practice/Index/933#3).
 
 ### Пример: най-голямо число
 
@@ -151,7 +151,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#4](https://judge.softuni.bg/Contests/Practice/Index/933#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#4](https://judge.softuni.org/Contests/Practice/Index/933#4).
 
 
 ### Пример: най-малко число
@@ -174,7 +174,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#5](https://judge.softuni.bg/Contests/Practice/Index/933#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#5](https://judge.softuni.org/Contests/Practice/Index/933#5).
 
 
 ### Пример: лява и дясна сума
@@ -195,7 +195,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#6](https://judge.softuni.bg/Contests/Practice/Index/933#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#6](https://judge.softuni.org/Contests/Practice/Index/933#6).
 
 
 ### Пример: четна / нечетна сума
@@ -218,7 +218,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#7](https://judge.softuni.bg/Contests/Practice/Index/933#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#7](https://judge.softuni.org/Contests/Practice/Index/933#7).
 
 
 ### Пример: сумиране на гласните букви
@@ -244,7 +244,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#8](https://judge.softuni.bg/Contests/Practice/Index/933#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#8](https://judge.softuni.org/Contests/Practice/Index/933#8).
 
 
 ## Какво научихме от тази глава?
@@ -281,7 +281,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#9](https://judge.softuni.bg/Contests/Practice/Index/933#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#9](https://judge.softuni.org/Contests/Practice/Index/933#9).
 
 
 ### Задача: четни / нечетни позиции
@@ -305,7 +305,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#10](https://judge.softuni.bg/Contests/Practice/Index/933#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#10](https://judge.softuni.org/Contests/Practice/Index/933#10).
 
 ### Задача: еднакви двойки
 
@@ -332,7 +332,7 @@ for (let i = 1; i <= 10; i++) {
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/933#11](https://judge.softuni.bg/Contests/Practice/Index/933#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/933#11](https://judge.softuni.org/Contests/Practice/Index/933#11).
 
 ## Упражнения: графични и уеб приложения
 
@@ -346,9 +346,8 @@ for (let i = 1; i <= 10; i++) {
 
 Нека първо се запознаем с **концепцията за рисуване “Turtle Graphics”**. Може да разгледаме следните източници:
 
-* Дефиниция на понятието “turtle graphics”: [http://c2.com/cgi/wiki?TurtleGraphics](http://c2.com/cgi/wiki?TurtleGraphics)
+* Дефиниция на понятието “turtle graphics”: [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
 * Статия за “turtle graphics” в Wikipedia: [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-* Интерактивен онлайн инструмент за чертане на фигури с костенурка:<br>[http://davidbau.github.io/jquery-turtle/demo.html](http://davidbau.github.io/jquery-turtle/demo.html)
 
 Ще реализираме приложението като използваме следните технологии:
   - Език **HTML** – за описание на потребителския интерфейс (поле за рисуване и бутони).
