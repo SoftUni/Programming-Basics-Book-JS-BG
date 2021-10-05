@@ -431,7 +431,7 @@ for (let i = 1; i <= n; i++) {
 - **script.js**
 - **images** (папка)
 
-Сега добавяме **картинките със звездичките** (те са част от файловете със заданието за този проект и могат да бъдат свалени от [тук](https://github.com/mchaov/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). Копираме ги от Windows Explorer и ги поставяме в папката **images** с copy/paste.
+Сега добавяме **картинките със звездичките** (те са част от файловете със заданието за този проект и могат да бъдат свалени от [тук](https://github.com/SoftUni/Programming-Basics-Book-JS-BG/tree/master/assets/chapter-6-1-assets)). Копираме ги от Windows Explorer и ги поставяме в папката **images** с copy/paste.
 
 Отваряме **index.html** и въвеждаме следният код:
 
