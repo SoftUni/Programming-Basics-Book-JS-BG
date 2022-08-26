@@ -101,16 +101,16 @@ span.run-code-loading {
     text-align: center;
     display: inline-block;
     color: #333333;
-    padding-right: 2.5em;
+    padding-right: 2.0em;
 }
 
 .topnav .logo {
     padding-top: 0.4em;
-    width: 120px;
-    min-width: 90px;
+    width: 150px;
+    min-width: 100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
     .topnav .logo {
         content: url("/assets/software-university-vertical-logo.svg");
         padding: 5px 0;
@@ -127,7 +127,7 @@ span.run-code-loading {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .topnav a {
         padding-right: 1.2em;
         font-size: 80%;
